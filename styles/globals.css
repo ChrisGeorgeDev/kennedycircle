@@ -1,16 +1,92 @@
+@font-face {
+  font-family: 'VisbyCF Medium';
+  src: url("/fonts/VisbyCF-Medium.eot");
+  src: url("/fonts/VisbyCF-Medium.eot?#iefix") format("embedded-opentype"), url("/fonts/VisbyCF-Medium.ttf") format("truetype"), url("/fonts/VisbyCF-Medium.woff2") format("woff2"), url("/fonts/VisbyCF-Medium.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'VisbyCF Regular';
+  src: url("/fonts/VisbyCF-Regular.eot");
+  src: url("/fonts/VisbyCF-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/VisbyCF-Regular.ttf") format("truetype"), url("/fonts/VisbyCF-Regular.woff2") format("woff2"), url("/fonts/VisbyCF-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Soleil Light';
+  src: url("/fonts/Soleil-Light.eot");
+  src: url("/fonts/Soleil-Light.eot?#iefix") format("embedded-opentype"), url("/fonts/Soleil-Light.ttf") format("truetype"),url("/fonts/Soleil-Light.woff") format("woff");
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+font-size: 21px;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.container {
+  padding-left:20px;
+  padding-right: 20px;
 }
 
-* {
-  box-sizing: border-box;
+
+/* Section Module */
+.dark {
+  @apply bg-gvhBlue-400;
 }
+
+.dark p {
+  @apply text-gvhGold-100 text-opacity-90;
+}
+
+.dark .head_underline {
+  @apply bg-gvhGold-100 opacity-50;
+}
+
+.dark h2, .dark h3, .dark a {
+  @apply text-gvhGold-400
+}
+
+.dark h2.here::after{
+  content: ".";
+  @apply font-display_med text-gvhGold-100;
+}
+
+.light {
+  @apply bg-gvhGold-100;
+}
+
+.light p {
+  @apply text-gvhBlue-400;
+}
+
+.light .head_underline {
+  @apply bg-gvhGold-400;
+}
+
+.light h3 {
+  @apply text-gvhGold-400;
+}
+
+.light h2, .light a {
+  @apply text-gvhBlue-400;
+}
+.light h2.here::after{
+  content: ".";
+  @apply font-display_med text-gvhGold-400;
+}
+
+.white {
+  @apply bg-white;
+}
+
+.section {
+ @apply lg:pt-[190px] lg:pb-[240px]
+}
+
+/* Images Module */
+.bl-round {   border-bottom-left-radius: 20% 50% ;}
