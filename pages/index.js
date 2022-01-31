@@ -3,6 +3,11 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Footer from '../components/Footer'
 import Section from '../components/Section'
+import Link from 'next/link'
+import profilePic from '../public/img/SuiteD-KitchenUpgrade1.png'
+import Hero from '../components/Hero'
+
+
 
 
 export default function Home() {
@@ -14,81 +19,153 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+      <Hero
+      alt="Pic"
+      image="/img/SuiteD-KitchenUpgrade1.png"
+
+      >
+
+Image Component
+   <br />
+   as a Background
+      </Hero>
+
+      <Section anchor="overview" contrast="dark">
+        <h2 className="display_h2 here">HERE</h2>
+        <div className="head_underline"></div>
+
+        <h3 className="display_h3 max-w-[700px] mb-4">
+          Live. Work. Relax.&nbsp;Play. testing some longer text PlaP PLay
+        </h3>
+
+        <p className="text-base max-w-[580px]">
+          The Residences on Kennedy Circle comprises of 148 units in a 6-storey
+          mid-rise state-of-the-art building that embodies a distinct spirit and
+          style like no other condominium in the area. The building features 1
+          bedroom, 1 bedroom + den and 2 bedroom unit types. Each unit has been
+          carefully developed to suit a variety of lifestyles with convenience
+          and comfort in mind, and appointed with beautiful, timeless features
+          and finishes.
         </p>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+        <Link href="/">
+          <a className="cta">VIEW FLOORPLANS</a>
+        </Link>
+      </Section>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+      <Section anchor="overview" contrast="light">
+        {/* <h2 className="display_h2 here">HERE</h2>
+        <div className="head_underline"></div> */}
+        <div className="flex flex-row-reverse">
+          <div className="max-w-[580px]">
+            <h2 className="display_h3 max-w-[700px] mb-4">
+              You have more reasons to stay at home.
+            </h2>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+            <p className="text-base max-w-[580px]">
+              The amenities of the Residences on Kennedy Circle offer something
+              for everyone - whether it's getting work done, focusing on
+              self-care or hosting an incredible event. Community spaces, such
+              as co-working areas, a yoga room, pet washing station and a 3,600
+              sqft outdoor terrace are just some of the thoughtfully selected
+              conveniences designed to meet all our residents' needs.
             </p>
-          </a>
+
+            <Link href="/">
+              <a className="cta">VIEW AMENITIES</a>
+            </Link>
+          </div>
         </div>
-      </main>
-
-      <Section
-      anchor="live"
-      contrast="dark"
-      >
-<h2 className="font-sans text-8xl here">HERE</h2>
-<div className=" w-full h-[2px] mb-7 block head_underline"></div>
-
-<h3 className="font-sans text-5xl max-w-[700px] mb-4">Live. Work. Relax.&nbsp;Play.</h3>
-<p className="text-base max-w-[580px]">
-The Residences on Kennedy Circle comprises of 148 units in a 6-storey mid-rise state-of-the-art building that embodies a distinct spirit and style like no other condominium in the area. The building features 1 bedroom, 1 bedroom + den and 2 bedroom unit types. Each unit has been carefully developed to suit a variety of lifestyles with convenience and comfort in mind, and appointed with beautiful, timeless features and finishes. 
-</p>
-
-<a className="font-display inline-block text-cta mt-16" href="#">VIEW FLOORPLANS</a>
-
+        {/* <img className="bl-round" src="/SuiteD-KitchenUpgrade1.png" /> */}
+        <div className="here_img">
+          <Image
+            src={profilePic}
+            layout="responsive"
+            alt="Picture of the author"
+          />
+        </div>
       </Section>
 
-      <Section
-      anchor="excel"
-      contrast="light"
-      >
-<h2 className="font-sans text-8xl here ">HERE</h2>
-<div className=" w-full h-[2px] mb-7 block head_underline"></div>
+      <Section anchor="overview" contrast="white">
+        {/* <h2 className="display_h2 here">HERE</h2>
+        <div className="head_underline"></div> */}
+        <div className="flex flex-row">
+          <div className="max-w-[580px]">
+            <h2 className="display_h3 max-w-[700px] mb-4">
+            You're part of
+a community.
+            </h2>
 
-<h3 className="font-sans text-5xl max-w-[700px] mb-4">Live. Work. Relax.&nbsp;Play.</h3>
-<p className="text-base max-w-[580px]">
-The Residences on Kennedy Circle comprises of 148 units in a 6-storey mid-rise state-of-the-art building that embodies a distinct spirit and style like no other condominium in the area. The building features 1 bedroom, 1 bedroom + den and 2 bedroom unit types. Each unit has been carefully developed to suit a variety of lifestyles with convenience and comfort in mind, and appointed with beautiful, timeless features and finishes. 
-</p>
+            <p className="text-base max-w-[580px]">
+            The amenities of the Residences on Kennedy Circle offer something for everyone – whether it’s getting work done, focusing on self-care or hosting an incredible event. Community spaces, such as co-working areas, a yoga room, pet washing station and a 3,600 sqft outdoor terrace are just some of the thoughtfully selected conveniences designed to meet all our residents’ needs.
+            </p>
 
-<a className="font-display inline-block text-cta mt-16" href="#">VIEW FLOORPLANS</a>
-
-<img className="bl-round" src="/SuiteD-KitchenUpgrade1.png"/>
-
-
+            <Link href="/">
+              <a className="cta">EXPLORE THE NEIGHBOURHOOD</a>
+            </Link>
+          </div>
+        </div>
+        {/* <img className="bl-round" src="/SuiteD-KitchenUpgrade1.png" /> */}
+        <div className="here_img">
+          <Image
+            src={profilePic}
+            layout="responsive"
+            alt="Picture of the author"
+          />
+        </div>
       </Section>
+
+
+      <Section anchor="overview" contrast="light">
+        {/* <h2 className="display_h2 here">HERE</h2>
+        <div className="head_underline"></div> */}
+        <div className="flex flex-row-reverse">
+          <div className="max-w-[580px]">
+            <h2 className="display_h3 max-w-[700px] mb-4">
+            You’re living an
+eco-conscious lifestyle.
+            </h2>
+
+            <p className="text-base max-w-[580px]">
+            We’ve committed to bring sustainable design and environmentally-responsible features, amenities and technology throughout the building.             </p>
+
+            <Link href="/">
+              <a className="cta">GREEN LIVING</a>
+            </Link>
+          </div>
+        </div>
+        {/* <img className="bl-round" src="/SuiteD-KitchenUpgrade1.png" /> */}
+        <div className="here_img">
+          <Image
+            src={profilePic}
+            layout="responsive"
+            alt="Picture of the author"
+          />
+        </div>
+      </Section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
       <footer className={styles.footer}>
@@ -97,7 +174,7 @@ The Residences on Kennedy Circle comprises of 148 units in a 6-storey mid-rise s
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by{" "}
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
@@ -105,5 +182,5 @@ The Residences on Kennedy Circle comprises of 148 units in a 6-storey mid-rise s
       </footer>
       <Footer></Footer>
     </>
-  )
+  );
 }

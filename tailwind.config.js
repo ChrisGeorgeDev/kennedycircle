@@ -59,14 +59,14 @@ module.exports = {
         "2.074rem",
         {
           letterSpacing: "0",
-          lineHeight: "2.5rem",
+          lineHeight: "2.4rem",
         },
       ],
       "4xl": [
         "2.488rem",
         {
           letterSpacing: "0",
-          lineHeight: "3.688rem",
+          lineHeight: "2.59rem",
         },
       ],
 
@@ -74,7 +74,7 @@ module.exports = {
         "2.986rem",
         {
           letterSpacing: "0",
-          lineHeight: "3.375rem",
+          lineHeight: "2.975rem",
         },
       ],
 
@@ -82,21 +82,21 @@ module.exports = {
         "3.583rem",
         {
           letterSpacing: "0",
-          lineHeight: "4.968rem",
+          lineHeight: "2.968rem",
         },
       ],
       "7xl": [
         "4.3rem",
         {
           letterSpacing: "0",
-          lineHeight: "6.313rem",
+          lineHeight: "3.313rem",
         },
       ],
       "8xl": [
         "5.16rem",
         {
           letterSpacing: "0",
-          lineHeight: "5.16rem",
+          lineHeight: "4.4rem",
         },
       ],
       "cta": [
