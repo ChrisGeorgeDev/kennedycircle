@@ -20,6 +20,16 @@ export default function Home() {
       </Head>
 
 
+      <Hero
+      alt="Pic"
+      image="/img/SuiteD-KitchenUpgrade1.png"
+
+      >
+
+Image Component
+   <br />
+   as a Background
+      </Hero>
 
       <Section anchor="overview" contrast="dark">
 
