@@ -20,26 +20,21 @@ export default function Home() {
       </Head>
 
 
-      <Hero
-      alt="Pic"
-      image="/img/SuiteD-KitchenUpgrade1.png"
-
-      >
-
-Image Component
-   <br />
-   as a Background
-      </Hero>
 
       <Section anchor="overview" contrast="dark">
-        <h2 className="display_h2 here">HERE</h2>
+
+
+
+
+        <div className="flex flex-row">
+          <div className="max-w-[580px]">
+          <h2 className="display_h2 here">HERE</h2>
         <div className="head_underline"></div>
+            <h3 className="display_h3 max-w-[700px] mb-4">
+            Live. Work. Relax. Play.           
+             </h3>
 
-        <h3 className="display_h3 max-w-[700px] mb-4">
-          Live. Work. Relax.&nbsp;Play. testing some longer text PlaP PLay
-        </h3>
-
-        <p className="text-base max-w-[580px]">
+            <p className="text-base max-w-[580px]">
           The Residences on Kennedy Circle comprises of 148 units in a 6-storey
           mid-rise state-of-the-art building that embodies a distinct spirit and
           style like no other condominium in the area. The building features 1
@@ -49,16 +44,19 @@ Image Component
           and finishes.
         </p>
 
-        <Link href="/">
-          <a className="cta">VIEW FLOORPLANS</a>
-        </Link>
+            <Link href="/">
+            <a className="cta">VIEW FLOORPLANS</a>
+            </Link>
+          </div>
+        </div>
       </Section>
 
       <Section anchor="overview" contrast="light">
-        {/* <h2 className="display_h2 here">HERE</h2>
-        <div className="head_underline"></div> */}
+       
         <div className="flex flex-row-reverse">
           <div className="max-w-[580px]">
+          <h2 className="display_h2 here">HERE</h2>
+        <div className="head_underline"></div>
             <h2 className="display_h3 max-w-[700px] mb-4">
               You have more reasons to stay at home.
             </h2>
@@ -88,10 +86,11 @@ Image Component
       </Section>
 
       <Section anchor="overview" contrast="white">
-        {/* <h2 className="display_h2 here">HERE</h2>
-        <div className="head_underline"></div> */}
+
         <div className="flex flex-row">
           <div className="max-w-[580px]">
+                    <h2 className="display_h2 here">HERE</h2>
+        <div className="head_underline"></div>
             <h2 className="display_h3 max-w-[700px] mb-4">
             You're part of
 a community.
@@ -118,10 +117,11 @@ a community.
 
 
       <Section anchor="overview" contrast="light">
-        {/* <h2 className="display_h2 here">HERE</h2>
-        <div className="head_underline"></div> */}
+
         <div className="flex flex-row-reverse">
           <div className="max-w-[580px]">
+          <h2 className="display_h2 here">HERE</h2>
+        <div className="head_underline"></div>
             <h2 className="display_h3 max-w-[700px] mb-4">
             You’re living an
 eco-conscious lifestyle.
