@@ -53,9 +53,10 @@ export default function Registration() {
           </label>
         </div>
         <div className="grid grid-cols-1 gap-3">
-          <label className="block">
+         
+        <label className="block">
             <span className="text-gray-700 sr-only">First Name </span>
-            <select className="form-select block w-full mt-1">
+            <select className="form-select block w-full overflow-x-hidden mt-1">
               <option>HOW DID YOU HEAR ABOUT US</option>
               <option>Option 2</option>
             </select>
@@ -63,7 +64,7 @@ export default function Registration() {
 
           <label className="block">
             <span className="text-gray-700 sr-only">First Name </span>
-            <select className="form-select block w-full mt-1">
+            <select className="form-select block w-full overflow-x-hidden mt-1">
               <option>TYPE OF UNIT DESIRED</option>
               <option>Option 2</option>
             </select>
@@ -71,14 +72,14 @@ export default function Registration() {
 
           <label className="block">
             <span className="text-gray-700 sr-only">First Name </span>
-            <select className="form-select block w-full mt-1">
+            <select className="form-select block w-full overflow-x-hidden mt-1">
               <option>ARE YOU A REALTOR?</option>
               <option>Option 2</option>
             </select>
           </label>
           <label className="block">
             <span className="text-gray-700 sr-only">First Name </span>
-            <select className="form-select block w-full mt-1">
+            <select className="form-select block w-full overflow-x-hidden mt-1">
               <option>ARE YOU WORKING WITH A REALTOR?</option>
               <option>Option 2</option>
             </select>
