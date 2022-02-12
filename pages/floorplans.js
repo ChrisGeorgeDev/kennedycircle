@@ -1,11 +1,12 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import Footer from '../components/Footer'
-import Section from '../components/Section'
-import Link from 'next/link'
-import profilePic from '../public/img/SuiteD-KitchenUpgrade1.png'
-import Hero from '../components/Hero'
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
+import Footer from "../components/Footer";
+import Section from "../components/Section";
+import Link from "next/link";
+import profilePic from "../public/img/SuiteD-KitchenUpgrade1.png";
+import Hero from "../components/Hero";
+import FlyoutMenu from "../components/Plans";
 
 export default function Home() {
   return (
@@ -16,16 +17,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-
-      <Hero
-      alt="Pic"
-      image="/img/SuiteD-KitchenUpgrade1.png"
-
-      >
-
-Image Component
-   <br />
-   as a Background
+      <Hero alt="Pic" image="/img/SuiteD-KitchenUpgrade1.png">
+        Image Component
+        <br />
+        as a Background
       </Hero>
 
       <Section anchor="overview" contrast="dark">
@@ -51,9 +46,61 @@ Image Component
         </Link>
       </Section>
 
+      <FlyoutMenu />
 
+      <div className="container mx-auto ">
+        <div className="flex flex-col md:flex-row">
+         
+          <div className="details w-[300px]">
+            <img
+              src="/img/icon/KC-Site-FloorPlan-Modal-TransparentBG-A.svg"
+              width={150}
+            />
 
+            <hr className=" h-[2px] border-t-[2px] border-gray-900 mb-10 mt-4"></hr>
+            <span className="display_h3 block text-gray-900">1 BED</span>
+            <span className="display_h3 block text-gray-900">1 BATH</span>
 
+            <dl>
+              <div className=" py-1 sm:grid sm:grid-cols-2 sm:gap-4 ">
+                <dt className="text-sm font-medium text-gray-900">
+                  Indoor living
+                </dt>
+                <dd className="mt-1 text-sm text-gray-500 sm:mt-0  text-right">
+                  606 sqft.
+                </dd>
+              </div>
+
+              <div className=" py-1 sm:grid sm:grid-cols-2 sm:gap-4 ">
+                <dt className="text-sm font-medium text-gray-900">
+                  Outdoor living
+                </dt>
+                <dd className="mt-1 text-sm text-gray-500 sm:mt-0 text-right">
+                  51 sqft.
+                </dd>
+              </div>
+              <div className=" py-1 sm:grid sm:grid-cols-2 sm:gap-4 ">
+                <dt className="text-sm font-medium text-gray-900">Total</dt>
+                <dd className="mt-1 text-sm text-gray-500 sm:mt-0 text-right">
+                  657 sqft.
+                </dd>
+              </div>
+            </dl>
+
+            <Link href="/">
+              <a className="cta">DOWNLOAD</a>
+            </Link>
+          </div>
+
+          <div className="fplan grow text-right">
+            <img
+              src="/img/floorplans/KC-Site-FloorPlan-Modal-TransparentBG-A.png"
+              width="400"
+              className="pl-40 pb-40 w-full"
+            />
+          </div>
+        </div>
+      </div>
 
       <Footer></Footer>
     </>

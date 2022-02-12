@@ -88,7 +88,7 @@ export default function Registration() {
           <div>
             <label className="inline-flex items-top">
               <input
-                className="form-checkbox appearance-none checked:bg-blue-500 mt-1"
+                className="form-checkbox accent-gvhGold-400 appearance-none checked:bg-blue-500 mt-1"
                 type="checkbox"
               />
               <span className="ml-2 text-xs text-gvhGold-100">
@@ -109,9 +109,9 @@ export default function Registration() {
 
       </form>
 
-      <p>
+      <div className="text-xs mt-10 text-center text-gvhGold-100 md:w-4/5 mx-auto font-sans">
       The developer reserves the right to modify or make substitutes to the building design, specifications and floorplans should they be necessary. Renderings, views, and layouts are for illustration purposes only. E.&O.E.
-      </p>
+      </div>
       </div>
     </Section>
   );
