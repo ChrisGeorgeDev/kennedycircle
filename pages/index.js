@@ -4,8 +4,8 @@ import styles from '../styles/Home.module.css'
 import Footer from '../components/Footer'
 import Section from '../components/Section'
 import Link from 'next/link'
-import profilePic from '../public/img/SuiteD-KitchenUpgrade1.png'
 import Hero from '../components/Hero'
+import Registration from '../components/Registration'
 
 
 
@@ -19,54 +19,43 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-
-      <Hero
-      alt="Pic"
-      image="/img/SuiteD-KitchenUpgrade1.png"
-
-      >
-
-Image Component
-   <br />
-   as a Background
+      <Hero alt="Pic" image="/img/SuiteD-KitchenUpgrade1.png">
+        Image Component
+        <br />
+        as a Background
       </Hero>
 
       <Section anchor="overview" contrast="dark">
-
-
-
-
         <div className="flex flex-row">
           <div className="max-w-[580px]">
-          <h2 className="display_h2 here">HERE</h2>
-        <div className="head_underline"></div>
+            <h2 className="display_h2 here">HERE</h2>
+            <div className="head_underline"></div>
             <h3 className="display_h3 max-w-[700px] mb-4">
-            Live. Work. Relax. Play.           
-             </h3>
+              Live. Work. Relax. Play.
+            </h3>
 
             <p className="text-base max-w-[580px]">
-          The Residences on Kennedy Circle comprises of 148 units in a 6-storey
-          mid-rise state-of-the-art building that embodies a distinct spirit and
-          style like no other condominium in the area. The building features 1
-          bedroom, 1 bedroom + den and 2 bedroom unit types. Each unit has been
-          carefully developed to suit a variety of lifestyles with convenience
-          and comfort in mind, and appointed with beautiful, timeless features
-          and finishes.
-        </p>
+              The Residences on Kennedy Circle comprises of 148 units in a
+              6-storey mid-rise state-of-the-art building that embodies a
+              distinct spirit and style like no other condominium in the area.
+              The building features 1 bedroom, 1 bedroom + den and 2 bedroom
+              unit types. Each unit has been carefully developed to suit a
+              variety of lifestyles with convenience and comfort in mind, and
+              appointed with beautiful, timeless features and finishes.
+            </p>
 
             <Link href="/">
-            <a className="cta">VIEW FLOORPLANS</a>
+              <a className="cta">VIEW FLOORPLANS</a>
             </Link>
           </div>
         </div>
       </Section>
 
       <Section anchor="overview" contrast="light">
-       
         <div className="flex flex-row-reverse">
           <div className="max-w-[580px]">
-          <h2 className="display_h2 here">HERE</h2>
-        <div className="head_underline"></div>
+            <h2 className="display_h2 here">HERE</h2>
+            <div className="head_underline"></div>
             <h2 className="display_h3 max-w-[700px] mb-4">
               You have more reasons to stay at home.
             </h2>
@@ -87,27 +76,29 @@ Image Component
         </div>
         {/* <img className="bl-round" src="/SuiteD-KitchenUpgrade1.png" /> */}
         <div className="here_img">
-          <Image
-            src={profilePic}
-            layout="responsive"
+          <img
+            src="/img/SuiteD-KitchenUpgrade1.png"
             alt="Picture of the author"
           />
         </div>
       </Section>
 
       <Section anchor="overview" contrast="white">
-
         <div className="flex flex-row">
           <div className="max-w-[580px]">
-                    <h2 className="display_h2 here">HERE</h2>
-        <div className="head_underline"></div>
+            <h2 className="display_h2 here">HERE</h2>
+            <div className="head_underline"></div>
             <h2 className="display_h3 max-w-[700px] mb-4">
-            You're part of
-a community.
+              You're part of a community.
             </h2>
 
             <p className="text-base max-w-[580px]">
-            The amenities of the Residences on Kennedy Circle offer something for everyone – whether it’s getting work done, focusing on self-care or hosting an incredible event. Community spaces, such as co-working areas, a yoga room, pet washing station and a 3,600 sqft outdoor terrace are just some of the thoughtfully selected conveniences designed to meet all our residents’ needs.
+              The amenities of the Residences on Kennedy Circle offer something
+              for everyone – whether it's getting work done, focusing on
+              self-care or hosting an incredible event. Community spaces, such
+              as co-working areas, a yoga room, pet washing station and a 3,600
+              sqft outdoor terrace are just some of the thoughtfully selected
+              conveniences designed to meet all our residents' needs.
             </p>
 
             <Link href="/">
@@ -117,28 +108,27 @@ a community.
         </div>
         {/* <img className="bl-round" src="/SuiteD-KitchenUpgrade1.png" /> */}
         <div className="here_img">
-          <Image
-            src={profilePic}
-            layout="responsive"
+        <img
+            src="/img/SuiteD-KitchenUpgrade1.png"
             alt="Picture of the author"
           />
         </div>
       </Section>
 
-
       <Section anchor="overview" contrast="light">
-
         <div className="flex flex-row-reverse">
           <div className="max-w-[580px]">
-          <h2 className="display_h2 here">HERE</h2>
-        <div className="head_underline"></div>
+            <h2 className="display_h2 here">HERE</h2>
+            <div className="head_underline"></div>
             <h2 className="display_h3 max-w-[700px] mb-4">
-            You’re living an
-eco-conscious lifestyle.
+              You're living an eco-conscious lifestyle.
             </h2>
 
             <p className="text-base max-w-[580px]">
-            We’ve committed to bring sustainable design and environmentally-responsible features, amenities and technology throughout the building.             </p>
+              We've committed to bring sustainable design and
+              environmentally-responsible features, amenities and technology
+              throughout the building.{" "}
+            </p>
 
             <Link href="/">
               <a className="cta">GREEN LIVING</a>
@@ -147,49 +137,14 @@ eco-conscious lifestyle.
         </div>
         {/* <img className="bl-round" src="/SuiteD-KitchenUpgrade1.png" /> */}
         <div className="here_img">
-          <Image
-            src={profilePic}
-            layout="responsive"
+        <img
+            src="/img/SuiteD-KitchenUpgrade1.png"
             alt="Picture of the author"
           />
         </div>
       </Section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+<Registration></Registration>
       <Footer></Footer>
     </>
   );

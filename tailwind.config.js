@@ -51,21 +51,18 @@ module.exports = {
       "2xl": [
         "1.728rem",
         {
-          letterSpacing: "0", //1%
           lineHeight: "1.95rem",
         },
       ],
       "3xl": [
         "2.074rem",
         {
-          letterSpacing: "0",
           lineHeight: "2.4rem",
         },
       ],
       "4xl": [
         "2.488rem",
         {
-          letterSpacing: "0",
           lineHeight: "2.59rem",
         },
       ],
@@ -73,7 +70,6 @@ module.exports = {
       "5xl": [
         "2.986rem",
         {
-          letterSpacing: "0",
           lineHeight: "2.975rem",
         },
       ],
@@ -81,21 +77,18 @@ module.exports = {
       "6xl": [
         "3.583rem",
         {
-          letterSpacing: "0",
           lineHeight: "2.968rem",
         },
       ],
       "7xl": [
         "4.3rem",
         {
-          letterSpacing: "0",
           lineHeight: "3.313rem",
         },
       ],
       "8xl": [
         "5.16rem",
         {
-          letterSpacing: "0",
           lineHeight: "4.4rem",
         },
       ],
@@ -120,5 +113,8 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+
+  ],
 }

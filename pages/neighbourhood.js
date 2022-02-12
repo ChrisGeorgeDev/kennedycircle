@@ -1,11 +1,12 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import Footer from '../components/Footer'
-import Section from '../components/Section'
-import Link from 'next/link'
-import profilePic from '../public/img/SuiteD-KitchenUpgrade1.png'
-import Hero from '../components/Hero'
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
+import Footer from "../components/Footer";
+import Section from "../components/Section";
+import Link from "next/link";
+import profilePic from "../public/img/SuiteD-KitchenUpgrade1.png";
+import Hero from "../components/Hero";
+import Registration from "../components/Registration";
 
 export default function Home() {
   return (
@@ -16,45 +17,81 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-
-      <Hero
-      alt="Pic"
-      image="/img/SuiteD-KitchenUpgrade1.png"
-
-      >
-
-Image Component
-   <br />
-   as a Background
+      <Hero alt="Pic" image="/img/SuiteD-KitchenUpgrade1.png">
+        Image Component
+        <br />
+        as a Background
       </Hero>
 
+      <Section anchor="overview" contrast="light">
+        <div className="flex flex-row">
+          <div className="max-w-[580px]">
+            <h2 className="display_h2 here">HERE</h2>
+            <div className="head_underline"></div>
+            <h3 className="display_h3 max-w-[700px] mb-4">
+            Milton:
+Meet your neighbourhood.
+            </h3>
+
+            <p className="text-base max-w-[580px]">
+            The Residences on Kennedy Circle offers the convenience of a Milton Transit bus stop at its doorstep, and is a short distance from the GO Station with a direct route to downtown Toronto, 20 minutes to Toronto Pearson Airport and 5 minutes to highway 401. Located in the Toronto-Waterloo Innovation Corridor, the second largest technology cluster in North America, residents are in proximity to Canada’s top academic institution and universities, start-up incubators, research facilities and tech companies.
+<br/>
+<br/>
+
+            </p>
+
+            <p className="text-base max-w-[580px]">
+            With nearby shops, big box stores, restaurants, parks and schools, modern living has never been so balanced.
+            </p>
+          </div>
+        </div>
+      </Section>
+      <div className="here_img">
+        <img
+          src="/img/SuiteD-KitchenUpgrade1.png"
+          alt="Picture of the author"
+        />
+      </div>
+
+
+
       <Section anchor="overview" contrast="dark">
-        <h2 className="display_h2 here">HERE</h2>
-        <div className="head_underline"></div>
+        <div className="flex flex-row">
+          <div className="max-w-[580px]">
+            <h2 className="display_h2 here">HERE</h2>
+            <div className="head_underline"></div>
+            <h2 className="display_h3 max-w-[700px] mb-4">
+              Working from home doesn't feel like work.
+            </h2>
 
-        <h3 className="display_h3 max-w-[700px] mb-4">
-          Live. Work. Relax.&nbsp;Play. testing some longer text PlaP PLay
-        </h3>
-
-        <p className="text-base max-w-[580px]">
-          The Residences on Kennedy Circle comprises of 148 units in a 6-storey
-          mid-rise state-of-the-art building that embodies a distinct spirit and
-          style like no other condominium in the area. The building features 1
-          bedroom, 1 bedroom + den and 2 bedroom unit types. Each unit has been
-          carefully developed to suit a variety of lifestyles with convenience
-          and comfort in mind, and appointed with beautiful, timeless features
-          and finishes.
-        </p>
-
-        <Link href="/">
-          <a className="cta">VIEW FLOORPLANS</a>
-        </Link>
+            <p className="text-base max-w-[580px]">
+              We've created a digital community for our residents, with areas
+              for social co-working spaces featuring work pods, a laptop bar and
+              a boardroom to host meetings, plus Smart Home Tech offering
+              digital building and unit access as well as smartphone video
+              calling and delivery parcel scanning.{" "}
+            </p>
+          </div>
+        </div>
+        {/* <img className="bl-round" src="/SuiteD-KitchenUpgrade1.png" /> */}
+        <div className="here_img">
+          <Image
+            src={profilePic}
+            layout="responsive"
+            alt="Picture of the author"
+          />
+        </div>
       </Section>
 
+      <div className="here_img">
+        <img
+          src="/img/SuiteD-KitchenUpgrade1.png"
+          alt="Picture of the author"
+        />
+      </div>
 
 
-
-
+      <Registration></Registration>
       <Footer></Footer>
     </>
   );

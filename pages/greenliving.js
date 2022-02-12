@@ -1,11 +1,12 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import Footer from '../components/Footer'
-import Section from '../components/Section'
-import Link from 'next/link'
-import profilePic from '../public/img/SuiteD-KitchenUpgrade1.png'
-import Hero from '../components/Hero'
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
+import Footer from "../components/Footer";
+import Section from "../components/Section";
+import Link from "next/link";
+import profilePic from "../public/img/SuiteD-KitchenUpgrade1.png";
+import Hero from "../components/Hero";
+import Registration from "../components/Registration";
 
 export default function Home() {
   return (
@@ -16,45 +17,192 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-
-      <Hero
-      alt="Pic"
-      image="/img/SuiteD-KitchenUpgrade1.png"
-
-      >
-
-Image Component
-   <br />
-   as a Background
+      <Hero alt="Pic" image="/img/SuiteD-KitchenUpgrade1.png">
+        Image Component
+        <br />
+        as a Background
       </Hero>
 
+      <Section anchor="overview" contrast="light">
+        <div className="flex flex-row">
+          <div className="max-w-[580px]">
+            <h2 className="display_h2 here">HERE</h2>
+            <div className="head_underline"></div>
+            <h3 className="display_h3 max-w-[700px] mb-4">
+            You're living a sustainable and eco-conscious lifestyle.
+            </h3>
+
+            <p className="text-base max-w-[580px]">
+            We've committed to bring sustainable design and environmentally-responsible features, amenities and technology throughout the building. <br/>
+<br/>
+
+            </p>
+
+         
+          </div>
+        </div>
+      </Section>
+     
+     
+      <div className="img_break">
+        <img
+          src="/img/SuiteD-KitchenUpgrade1.png"
+          alt="Picture of the author"
+        />
+      </div>
+
+
+
       <Section anchor="overview" contrast="dark">
-        <h2 className="display_h2 here">HERE</h2>
-        <div className="head_underline"></div>
+        <div className="flex flex-row">
+          <div className="w-full">
+            <h2 className="display_alt  text-center">FEATURES & FINISHES</h2>
+            <div className="head_underline "></div>
 
-        <h3 className="display_h3 max-w-[700px] mb-4">
-          Live. Work. Relax.&nbsp;Play. testing some longer text PlaP PLay
-        </h3>
+            <div className="w-4/5 m-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 lg:gap-20 pt-10  ">
+              <div>
+                <img
+                  className="h-[182px] mb-[70px]"
+                  src="img/icon/KC-Site-Green-Icons-1-HeatingandCooling.svg"
+                />
+                <h3 className="text-xl mb-6">Heating & Cooling</h3>
+                <p>
+                Efficient distribution of heating and cooling through sealed duct work which lowers the usage of energy, as well as the installation of an Energy Recovery Ventilator (ERV) resulting in healthier, fresh air intake, improved control of humidity and lowered use of energy.
 
-        <p className="text-base max-w-[580px]">
-          The Residences on Kennedy Circle comprises of 148 units in a 6-storey
-          mid-rise state-of-the-art building that embodies a distinct spirit and
-          style like no other condominium in the area. The building features 1
-          bedroom, 1 bedroom + den and 2 bedroom unit types. Each unit has been
-          carefully developed to suit a variety of lifestyles with convenience
-          and comfort in mind, and appointed with beautiful, timeless features
-          and finishes.
-        </p>
+                </p>
+              </div>
+              <div>
+                <img
+                  className="h-[182px] mb-[70px]"
+                  src="img/icon/KC-Site-Green-Icons-2-Insulation.svg"
+                />
+                <h3 className="text-xl mb-6">Insulation</h3>
+                <p>
+                Tightly sealed building envelope and wall insulation to reduce heat loss and thermally insulated energy efficient double glazed architecturally designed windows with low expansion polyurethane spray foam for a tight air seal.
 
-        <Link href="/">
-          <a className="cta">VIEW FLOORPLANS</a>
-        </Link>
+                </p>
+              </div>
+              <div>
+                <img
+                  className="h-[182px] mb-[70px]"
+                  src="img/icon/KC-Site-Green-Icons-3-ElectricalandPlumbing.svg"
+                />
+                <h3 className="text-xl mb-6">Electrical & Plumbing</h3>
+                <p>
+                Individually metered suites to lower costs to utility bills and
+high efficiency plumbing fixtures with central hot water delivery system installed throughout building and in suites for water conservation. 
+
+                </p>
+              </div>
+              <div>
+                <img
+                  className="h-[182px] mb-[70px]"
+                  src="img/icon/KC-Site-Green-Icons-4-Recycling.svg"
+                />
+                <h3 className="text-xl mb-6">Recycling</h3>
+                <p>
+                Community Recycling and Waste Reduction Program with centralized disposal facilities with separate water 
+
+                </p>
+              </div>
+           
+            </div>
+
+         
+          </div>
+        </div>
       </Section>
 
 
+      <Section anchor="overview" contrast="white">
+        <div className="flex flex-row">
+          <div className="w-full">
+            <h2 className="display_alt  text-center">FEATURES & FINISHES</h2>
+            <div className="head_underline "></div>
 
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-20 pt-10  ">
+              <div>
+                <img
+                  className="h-[182px] mb-[70px]"
+                  src="img/icon/KC-Site-FF-Icons-1-General.svg"
+                />
+                <h3 className="text-xl mb-6">General</h3>
+                <p>
+                  Approx. 10' high ceilings on ground floor and approx 9' high
+                  ceilings on 2nd-6th floor. Modern wide plank, wear-resistant
+                  laminate flooring and modern style interior doors and trim.
+                </p>
+              </div>
+              <div>
+                <img
+                  className="h-[182px] mb-[70px]"
+                  src="img/icon/KC-Site-FF-Icons-2-Kitchen.svg"
+                />
+                <h3 className="text-xl mb-6">Kitchen</h3>
+                <p>
+                  ENERGY STAR® stainless steel appliance package with
+                  custom-crafted kitchen cabinetry with soft close doors and
+                  drawers and cultured marble countertop.{" "}
+                </p>
+              </div>
+              <div>
+                <img
+                  className="h-[182px] mb-[70px]"
+                  src="img/icon/KC-Site-FF-Icons-3-EnsuiteandBathroom.svg"
+                />
+                <h3 className="text-xl mb-6">Ensuite & Bathroom</h3>
+                <p>
+                  Cultured marble countertop with sleek Moen 'Vichy' faucet and
+                  contemporary hardware and tiled with imporated ceramic tile.{" "}
+                </p>
+              </div>
+              <div>
+                <img
+                  className="h-[182px] mb-[70px]"
+                  src="img/icon/KC-Site-FF-Icons-4-Laundry.svg"
+                />
+                <h3 className="text-xl mb-6">Laundry</h3>
+                <p>
+                  Full-size ENERGY STAR® washer and energy efficient heat pump
+                  ventless dryer and floored with imported ceramic tile.{" "}
+                </p>
+              </div>
+              <div>
+                <img
+                  className="h-[182px] mb-[70px]"
+                  src="img/icon/KC-Site-FF-Icons-5-MechanicalandElectrical.svg"
+                />
+                <h3 className="text-xl mb-6">Mechanical & Electrical</h3>
+                <p>
+                  Individual heating & cooling units and Electricity and Water
+                  consumption sub-metering with Energy Recovery Ventilator.{" "}
+                </p>{" "}
+              </div>
+              <div>
+                <img
+                  className="h-[182px] mb-[70px]"
+                  src="img/icon/KC-Site-FF-Icons-6-SecurityandCommunications.svg"
+                />
+                <h3 className="text-xl mb-6">Security & Communications</h3>
+                <p>
+                  Integrated Gable View Homes Smart Home Technology offering
+                  keyless building and unit entry and 24-hour video surveillance
+                  monitoring system.{" "}
+                </p>
+              </div>
+            </div>
 
+            <div className="text-center">
+              <Link href="/">
+                <a className="cta">DOWNLOAD FEATURES & AMENITIES</a>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </Section>
+ 
 
+      <Registration></Registration>
       <Footer></Footer>
     </>
   );

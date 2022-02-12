@@ -1,11 +1,12 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import Footer from '../components/Footer'
-import Section from '../components/Section'
-import Link from 'next/link'
-import profilePic from '../public/img/SuiteD-KitchenUpgrade1.png'
-import Hero from '../components/Hero'
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
+import Footer from "../components/Footer";
+import Section from "../components/Section";
+import Link from "next/link";
+import profilePic from "../public/img/SuiteD-KitchenUpgrade1.png";
+import Hero from "../components/Hero";
+import Registration from "../components/Registration";
 
 export default function Home() {
   return (
@@ -16,45 +17,172 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-
-      <Hero
-      alt="Pic"
-      image="/img/SuiteD-KitchenUpgrade1.png"
-
-      >
-
-Image Component
-   <br />
-   as a Background
+      <Hero alt="Pic" image="/img/SuiteD-KitchenUpgrade1.png">
+        Image Component
+        <br />
+        as a Background
       </Hero>
 
-      <Section anchor="overview" contrast="dark">
-        <h2 className="display_h2 here">HERE</h2>
-        <div className="head_underline"></div>
+      <Section anchor="overview" contrast="light">
+        <div className="flex flex-row">
+          <div className="max-w-[580px]">
+            <h2 className="display_h2 here">HERE</h2>
+            <div className="head_underline"></div>
+            <h3 className="display_h3 max-w-[700px] mb-4">
+              Your home extends beyond.{" "}
+            </h3>
 
-        <h3 className="display_h3 max-w-[700px] mb-4">
-          Live. Work. Relax.&nbsp;Play. testing some longer text PlaP PLay
-        </h3>
-
-        <p className="text-base max-w-[580px]">
-          The Residences on Kennedy Circle comprises of 148 units in a 6-storey
-          mid-rise state-of-the-art building that embodies a distinct spirit and
-          style like no other condominium in the area. The building features 1
-          bedroom, 1 bedroom + den and 2 bedroom unit types. Each unit has been
-          carefully developed to suit a variety of lifestyles with convenience
-          and comfort in mind, and appointed with beautiful, timeless features
-          and finishes.
-        </p>
-
-        <Link href="/">
-          <a className="cta">VIEW FLOORPLANS</a>
-        </Link>
+            <p className="text-base max-w-[580px]">
+              Come home to an expansive lobby complete with a 24-7 virtual
+              concierge and spaces to relax and meet your neighbours and guests,
+              including our 3,600 sqft outdoor terrace. Host an incredible event
+              from our demonstration kitchen and lounge.
+            </p>
+          </div>
+        </div>
       </Section>
 
+      <Section anchor="overview" contrast="white">
+        <div className="flex flex-row-reverse">
+          <div className="max-w-[580px]">
+            <h2 className="display_h2 here">HERE</h2>
+            <div className="head_underline"></div>
+            <h2 className="display_h3 max-w-[700px] mb-4">
+              Self-care is everyday{" "}
+            </h2>
 
+            <p className="text-base max-w-[580px]">
+              Focus on your health and wellness in our yoga, stretch and
+              meditation room. This soothing and sun-filled space has been
+              designed to benefit every active and health-conscious resident.{" "}
+            </p>
+          </div>
+        </div>
+        {/* <img className="bl-round" src="/SuiteD-KitchenUpgrade1.png" /> */}
+      </Section>
 
+      <div className="here_img">
+        <img
+          src="/img/SuiteD-KitchenUpgrade1.png"
+          alt="Picture of the author"
+        />
+      </div>
 
+      <Section anchor="overview" contrast="light">
+        <div className="flex flex-row">
+          <div className="max-w-[580px]">
+            <h2 className="display_h2 here">HERE</h2>
+            <div className="head_underline"></div>
+            <h2 className="display_h3 max-w-[700px] mb-4">
+              Working from home doesn't feel like work.
+            </h2>
 
+            <p className="text-base max-w-[580px]">
+              We've created a digital community for our residents, with areas
+              for social co-working spaces featuring work pods, a laptop bar and
+              a boardroom to host meetings, plus Smart Home Tech offering
+              digital building and unit access as well as smartphone video
+              calling and delivery parcel scanning.{" "}
+            </p>
+          </div>
+        </div>
+        {/* <img className="bl-round" src="/SuiteD-KitchenUpgrade1.png" /> */}
+        <div className="here_img">
+        <div className="here_img">
+        <img
+          src="/img/SuiteD-KitchenUpgrade1.png"
+          alt="Picture of the author"
+        />
+      </div>
+        </div>
+      </Section>
+
+      <Section anchor="overview" contrast="white">
+        <div className="flex flex-row-reverse">
+          <div className="max-w-[580px]">
+            <h2 className="display_h3 max-w-[700px] mb-4">The Building at a glance</h2>
+
+        
+          </div>
+        </div>
+      </Section>
+
+      <Section anchor="overview" contrast="dark">
+        <div className="flex flex-row">
+          <div className="w-full">
+            <h2 className="display_alt  text-center">BUILDING<br/>
+FEATURES & AMENITIES</h2>
+            <div className="head_underline "></div>
+
+            <div className="grid px-5 xl:w-full 2xl:w-11/12 mx-auto grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 lg:gap-20 pt-10  ">
+   
+              <div>
+                <ul className="list-disc">
+                  <li>
+                  Building designed in collaboration with KNYMH Architects 
+
+                  </li>
+                  <li>
+                  Indoor amenities designed by Stagg & Paper Design Co.
+                  </li>
+                  <li>
+                  Outdoor amenities designed by Adesso Design Inc. 
+
+                  </li>
+                  <li>
+                  State-of-the-art indoor amenities including Social Lounge, Co-Working, and Yoga & Movement Studio 
+                  </li>
+                  <li>
+                  Pet Wash Station 
+
+                  </li>
+                  <li>
+                  Chef inspired Entertainment Kitchen and Lounge Area 
+
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+              <ul className="list-disc">
+              
+                  <li>
+                  Furnished outdoor Rooftop Terrace 
+                  </li>
+                  <li>
+                  Secure Locker storage rooms 
+
+                  </li>
+                  <li>
+                  Electric Vehicle (EV) charging infrastructure 
+                  </li>
+                  <li>
+                  Gable View Homes Smart Home Technology 
+
+                  </li>
+                  <li>
+                  Virtual Concierge Service
+
+                  </li>
+                  <li>
+                  Secure, Parcel Management Solution 
+
+                  </li>
+                </ul>
+              </div>
+     
+            </div>
+
+            <div className="text-center">
+              <Link href="/">
+                <a className="cta">DOWNLOAD FEATURES & AMENITIES</a>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      <Registration></Registration>
       <Footer></Footer>
     </>
   );
