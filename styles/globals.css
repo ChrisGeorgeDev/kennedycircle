@@ -219,3 +219,9 @@ font-size: 21px;
 .formActions {
   text-align: center;
 }
+
+/* FLOORPLANS */
+
+.floorplan_meta .display_h3 {
+  @apply font-sans text-xl sm:text-2xl md:text-2xl lg:text-4xl xl:text-2xl;
+}

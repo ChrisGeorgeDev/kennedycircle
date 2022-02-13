@@ -48,59 +48,180 @@ export default function Home() {
 
       <FlyoutMenu />
 
-      <div className="container mx-auto ">
-        <div className="flex flex-col md:flex-row">
+
+
+      <div className="container mx-auto">
+        {/* CONTAINER  */}
+        <div class="flex flex-col xl:flex-row">
          
-          <div className="details w-[300px]">
-            <img
-              src="/img/icon/KC-Site-FloorPlan-Modal-TransparentBG-A.svg"
-              width={150}
-            />
+          <div class="flex-none flex-col xl:w-[300px] flex  ">
+           
+         
 
-            <hr className=" h-[2px] border-t-[2px] border-gray-900 mb-10 mt-4"></hr>
-            <span className="display_h3 block text-gray-900">1 BED</span>
-            <span className="display_h3 block text-gray-900">1 BATH</span>
+          <div class="grid  xl:grid-cols-1 gap-x-4 gap-y-2 w-full ">
 
-            <dl>
-              <div className=" py-1 sm:grid sm:grid-cols-2 sm:gap-4 ">
-                <dt className="text-sm font-medium text-gray-900">
-                  Indoor living
-                </dt>
-                <dd className="mt-1 text-sm text-gray-500 sm:mt-0  text-right">
-                  606 sqft.
-                </dd>
+            <div className="logo row-span-2 col-span-2 xl:row-span-1 xl:col-span-1">
+              <img
+                className="lg:pr-10"
+                src="/img/icon/KC-Site-FloorPlan-Modal-TransparentBG-A.svg"
+              />
+              <hr className="hidden h-[2px] border-t-[2px] border-gray-900 mb-10 mt-8"></hr>
+            </div>
+             
+            <hr className=" md:hidden lg:hidden xl:block col-span-6 mt-3 h-[2px] border-t-[1px] border-gray-400 "></hr>
+
+              <div className="floorplan_meta col-span-4 xl:col-span-6 xl:mt-2">
+                <span className="display_h3 block text-gray-900">1 BED + DEN</span>
+                <span className="display_h3 block text-gray-900">1 BATH</span>
               </div>
 
-              <div className=" py-1 sm:grid sm:grid-cols-2 sm:gap-4 ">
-                <dt className="text-sm font-medium text-gray-900">
-                  Outdoor living
-                </dt>
-                <dd className="mt-1 text-sm text-gray-500 sm:mt-0 text-right">
-                  51 sqft.
-                </dd>
-              </div>
-              <div className=" py-1 sm:grid sm:grid-cols-2 sm:gap-4 ">
-                <dt className="text-sm font-medium text-gray-900">Total</dt>
-                <dd className="mt-1 text-sm text-gray-500 sm:mt-0 text-right">
-                  657 sqft.
-                </dd>
-              </div>
-            </dl>
 
-            <Link href="/">
-              <a className="cta">DOWNLOAD</a>
-            </Link>
+            
+              <div className="col-span-6 md:col-span-3 xl:col-span-6  ">
+                <dl>
+                  <div className=" grid grid-cols-2 gap-4 ">
+                    <dt className="text-sm font-medium text-gray-900">
+                      Indoor living
+                    </dt>
+                    <dd className=" text-sm text-gray-500 mt-0  text-left md:text-right">
+                      606 sqft.
+                    </dd>
+                  </div>
+
+                  <div className=" grid grid-cols-2 gap-4 ">
+                    <dt className="text-sm font-medium text-gray-900">
+                      Outdoor living
+                    </dt>
+                    <dd className=" text-sm text-gray-500 mt-0 text-left md:text-right">
+                      51 sqft.
+                    </dd>
+                  </div>
+                  <div className=" grid grid-cols-2 gap-4 ">
+                    <dt className="text-sm font-medium text-gray-900">Total</dt>
+                    <dd className=" text-sm text-gray-500 sm:mt-0 text-left md:text-right">
+                      657 sqft.
+                    </dd>
+                  </div>
+                </dl>
+
+              </div>
+
+              <hr className="col-span-6 lg:block h-[2px] border-t-[1px] border-gray-400 "></hr>
+
+              {/* <Link href="/">
+                  <a className="cta hidden xl:block">DOWNLOAD</a>
+                </Link> */}
+              </div>
+
+
+
+
           </div>
 
-          <div className="fplan grow text-right">
+          <hr className=" hidden  lg:hidden h-[2px] border-t-[2px] border-gray-900 mb-10 mt-8"></hr>
+         
+          <div class="flex-1 mt-10 xl:mt-0 ">
             <img
               src="/img/floorplans/KC-Site-FloorPlan-Modal-TransparentBG-A.png"
               width="400"
-              className="pl-40 pb-40 w-full"
+              className="xl:pl-20 pb-20 w-full"
             />
           </div>
+
         </div>
+
+
+        {/* CONTAINER  */}
+
       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      {/* <div className="container mx-auto">
+        <div class="flex flex-col lg:flex-row">
+         
+          <div class="flex-none flex-col md:flex-row flex md:w-full ">
+           
+         
+
+            <div className="flex-1 flex flex-col md:flex-row sm:justify-start md:justify-end md:pl-10">
+           
+            <div className="logo w-[100px]">
+              <img
+                className="lg:pr-10"
+                src="/img/icon/KC-Site-FloorPlan-Modal-TransparentBG-A.svg"
+              />
+
+              <hr className="hidden lg:block h-[2px] border-t-[2px] border-gray-900 mb-10 mt-8"></hr>
+            </div>
+             
+              <div className="floorplan_meta w-[100}mt-3">
+                <span className="display_h3 block text-gray-900">1 BED + DEN</span>
+                <span className="display_h3 block text-gray-900">1 BATH</span>
+              </div>
+
+              <div className="md:pl-10 shrink w-full">
+                <dl>
+                  <div className=" py-1 sm:grid sm:grid-cols-2 sm:gap-4 ">
+                    <dt className="text-sm font-medium text-gray-900">
+                      Indoor living
+                    </dt>
+                    <dd className="mt-1 text-sm text-gray-500 sm:mt-0  text-left md:text-right">
+                      606 sqft.
+                    </dd>
+                  </div>
+
+                  <div className=" py-1 sm:grid sm:grid-cols-2 sm:gap-4 ">
+                    <dt className="text-sm font-medium text-gray-900">
+                      Outdoor living
+                    </dt>
+                    <dd className="mt-1 text-sm text-gray-500 sm:mt-0 text-left md:text-right">
+                      51 sqft.
+                    </dd>
+                  </div>
+                  <div className=" py-1 sm:grid sm:grid-cols-2 sm:gap-4 ">
+                    <dt className="text-sm font-medium text-gray-900">Total</dt>
+                    <dd className="mt-1 text-sm text-gray-500 sm:mt-0 text-left md:text-right">
+                      657 sqft.
+                    </dd>
+                  </div>
+                </dl>
+
+                <Link href="/">
+                  <a className="cta md:hidden">DOWNLOAD</a>
+                </Link>
+              </div>
+
+            </div>
+
+          </div>
+
+          <hr className=" md:block lg:hidden h-[2px] border-t-[2px] border-gray-900 mb-10 mt-8"></hr>
+         
+          <div class="flex-1 ">
+            <img
+              src="/img/floorplans/KC-Site-FloorPlan-Modal-TransparentBG-A.png"
+              width="400"
+              className="lg:pl-40 pb-40 w-full"
+            />
+          </div>
+
+        </div>
+      </div> */}
 
       <Footer></Footer>
     </>
