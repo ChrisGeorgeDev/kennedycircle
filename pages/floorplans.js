@@ -58,11 +58,11 @@ export default function Home() {
            
          
 
-          <div class="grid  xl:grid-cols-1 gap-x-4 gap-y-2 w-full ">
+          <div class="grid  xl:grid-cols-1 gap-x-4 gap-y-2 md:gap-x-12 w-full ">
 
-            <div className="logo row-span-2 col-span-2 xl:row-span-1 xl:col-span-1">
+            <div className="logo md:row-span-2 col-span-3 sm:col-span-2 xl:row-span-1  xl:col-span-4">
               <img
-                className="lg:pr-10"
+                className="lg:pr-0"
                 src="/img/icon/KC-Site-FloorPlan-Modal-TransparentBG-A.svg"
               />
               <hr className="hidden h-[2px] border-t-[2px] border-gray-900 mb-10 mt-8"></hr>
@@ -77,7 +77,7 @@ export default function Home() {
 
 
             
-              <div className="col-span-6 md:col-span-3 xl:col-span-6  ">
+              <div className="col-span-6 md:col-span-4 lg:col-span-1 xl:col-span-6  ">
                 <dl>
                   <div className=" grid grid-cols-2 gap-4 ">
                     <dt className="text-sm font-medium text-gray-900">
