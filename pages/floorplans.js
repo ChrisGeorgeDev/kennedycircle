@@ -23,35 +23,37 @@ export default function Home() {
         as a Background
       </Hero>
 
-      <Section anchor="overview" contrast="dark">
-        <h2 className="display_h2 here">HERE</h2>
-        <div className="head_underline"></div>
+      <Section anchor="overview" contrast="light">
+        <div className="flex flex-row">
+          <div className="max-w-[580px]">
+            <h2 className="display_h2 here">HERE</h2>
+            <div className="head_underline"></div>
+            <h3 className="display_h3 max-w-[900px] mb-4">
+            We bring style and functionality to each and every home.
+                        </h3>
 
-        <h3 className="display_h3 max-w-[700px] mb-4">
-          Live. Work. Relax.&nbsp;Play. testing some longer text PlaP PLay
-        </h3>
+            <p className="text-base max-w-[580px]">
+            Each floor plan has been laid out for elevated living experiences.             </p>
 
-        <p className="text-base max-w-[580px]">
-          The Residences on Kennedy Circle comprises of 148 units in a 6-storey
-          mid-rise state-of-the-art building that embodies a distinct spirit and
-          style like no other condominium in the area. The building features 1
-          bedroom, 1 bedroom + den and 2 bedroom unit types. Each unit has been
-          carefully developed to suit a variety of lifestyles with convenience
-          and comfort in mind, and appointed with beautiful, timeless features
-          and finishes.
-        </p>
-
-        <Link href="/">
-          <a className="cta">VIEW FLOORPLANS</a>
-        </Link>
+            <Link href="/">
+              <a className="cta">VIEW FLOORPLANS</a>
+            </Link>
+          </div>
+        </div>
       </Section>
 
+      <Section anchor="overview" contrast="white">
+
+      <h2 className="display_alt  text-center">FEATURES & FINISHES</h2>
+            <div className="head_underline "></div>
+
       <FlyoutMenu />
+      </Section>
 
 
 
+{/* 
       <div className="container mx-auto">
-        {/* CONTAINER  */}
         <div class="flex flex-col xl:flex-row">
          
           <div class="flex-none flex-col xl:w-[300px] flex  ">
@@ -108,12 +110,10 @@ export default function Home() {
 
               <hr className="col-span-6 lg:block h-[2px] border-t-[1px] border-gray-400 "></hr>
 
-              {/* <Link href="/">
-                  <a className="cta hidden xl:block">DOWNLOAD</a>
-                </Link> */}
+              <Link href="/">
+                  <a className="floorplan_meta cta hidden xl:block">DOWNLOAD</a>
+                </Link>
               </div>
-
-
 
 
           </div>
@@ -124,17 +124,17 @@ export default function Home() {
             <img
               src="/img/floorplans/KC-Site-FloorPlan-Modal-TransparentBG-A.png"
               width="400"
-              className="xl:pl-20 pb-20 w-full"
+              className="xl:pl-20 xl:pr-20 pb-10 w-full"
             />
+            <p className="text-xxs text-center pb-20 mx-auto w-4/5">
+            Actual useable floor space varies from stated floor area. All furniture is for illustrative purpose only and not included in the suite. All dimensions are approximate. Sizes and specifications are subject to change without notice. E. & O. E. 
+            </p>
+            
           </div>
 
         </div>
-
-
-        {/* CONTAINER  */}
-
       </div>
-
+ */}
 
 
 
