@@ -50,6 +50,12 @@ font-size: 21px;
   text-shadow: 1px 1px 1px #3c5c5e;
 }
 
+/* Navigation  */
+
+.menu-desktop a , .menu-desktop span {
+  font-size: 14px;
+}
+
 /* Section Module */
 
 .cta {

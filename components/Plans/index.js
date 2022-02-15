@@ -132,7 +132,7 @@ export default function FlyoutMenu() {
                         onClick={closeCurrent}
                         ref={(el) => (AccordionRefs.current[index] = el)}
                       >
-                        <Disclosure.Button className={`${ open ? "bg-gvhBlue-400 text-gray-400" : "" } fp-button transition ease-in-out flex hover:bg-gvhBlue-400 items-center w-full h-[80px] text-gvhBlue-400 focus:outline-none`} >
+                        <Disclosure.Button className={`${ open ? "bg-gvhBlue-400 text-gray-400" : "" } hover:bg-gvhBlue-400 fp-button transition ease-in-out flex hover:text-gray-400 items-center w-full h-[80px] text-gvhBlue-400 focus:outline-none`} >
                           <span className={`${ open ? "text-gvhGold-400" : "" } flex-auto w-16 text-center`}
 >                              {solution.type}
                           </span>
@@ -145,7 +145,7 @@ export default function FlyoutMenu() {
                           <span className="flex menuItems-center mr-10">
                  
 
-<svg viewBox="0 0 15 15" fill="none"    className={`${ open ? "transform rotate-180" : "" } w-5 h-5 text-green-eco`} xmlns="http://www.w3.org/2000/svg" width="15" height="15"><path d="M14 5l-6.5 7L1 5" stroke="currentColor" stroke-linecap="square"></path></svg>
+<svg viewBox="0 0 15 15" fill="none"    className={`${ open ? "transform text-gvhGold-400 rotate-180" : "" } w-5 h-5 text-green-eco`} xmlns="http://www.w3.org/2000/svg" width="15" height="15"><path d="M14 5l-6.5 7L1 5" stroke="currentColor" stroke-linecap="square"></path></svg>
                           </span>
                         </Disclosure.Button>
                       </dt>
