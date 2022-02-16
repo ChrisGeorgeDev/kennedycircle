@@ -8,8 +8,9 @@ import profilePic from "../public/img/SuiteD-KitchenUpgrade1.png";
 import Hero from "../components/Hero";
 import Registration from "../components/Registration";
 import { Fragment } from 'react'
-import { Tab } from '@headlessui/react'
+import { Tab, Transition } from '@headlessui/react'
 import Menu from '../components/Menu'
+
 
 
 export default function Home() {
@@ -60,7 +61,7 @@ export default function Home() {
       <Section anchor="overview" contrast="dark">
         <div className="flex flex-row">
           <div className="w-full">
-            <h2 className="display_alt  text-center">FEATURES & FINISHES</h2>
+            <h2 className="display_alt  text-center">GREEN LIVING</h2>
             <div className="head_underline "></div>
 
             <div className="w-4/5 m-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 lg:gap-20 pt-10  ">
@@ -126,64 +127,77 @@ high efficiency plumbing fixtures with central hot water delivery system install
             <h2 className="display_alt  text-center">EV CHARGING</h2>
             <div className="head_underline "></div>
 
-            Two options offered for EV Charging:
+            <h2 className="display_h4 text-center pt-8 pb-8">
+            Two options offered for EV&nbsp;Charging:
+            </h2>
 
             <Tab.Group>
-      <Tab.List>
-        <Tab as={Fragment}>
-          {({ selected }) => (
-            <button
-              className={
-                selected ? 'bg-blue-500 text-white' : 'bg-white text-black'
-              }
-            >
-              Tab 1
-            </button>
-          )}
-        </Tab>
-        <Tab as={Fragment}>
-          {({ selected }) => (
-            <button
-              className={
-                selected ? 'bg-blue-500 text-white' : 'bg-white text-black'
-              }
-            >
-              Tab 2
-            </button>
-          )}
-        </Tab>
-     
+            <Tab.List className="pb-6 text-center flex-grow ">
+             <Tab as={Fragment}>
+                {({ selected }) => (
+                  <button
+                    className={
+                      selected
+                        ? "border-b-4 px-5 pb-2 mb-4 border-gvhGold-400  text-gvhBlue-400 text-center "
+                        : " text-gvhBlue-400 mb-4 px-5 pb-2 border-b text-left border-gvhGold-400"
+                    }
+                  >
+                    <span className="pr-4">Option A</span>
+                  </button>
+                )}
+              </Tab>
+              <Tab as={Fragment}>
+                {({ selected }) => (
+                  <button
+                    className={
+                      selected
+                        ? "border-b-4 px-5 pb-2 mb-4 border-gvhGold-400  text-gvhBlue-400 text-center "
+                        : " text-gvhBlue-400 mb-4 px-5 pb-2 border-b text-left border-gvhGold-400"
+                    }
+                  >
+                    <span className="pr-4">Option B</span>
+                  </button>
+                )}
+              </Tab>
       </Tab.List>
       <Tab.Panels>
+  
         <Tab.Panel>
+        <h2 className="display_h4 text-center w-full md:w-4/5 lg:w-2/3 xl:w-1/2 mx-auto pb-10">
+
+        Turnkey Electrical Vehicle Charging with fully installed EV service equipment.
+                </h2>
+
+                <ul className=" list-disc mx-auto w-full px-5 md:w-4/5  lg:w-3/5 xl:w-2/5">
+  <li>
+  	Electricity Meter to be billed directly to residents and separate from suite electrical consumption through Electric Vehicle Energy Management System. 
+  </li>
+  <li>
+  Available at Residential Suite Occupancy Date, no later than final closing
+  </li>
+</ul>
+
+        </Tab.Panel>
+        <Tab.Panel>
+        <h2 className="display_h4 text-center w-full md:w-4/5 lg:w-2/3 xl:w-1/2 mx-auto pb-10">
+
         EV Charging Rough-In to facilitate future installation of EV Charging Capability
-<ul>
+        </h2>
+
+        <ul className=" list-disc mx-auto w-full px-5 md:w-4/5  lg:w-3/5 xl:w-2/5">
   <li>
-  Offers an Installation of electrical conduit running to sub-electrical room to facilitate future installation of EV Charge capabilities
+  Offers an Installation of electrical conduit running to sub-electrical room to 
+facilitate future installation of EV Charge capabilities
 
   </li>
   <li>
-  To be managed by Property Management and Condominium Corporation after closing. Agreement to be provided and signed by resident/owner
+  	To be managed by Property Management and Condominium Corporation 
+after closing. Agreement to be provided and signed by resident/owner
 
   </li>
 </ul>
 
         </Tab.Panel>
-
-        <Tab.Panel>
-        OPTION 2 EV Charging Rough-In to facilitate future installation of EV Charging Capability
-<ul>
-  <li>
-  Offers an Installation of electrical conduit running to sub-electrical room to facilitate future installation of EV Charge capabilities
-
-  </li>
-  <li>
-  To be managed by Property Management and Condominium Corporation after closing. Agreement to be provided and signed by resident/owner
-
-  </li>
-</ul>
-        </Tab.Panel>
-
       </Tab.Panels>
     </Tab.Group>
 

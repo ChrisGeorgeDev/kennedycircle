@@ -149,6 +149,14 @@ export default function FlyoutMenu() {
                           </span>
                         </Disclosure.Button>
                       </dt>
+                      <Transition
+        enter="transition duration-1000 ease-out"
+        enterFrom="transform translate-y-6 opacity-0"
+        enterTo="transform translate-y-0 opacity-100"
+        leave="transition duration-75 ease-out"
+        leaveFrom="transform  opacity-100"
+        leaveTo="transform  opacity-0"
+      >
                       <Disclosure.Panel as="dd" className="mt-2">
                         <div className="w-full ">
    
@@ -237,6 +245,7 @@ export default function FlyoutMenu() {
 
                         </div>
                       </Disclosure.Panel>
+                      </Transition>
                     </>
                   )}
                 </Disclosure>

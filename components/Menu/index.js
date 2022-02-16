@@ -1,15 +1,19 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import { useRouter } from 'next/router';
+
 export default function Menu() {
     const [show, setShow] = useState(null);
     const [profile, setProfile] = useState(false);
     const [product, setProduct] = useState(false);
     const [deliverables, setDeliverables] = useState(false);
+    const router = useRouter();
+
     return (
         <>
             <div className="bg-gray-200 h-full w-full">
                 {/* Code block starts */}
-                <nav className="bg-white fixed w-full shadow xl:block hidden">
+                <nav className="bg-white fixed z-10 w-full shadow xl:block hidden">
                     <div className="mx-auto container px-6 py-2 xl:py-0">
                         <div className="flex items-center justify-between">
                             <div className="inset-y-0 left-0 flex items-center xl:hidden">
@@ -59,7 +63,7 @@ export default function Menu() {
                                 </div>
                             </div>
 
-                            <div className="flex">
+                            <div className="flex items-center">
      
                                 <div className="hidden menu-desktop xl:flex items-center">
                                   
@@ -71,21 +75,21 @@ export default function Menu() {
                                                         <div className="flex items-center">
                                                          
                                                         <Link href="/team">
-                                        <a  className="flex px-5 items-center py-6 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out uppercase"> The Team</a>
+                                        <a  className="sub-link"> The Team</a>
                                       </Link>
 
                                                         </div>
                                                     </li>
                                                     <li className="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none flex items-center">
                                                     <Link href="/greenliving">
-                                        <a  className="flex px-5 items-center py-6 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out uppercase"> Green Features</a>
+                                        <a  className="sub-link"> Green Features</a>
                                       </Link>
 
                                                     </li>
                                               
                                                 </ul>
                                             )}
-                                             <span className="flex uppercase pl-5 items-center py-6  leading-5 text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
+                                             <span className="link">
                                     About
                                     <div className="ml-2 text-gray-600">
                                                 <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-chevron-down cursor-pointer" width={20} height={20} viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -106,29 +110,29 @@ export default function Menu() {
                                 
 
                                       <Link href="/residences">
-                                        <a  className="flex px-5 items-center py-6 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out uppercase"> The Residences</a>
+                                        <a  className={router.pathname == "/residences" ? "active link " : "link"}> The Residences</a>
                                       </Link>
 
                                       <Link href="/floorplans">
-                                        <a  className="flex px-5 items-center py-6 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out uppercase"> The Floorplans</a>
+                                         <a  className={router.pathname == "/floorplans" ? "active link " : "link"} > The Floorplans</a>
                                       </Link>
 
                                       <Link href="/amenities">
-                                        <a  className="flex px-5 items-center py-6 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out uppercase"> The Amenities</a>
+                                         <a  className={router.pathname == "/amenities" ? "active link " : "link"} > The Amenities</a>
                                       </Link>
 
                                       <Link href="/location">
-                                        <a  className="flex px-5 items-center py-6 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out uppercase"> The Location</a>
+                                         <a  className={router.pathname == "/location" ? "active link " : "link"} > The Location</a>
                                       </Link>
 
-                                      <a href="#register"  className="flex px-5 items-center py-6 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out uppercase"> Register</a>
+                            
 
 
 
                           
                               
                                 </div>
-
+                                <a href="#register" className="reg-cta" > Register</a>
 
 
 
@@ -253,15 +257,15 @@ export default function Menu() {
                                   
                                             </li>
 
-                                            <li className="text-gray-800 pt-8 cursor-pointer">
+                                            <li className="text-gray-800  cursor-pointer">
                                             <Link href="/team">
-                                        <a  className="flex px-5 items-center py-6 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out uppercase"> The Team</a>
+                                        <a  className="flex items-center  text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out uppercase"> The Team</a>
                                       </Link>
                                             </li>
 
-                                            <li className="text-gray-800 pt-8 cursor-pointer">
+                                            <li className="text-gray-800  cursor-pointer">
                                             <Link href="/greenliving">
-                                        <a  className="flex px-5 items-center py-6 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out uppercase"> Green Features</a>
+                                        <a  className="flex px-5 items-center  text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out uppercase"> Green Features</a>
                                       </Link>
                                             </li>
 

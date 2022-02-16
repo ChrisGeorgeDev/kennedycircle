@@ -126,23 +126,8 @@ export default function Home() {
         </div>
       </Section>
 
-      <div className="here_img">
-          <Image
-            src={profilePic}
-            layout="responsive"
-            alt="Picture of the author"
-          />
-        </div>
+     
 
-    <Floorplans></Floorplans>
-
-      <div className="here_img">
-          <Image
-            src={profilePic}
-            layout="responsive"
-            alt="Picture of the author"
-          />
-        </div>
 
         <Section anchor="overview" contrast="light">
         <div className="flex flex-row">

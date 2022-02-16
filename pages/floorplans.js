@@ -46,7 +46,7 @@ export default function Home() {
 
       <Section anchor="overview" contrast="white">
 
-      <h2 className="display_alt  text-center">FEATURES & FINISHES</h2>
+      <h2 className="display_alt  text-center">FLOORPLANS</h2>
             <div className="head_underline "></div>
 
       <FlyoutMenu />

@@ -21,10 +21,8 @@ export default function Home() {
       </Head>
 <Menu></Menu>
 
-      <Hero alt="Pic" image="/img/SuiteD-KitchenUpgrade1.png">
-        Image Component
-        <br />
-        as a Background
+      <Hero alt="Pic" image="/img/hero/KC-Render.jpg">
+     <h2 className='display text-white text-7xl'>KENNEDY CIRCLE</h2>
       </Hero>
 
       <Section anchor="overview" contrast="dark">
@@ -47,7 +45,7 @@ export default function Home() {
             </p>
 
             <Link href="/">
-              <a className="cta">VIEW FLOORPLANS</a>
+              <a className="cta links link--metis">VIEW FLOORPLANS</a>
             </Link>
           </div>
         </div>
