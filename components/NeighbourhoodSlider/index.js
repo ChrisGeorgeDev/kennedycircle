@@ -8,7 +8,7 @@ import 'swiper/css';
 export default function Neighbourhood() {
       return (
     <Swiper
-    slidesPerView={2}
+    slidesPerView={1}
     centeredSlides={true}
     spaceBetween={30}
       onSlideChange={() => console.log('slide change')}
@@ -17,7 +17,7 @@ export default function Neighbourhood() {
         // when window width is >= 640px
         640: {
           slidesPerView: 1,
-          spaceBetween: 20,
+          spaceBetween: 10,
 
         },
         // when window width is >= 768px

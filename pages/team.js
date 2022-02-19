@@ -28,7 +28,7 @@ export default function Home() {
           <div className="">
             <h2 className="display_h2 ">Gable View Homes</h2>
             <h2 className="display_h3 mt-8 mb-8">The Builder</h2>
-            <p className="text-base w-3/5">
+            <p className="text-base max-w-[900px]">
               Spaces designed for life. <br />
               At Gable View Homes, we are inspired to build houses and
               communities you’ll be proud to call home. As a boutique developer
@@ -39,13 +39,13 @@ export default function Home() {
               beautifully designed and sustainably built homes suited for every
               lifestyle.
             </p>{" "}
-            <p className="text-base w-3/5">
+            <p className="text-base max-w-[900px]">
               Gable View Homes creates engaging and inspiring living experiences
               by setting new standards in real estate development. Grounded in
               diverse community engagement and integration with each project, we
               design and develop spaces to live, work and play.
             </p>
-            <p className="text-base w-3/5">
+            <p className="text-base max-w-[900px]">
               From vibrant townhomes, contemporary singles and semi-detached
               houses to modern condominiums, our mission is to adhere to our
               core values of creating outstanding spaces through design and
@@ -63,14 +63,14 @@ export default function Home() {
             <h2 className="display_h2 here">KNYMH Inc</h2>
             <h2 className="display_h3 mt-8 mb-8">The Architect.</h2>
 
-            <p className="text-base w-3/5">
+            <p className="text-base max-w-[900px]">
               Team KNYMH Inc. is comprised of Architects, BCIN Certified
               Designers, Interior Coordinators, Technologists and LEED®
               Accredited Professionals. Their focus is to develop responsible
               solutions with the full commitment to incorporate environmental
               sustainability into planning, design and construction practices.
             </p>
-            <p className="text-base w-3/5">
+            <p className="text-base max-w-[900px]">
               As a solution oriented practice, KNYMH’s services include
               architectural, interior design, urban planning and project
               management services, ranging from programming spaces, concept
@@ -87,7 +87,7 @@ export default function Home() {
             <h2 className="display_h2 ">Stagg & Paper Interiors</h2>
             <h2 className="display_h3 mt-8 mb-8">The Interior Designer.</h2>
 
-            <p className="text-base w-3/5">
+            <p className="text-base max-w-[900px]">
               Stagg & Paper Interiors is an interior design firm rooted in the
               fundamental principle that home is where they start⁠. They take an
               intentional approach to design that places value on simplicity and
@@ -96,7 +96,7 @@ export default function Home() {
               a living oasis from the world’s outside noise — offering clients
               the sense of well-being, calmness, and order within their home.
             </p>
-            <p className="text-base w-3/5">
+            <p className="text-base max-w-[900px]">
               With 15 years of experience working in high profile firms, they
               offer services in space planning, design development, and finish
               and furniture selections. They bring passion and simplicity to the

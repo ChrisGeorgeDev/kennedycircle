@@ -241,6 +241,7 @@ export default function Menu() {
         <nav>
           <div className="py-2 px-2 w-full flex xl:hidden justify-between items-center bg-white fixed top-0 z-40">
             <div>
+            <a href="/">
               <svg
                 className="w-16 md:hidden lg:hidden"
                 width="122"
@@ -343,6 +344,7 @@ export default function Menu() {
                         </clipPath>
                       </defs>
                     </svg>
+                    </a>
               {/* Full Logo  */}
             </div>
             <div className="flex items-center">
@@ -472,7 +474,7 @@ export default function Menu() {
                           className="text-gray-800 pt-4"
                           onClick={() => setShow(!show)}
                         >
-                          <Link href="/Location">
+                          <Link href="/location">
                             <a className="flex px-2 items-center pt-1 text-sm leading-5 text-gray-700  focus:outline-none transition duration-150 ease-in-out uppercase">
                               {" "}
                                 Location

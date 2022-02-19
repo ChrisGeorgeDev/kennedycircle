@@ -61,7 +61,7 @@ export default function Home() {
 
       <Section anchor="overview" contrast="dark">
         <div className="flex items-center justify-center flex-row w-full">
-          <div className="max-w-[580px]">
+          <div className="w-full md:max-w-[580px]">
             <h2 className="display_h3 max-w-[700px] mb-4">
               LIfe's conveniences are just around the corner
             </h2>
