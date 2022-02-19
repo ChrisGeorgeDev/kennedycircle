@@ -3,7 +3,9 @@ export default function Footer() {
     <div className=" bg-gvhBlue-400 px-4 pb-4">
       <div className="flex justify-center pt-9">
         <div>
-          <img src="/img/placeholder-gvh.png" className="px-2" width={292} />
+          <a href="https://www.gableviewhomes.com" target="_blank">
+            <img src="/img/placeholder-gvh.png" className="px-2" width={292} />
+</a>
           <hr className="mt-4 mb-4 border-t-[1px] border-gvhGold-400" />
           <p className="text-center text-gvhGold-100">
             Spaces designed for life.
@@ -17,7 +19,7 @@ export default function Footer() {
         </div>
         <div>
           <p className="text-gvhGold-400 text-sm">
-            <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a>
+            <a className=" hover:text-white transition-all duration-150" href="#">Privacy Policy</a> |      <a className=" hover:text-white transition-all duration-150" href="#">Terms of Use</a>
           </p>
         </div>
       </div>

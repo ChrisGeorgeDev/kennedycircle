@@ -4,7 +4,7 @@ import Section from "../Section";
 export default function Registration() {
   return (
     <Section anchor="register" contrast="black register">
-      <img className="register_icon " src="/img/icon/kc-brandmark.svg" />
+      <img className="register_icon  " src="/img/icon/kc-brandmark.svg" />
            <div className="w-full">
             <h2 className="display_alt  text-center">REGISTER NOW</h2>
             <div className="head_underline "></div>
@@ -58,7 +58,7 @@ export default function Registration() {
             <span className="text-gray-700 sr-only">First Name </span>
             <select className="form-select block w-full overflow-x-hidden mt-1">
               <option>HOW DID YOU HEAR ABOUT US</option>
-              <option>Option 2</option>
+             <option value="Google Search">Google Search</option><option value="Buzz Buzz Homes">Buzz Buzz Homes</option><option value="A-Frame">A-Frame</option><option value="Magazine/Newspaper">Magazine/Newspaper</option><option value="Signage">Signage</option><option value="Social Media">Social Media</option><option value="Gableviewhomes.com">Gableviewhomes.com</option><option value="E-Blast">E-Blast</option>
             </select>
           </label>
 
@@ -66,7 +66,7 @@ export default function Registration() {
             <span className="text-gray-700 sr-only">First Name </span>
             <select className="form-select block w-full overflow-x-hidden mt-1">
               <option>TYPE OF UNIT DESIRED</option>
-              <option>Option 2</option>
+   <option value="One Bedroom">One Bedroom</option><option value="One Bedroom plus Den">One Bedroom plus Den</option><option value="Two Bedroom">Two Bedroom</option>
             </select>
           </label>
 
@@ -74,14 +74,17 @@ export default function Registration() {
             <span className="text-gray-700 sr-only">First Name </span>
             <select className="form-select block w-full overflow-x-hidden mt-1">
               <option>ARE YOU A REALTOR?</option>
-              <option>Option 2</option>
+              <option>Yes</option>
+              <option>No</option>
+
             </select>
           </label>
           <label className="block">
             <span className="text-gray-700 sr-only">First Name </span>
             <select className="form-select block w-full overflow-x-hidden mt-1">
               <option>ARE YOU WORKING WITH A REALTOR?</option>
-              <option>Option 2</option>
+              <option>Yes</option>
+              <option>No</option>
             </select>
           </label>
 
@@ -109,7 +112,15 @@ export default function Registration() {
 
       </form>
 
-      <div className="text-xs mt-10 text-center text-gvhGold-100 md:w-4/5 mx-auto font-sans">
+<div className="max-w-[500px] mt-20">
+<h2 className="display_h3 mb-2"> Book your virtual <br></br>appointment.</h2>
+<div className="text-slate-600">
+ <span className="text-gvhGold-100 md:text-xl">555.555.555</span> <br/>
+ <span className="text-gvhGold-100 md:text-xl">sales@gableviewhomes.com</span></div>
+
+
+</div>
+      <div className="text-xs mt-32 text-center text-slate-400 md:w-4/5 mx-auto font-sans">
       The developer reserves the right to modify or make substitutes to the building design, specifications and floorplans should they be necessary. Renderings, views, and layouts are for illustration purposes only. E.&O.E.
       </div>
       </div>

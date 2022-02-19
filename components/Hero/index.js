@@ -16,7 +16,7 @@ export default function Hero(props) {
 
   return (
     <section
-      className="h-screen"
+      className="hero flex items-center"
       style={{ backgroundImage: `linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 55.28%), url(${image})`, backgroundSize: "cover", backgroundPosition: "bottom" }}
     >
 

@@ -11,76 +11,61 @@ const solutions = [
   {
     type: "A",
     typeSvg: "KC-Site-FloorPlan-Modal-TransparentBG-A.svg",
-    bed: "1 BED + DEN",
+    bed: "1 BED",
     bath: "1 BATH",
     indoor: "606 sqft.",
-    outdoor: "606 sqft.",
-    total: "606 sqft.",
+    outdoor: "51 sqft.",
+    total: "657 sqft.",
     blackline:"KC-Site-FloorPlan-Modal-TransparentBG-A.png",
-    download:"",
-    name: "Blog",
-    description:
-      "Mollit eu laboris ullamco eiusmod sit ad aliquip quis. Duis mollit irure sint dolor adipisicing. Ullamco do eiusmod duis eu nulla sint. Proident amet excepteur laborum deserunt sunt Lorem ex elit ut ut qui qui laboris velit minim. Ex amet do anim do in consequat aliquip elit aute proident. Anim culpa veniam eu consectetur dolor velit nostrud laboris. Exercitation non ad excepteur et deserunt reprehenderit exercitation quis labore veniam labore non velit. Est proident exercitation ex non laborum cillum commodo non dolore eu ad. Occaecat enim elit non exercitation fugiat ipsum officia proident officia ex minim consectetur. Pariatur in aute irure consectetur sit culpa eiusmod dolore Lorem.Learn about tips, product updates and company culture.",
-    href: "#"
+    download:"KennedyCircle-FloorPlan-A.pdf",
+     href: "#"
   },
   {
     type: "B",
-    typeSvg: "KC-Site-FloorPlan-Modal-TransparentBG-A.svg",
+    typeSvg: "KC-Site-FloorPlan-Modal-TransparentBG-B.svg",
     bed: "1 BED + DEN",
     bath: "1 BATH",
-    indoor: "606 sqft.",
-    outdoor: "606 sqft.",
-    total: "606 sqft.",
-    blackline:"KC-Site-FloorPlan-Modal-TransparentBG-A.png",
-    download:"",
-    name: "Blog",
-    description:
-      "Mollit eu laboris ullamco eiusmod sit ad aliquip quis. Duis mollit irure sint dolor adipisicing. Ullamco do eiusmod duis eu nulla sint. Proident amet excepteur laborum deserunt sunt Lorem ex elit ut ut qui qui laboris velit minim. Ex amet do anim do in consequat aliquip elit aute proident. Anim culpa veniam eu consectetur dolor velit nostrud laboris. Exercitation non ad excepteur et deserunt reprehenderit exercitation quis labore veniam labore non velit. Est proident exercitation ex non laborum cillum commodo non dolore eu ad. Occaecat enim elit non exercitation fugiat ipsum officia proident officia ex minim consectetur. Pariatur in aute irure consectetur sit culpa eiusmod dolore Lorem.Learn about tips, product updates and company culture.",
+    indoor: "661 sqft.",
+    outdoor: "45 sqft.",
+    total: "706 sqft.",
+    blackline:"KC-Site-FloorPlan-Modal-TransparentBG-B.png",
+    download:"KennedyCircle-FloorPlan-B.pdf",
     href: "#"
   },
   {
     type: "C",
-    typeSvg: "KC-Site-FloorPlan-Modal-TransparentBG-A.svg",
-    bed: "1 BED + DEN",
-    bath: "1 BATH",
-    indoor: "606 sqft.",
-    outdoor: "606 sqft.",
-    total: "606 sqft.",
-    blackline:"KC-Site-FloorPlan-Modal-TransparentBG-A.png",
-    download:"",
-    name: "Blog",
-    description:
-      "Mollit eu laboris ullamco eiusmod sit ad aliquip quis. Duis mollit irure sint dolor adipisicing. Ullamco do eiusmod duis eu nulla sint. Proident amet excepteur laborum deserunt sunt Lorem ex elit ut ut qui qui laboris velit minim. Ex amet do anim do in consequat aliquip elit aute proident. Anim culpa veniam eu consectetur dolor velit nostrud laboris. Exercitation non ad excepteur et deserunt reprehenderit exercitation quis labore veniam labore non velit. Est proident exercitation ex non laborum cillum commodo non dolore eu ad. Occaecat enim elit non exercitation fugiat ipsum officia proident officia ex minim consectetur. Pariatur in aute irure consectetur sit culpa eiusmod dolore Lorem.Learn about tips, product updates and company culture.",
-    href: "#"
+    typeSvg: "KC-Site-FloorPlan-Modal-TransparentBG-C.svg",
+    bed: "2 BED ",
+    bath: "2 BATH",
+    indoor: "878 sqft.",
+    outdoor: "50 sqft.",
+    total: "928 sqft.",
+    blackline:"KC-Site-FloorPlan-Modal-TransparentBG-C.png",
+    download:"KennedyCircle-FloorPlan-C.pdf",
+     href: "#"
   },
   {
     type: "D",
-    typeSvg: "KC-Site-FloorPlan-Modal-TransparentBG-A.svg",
-    bed: "1 BED + DEN",
-    bath: "1 BATH",
-    indoor: "606 sqft.",
-    outdoor: "606 sqft.",
-    total: "606 sqft.",
-    blackline:"KC-Site-FloorPlan-Modal-TransparentBG-A.png",
-    download:"",
-    name: "Blog",
-    description:
-      "Mollit eu laboris ullamco eiusmod sit ad aliquip quis. Duis mollit irure sint dolor adipisicing. Ullamco do eiusmod duis eu nulla sint. Proident amet excepteur laborum deserunt sunt Lorem ex elit ut ut qui qui laboris velit minim. Ex amet do anim do in consequat aliquip elit aute proident. Anim culpa veniam eu consectetur dolor velit nostrud laboris. Exercitation non ad excepteur et deserunt reprehenderit exercitation quis labore veniam labore non velit. Est proident exercitation ex non laborum cillum commodo non dolore eu ad. Occaecat enim elit non exercitation fugiat ipsum officia proident officia ex minim consectetur. Pariatur in aute irure consectetur sit culpa eiusmod dolore Lorem.Learn about tips, product updates and company culture.",
-    href: "#"
+    typeSvg: "KC-Site-FloorPlan-Modal-TransparentBG-D.svg",
+    bed: "2 BED ",
+    bath: "2 BATH",
+    indoor: "1,042 sqft.",
+    outdoor: "42 sqft.",
+    total: "1,084 sqft.",
+    blackline:"KC-Site-FloorPlan-Modal-TransparentBG-D.png",
+    download:"KennedyCircle-FloorPlan-D.pdf",
+      href: "#"
   },
   {
     type: "E",
-    typeSvg: "KC-Site-FloorPlan-Modal-TransparentBG-A.svg",
-    bed: "1 BED + DEN",
-    bath: "1 BATH",
-    indoor: "606 sqft.",
-    outdoor: "606 sqft.",
-    total: "606 sqft.",
-    blackline:"KC-Site-FloorPlan-Modal-TransparentBG-A.png",
-    download:"",
-    name: "Blog",
-    description:
-      "Mollit eu laboris ullamco eiusmod sit ad aliquip quis. Duis mollit irure sint dolor adipisicing. Ullamco do eiusmod duis eu nulla sint. Proident amet excepteur laborum deserunt sunt Lorem ex elit ut ut qui qui laboris velit minim. Ex amet do anim do in consequat aliquip elit aute proident. Anim culpa veniam eu consectetur dolor velit nostrud laboris. Exercitation non ad excepteur et deserunt reprehenderit exercitation quis labore veniam labore non velit. Est proident exercitation ex non laborum cillum commodo non dolore eu ad. Occaecat enim elit non exercitation fugiat ipsum officia proident officia ex minim consectetur. Pariatur in aute irure consectetur sit culpa eiusmod dolore Lorem.Learn about tips, product updates and company culture.",
+    typeSvg: "KC-Site-FloorPlan-Modal-TransparentBG-E.svg",
+    bed: "2 BED ",
+    bath: "2 BATH",
+    indoor: "963 sqft.",
+    outdoor: "214 sqft.",
+    total: "1,179 sqft.",
+    blackline:"KC-Site-FloorPlan-Modal-TransparentBG-E.png",
+    download:"KennedyCircle-FloorPlan-E.pdf",
     href: "#"
   },
 ]
@@ -171,7 +156,7 @@ export default function FlyoutMenu() {
             <div className="logo md:row-span-2 col-span-3 sm:col-span-2 xl:row-span-1  xl:col-span-4">
               <img
                 className="lg:pr-0"
-                src="/img/icon/KC-Site-FloorPlan-Modal-TransparentBG-A.svg"
+                src={`img/icon/${solution.typeSvg}`}
               />
               <hr className="hidden h-[2px] border-t-[2px] border-gray-900 mb-10 mt-8"></hr>
             </div>
@@ -179,8 +164,8 @@ export default function FlyoutMenu() {
             <hr className=" md:hidden lg:hidden xl:block col-span-6 mt-3 h-[2px] border-t-[1px] border-gray-400 "></hr>
 
               <div className="floorplan_meta col-span-4 xl:col-span-6 xl:mt-2">
-                <span className="display_h3 block text-gray-900">1 BED + DEN</span>
-                <span className="display_h3 block text-gray-900">1 BATH</span>
+                <span className="display_h3 block text-gray-900">{solution.bed}</span>
+                <span className="display_h3 block text-gray-900">{solution.bath}</span>
               </div>
 
 
@@ -192,7 +177,7 @@ export default function FlyoutMenu() {
                       Indoor living
                     </dt>
                     <dd className=" text-sm text-gray-500 mt-0  text-left md:text-right">
-                      606 sqft.
+                    {solution.indoor}
                     </dd>
                   </div>
 
@@ -201,13 +186,13 @@ export default function FlyoutMenu() {
                       Outdoor living
                     </dt>
                     <dd className=" text-sm text-gray-500 mt-0 text-left md:text-right">
-                      51 sqft.
+                    {solution.outdoor}
                     </dd>
                   </div>
                   <div className=" grid grid-cols-2 gap-4 ">
                     <dt className="text-sm font-medium text-gray-900">Total</dt>
                     <dd className=" text-sm text-gray-500 sm:mt-0 text-left md:text-right">
-                      657 sqft.
+                    {solution.total}
                     </dd>
                   </div>
                 </dl>
@@ -216,9 +201,14 @@ export default function FlyoutMenu() {
 
               <hr className="col-span-6 lg:block h-[2px] border-t-[1px] border-gray-400 "></hr>
 
-              <Link href="/">
-                  <a className="floorplan_meta cta hidden xl:block">DOWNLOAD</a>
-                </Link>
+
+
+      
+              <a href={`assets/floorplans/${solution.download}`}  target="_blank" className="fp-cta hidden xl:block">DOWNLOAD</a>
+               
+                
+
+
               </div>
 
 
@@ -228,7 +218,7 @@ export default function FlyoutMenu() {
          
           <div class="flex-1 mt-10 xl:mt-0 ">
             <img
-              src="/img/floorplans/KC-Site-FloorPlan-Modal-TransparentBG-A.png"
+              src={`img/floorplans/${solution.blackline}`}
               width="400"
               className="xl:pl-20 pb-10 w-full"
             />
