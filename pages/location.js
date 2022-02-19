@@ -61,17 +61,13 @@ export default function Home() {
 
       <Section anchor="overview" contrast="dark">
         <div className="flex items-center justify-center flex-row w-full">
-          <div className="w-full md:max-w-[580px]">
+         
+          <div className="w-full flex-col md:flex-row flex md:max-w-[580px]">
             <h2 className="display_h3 max-w-[700px] mb-4">
               LIfe's conveniences are just around the corner
             </h2>
 
-            <a href="#NEEDTHEFILE" target="_blank" className="cta">
-              DOWNLOAD COMMUNITY MAP{" "}
-            </a>
-          </div>
-
-          <div className="here_img w-full">
+            <div className="here_img w-full">
             <img
               src="/img/icon/KC-Site-SiteMap.svg"
               alt="Picture of the author"
@@ -79,6 +75,13 @@ export default function Home() {
               className="w-full"
             />
           </div>
+
+            <a href="#NEEDTHEFILE" target="_blank" className="cta">
+              DOWNLOAD COMMUNITY MAP{" "}
+            </a>
+          </div>
+
+     
         </div>
       </Section>
 
