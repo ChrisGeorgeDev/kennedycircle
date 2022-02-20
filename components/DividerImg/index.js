@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { useMediaQuery } from "../../hooks/useMediaQuery";
 
 export default function DividerImg(props) {
