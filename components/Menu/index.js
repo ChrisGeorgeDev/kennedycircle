@@ -166,8 +166,7 @@ export default function Menu() {
             <a href="/">
               <svg
                 className="h-[31px] md:hidden lg:hidden"
-                width="122"
-                height="66"
+              
                 viewBox="0 0 122 66"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"

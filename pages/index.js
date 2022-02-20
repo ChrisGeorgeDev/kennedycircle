@@ -22,7 +22,7 @@ export default function Home() {
       imagePortrait="img/hero/KC-HeroImage-Rendering-Portrait.jpg"
       >
     
-<svg className="heroMsg mb-24" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
+<svg className="heroMsg lg:mb-24" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
 	 viewBox="0 0 864 318.99">
 
 <g>
