@@ -376,3 +376,7 @@ font-size: 21px;
 
 
 
+svg.heroMsg {
+  @apply w-3/5 mx-auto ;
+  filter: drop-shadow(5px 1px 10px rgb(0 0 0 / 0.8));
+}

@@ -22,7 +22,7 @@ export default function Menu() {
                  
                   <div
                     className="hidden close-m-menu text-gray-700"
-                    onclick="MenuHandler(this,false)"
+                    onClick="MenuHandler(this,false)"
                   >
                     <svg
                       aria-label="Close"
@@ -32,7 +32,7 @@ export default function Menu() {
                       viewBox="0 0 24 24"
                       strokeWidth="1.5"
                       stroke="currentColor"
-                      f ill="none"
+                      fill="none"
                       strokeLinecap="round"
                       strokeLinejoin="round"
                     >
@@ -165,7 +165,7 @@ export default function Menu() {
             <div>
             <a href="/">
               <svg
-                className="w-16 md:hidden lg:hidden"
+                className="h-[31px] md:hidden lg:hidden"
                 width="122"
                 height="66"
                 viewBox="0 0 122 66"
@@ -373,7 +373,7 @@ export default function Menu() {
                         <div className="flex ">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            class="h-5 w-5"
+                            className="h-5 w-5"
                             viewBox="0 0 20 20"
                             fill="currentColor"
                           >

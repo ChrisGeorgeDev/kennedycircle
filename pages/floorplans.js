@@ -17,7 +17,9 @@ export default function Home() {
         description="A short description goes here."
       />
       <Menu></Menu>
-      <Hero alt="Pic" image="/img/hero/KC-Site-Residences-TitleAreaBG.jpg">
+      <Hero alt="Pic" image="/img/hero/KC-Site-Residences-TitleAreaBG.jpg"
+      imagePortrait="/img/hero/KC-Site-FloorPlans-TitleAreaBG-P.jpg"
+      >
       <h1 className="display_h1_alt text-white">THE FLOOR PLANS</h1>
       </Hero>
 

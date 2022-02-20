@@ -6,7 +6,7 @@ export default function Registration() {
     <Section anchor="register" contrast="black register">
       <img className="register_icon  " src="/img/icon/kc-brandmark.svg" />
       <div className="w-full">
-        <h2 className="display_alt  text-center">PHASE 1 SOLD  OUT</h2>
+        <h2 className="display_alt  text-center">PHASE 1 SOLD&nbsp;OUT</h2>
         <p className="display_alt  text-center">REGISTER FOR FINAL&nbsp;RELEASE</p>
 
         <div className="head_underline "></div>

@@ -17,7 +17,10 @@ export default function Home() {
       />
       <Menu></Menu>
 
-      <Hero alt="Pic" image="/img/hero/KC-Site-Team-TitleAreaBG.jpg">
+      <Hero alt="Pic" 
+      image="/img/hero/KC-Site-Team-TitleAreaBG.jpg"
+      imagePortrait="/img/hero/KC-Site-Team-TitleAreaBG-P.jpg"
+      >
       <h1 className="display_h1_alt text-white">THE TEAM</h1>
       </Hero>
 
