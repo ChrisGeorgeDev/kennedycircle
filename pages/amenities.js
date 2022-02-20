@@ -4,7 +4,6 @@ import styles from "../styles/Home.module.css";
 import Footer from "../components/Footer";
 import Section from "../components/Section";
 import Link from "next/link";
-import profilePic from "../public/img/SuiteD-KitchenUpgrade1.png";
 import Hero from "../components/Hero";
 import Registration from "../components/Registration";
 import Menu from "../components/Menu";
@@ -19,8 +18,12 @@ export default function Home() {
         description="A short description goes here."
       />
       <Menu></Menu>
-      <Hero alt="Pic" image="/img/hero/KC-Site-Amenities-TitleAreaBG.jpg">
-        <h1 className="display_h2 text-white ">THE AMENITIES</h1>
+      <Hero alt="Pic" image="/img/hero/KC-Site-Amenities-TitleAreaBG.jpg"
+        imagePortrait="img/hero/KC-Site-Amenities-TitleAreaBG-Portrait.jpg"
+
+      >
+        <h1 className="display_h1_alt text-white">THE AMENITIES</h1>
+
       </Hero>
 
       <Section anchor="overview" contrast="light">
@@ -48,7 +51,7 @@ export default function Home() {
         </div>
       </Section>
 
-      <Section anchor="overview" contrast="light">
+      <Section anchor="overview" contrast="white">
         <div className="flex flex-row-reverse">
           <div className="max-w-[580px]">
             <h2 className="display_h2 here">HERE</h2>
@@ -104,13 +107,15 @@ export default function Home() {
       </Section>
 
       <Section anchor="overview" contrast="white">
-        <div className="flex flex-row-reverse">
-          <div className="max-w-[580px]">
-            <h2 className="display_h3 max-w-[700px] mb-4">
-              The Building at a glance
+        <div className="flex relative flex-col">
+      <div className="lg:absolute right-0">
+      <div className="flex justify-end ">
+            <h2 className="display_h3 max-w-[300px] lg:max-w-[400px] mb-4">
+              The Building<br/> at a glance
             </h2>
           </div>
-          <img src="/img/siteplan.png" />
+      </div>
+          <img className="max-w-[800px] xl:max-w-[1200px]" src="/img/siteplan.jpg" />
         </div>
       </Section>
 
@@ -124,7 +129,7 @@ export default function Home() {
             </h2>
             <div className="head_underline "></div>
 
-            <div className="grid px-5 xl:w-full 2xl:w-11/12 mx-auto grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 lg:gap-20 pt-10  ">
+            <div className="grid px-5 xl:w-full 2xl:w-11/12 mx-auto grid-cols-1 gap-0 lg:grid-cols-2 lg:gap-20 pt-10  ">
               <div>
                 <ul className="list-disc">
                   <li>

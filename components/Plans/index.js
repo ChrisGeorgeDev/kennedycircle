@@ -98,12 +98,13 @@ export default function FlyoutMenu() {
     <div className="">
       <div className=" mx-auto max-w-7xl  ">
         <div className="divide-y-2 divide-gvhGold-400 ">
+          
           <div className="flex ">
-            <p className="flex-auto w-16 text-center">TYPE</p>
-            <p className="flex-auto w-16 text-center">BEDS</p>
-            <p className="flex-auto w-16 text-center">SIZE</p>
-            <span className="flex  menuItems-center mr-10">
-              <ChevronDownIcon className=" text-transparent w-5 h-5 " />
+            <p className="flex-auto  w-4 md:w-16 text-left md:text-center">TYPE</p>
+            <p className="flex-auto hidden md:block  w-16  text-left md:text-center">BEDS</p>
+            <p className="flex-auto hidden md:block w-16 text-center">SIZE</p>
+            <span className="flex  menuItems-center mr-2 md:mr-10">
+              <ChevronDownIcon className=" text-transparent w-3 h-3 md:w-5 md:h-5 " />
             </span>
           </div>
 
@@ -118,19 +119,19 @@ export default function FlyoutMenu() {
                         ref={(el) => (AccordionRefs.current[index] = el)}
                       >
                         <Disclosure.Button className={`${ open ? "bg-gvhBlue-400 text-gray-400" : "" } hover:bg-gvhBlue-400 fp-button transition ease-in-out flex hover:text-gray-400 items-center w-full h-[80px] text-gvhBlue-400 focus:outline-none`} >
-                          <span className={`${ open ? "text-gvhGold-400" : "" } flex-auto w-16 text-center`}
+                          <span className={`${ open ? "text-gvhGold-400" : "" } flex-auto w-4 md:w-16 pl-2 text-left md:text-center`}
 >                              {solution.type}
                           </span>
-                          <span  className={`${ open ? "text-gvhGold-400" : "" } flex-auto w-16 text-center`}
+                          <span  className={`${ open ? "text-gvhGold-400" : "" } flex-auto w-16 text-left md:text-center`}
 >                              {solution.bed}
                           </span>
-                          <span  className={`${ open ? "text-gvhGold-400" : "" } flex-auto w-16 text-center`}
+                          <span  className={`${ open ? "text-gvhGold-400" : "" } flex-auto w-16  md:text-center`}
 >                              {solution.total}
                           </span>
-                          <span className="flex menuItems-center mr-10">
+                          <span className="flex menuItems-center mr-2 md:mr-10">
                  
 
-<svg viewBox="0 0 15 15" fill="none"    className={`${ open ? "transform text-gvhGold-400 rotate-180" : "" } w-5 h-5 text-green-eco`} xmlns="http://www.w3.org/2000/svg" width="15" height="15"><path d="M14 5l-6.5 7L1 5" stroke="currentColor" stroke-linecap="square"></path></svg>
+<svg viewBox="0 0 15 15" fill="none"    className={`${ open ? "transform text-gvhGold-400 rotate-180" : "" } w-3 h-3 md:w-5 md:h-5 text-green-eco`} xmlns="http://www.w3.org/2000/svg" width="15" height="15"><path d="M14 5l-6.5 7L1 5" stroke="currentColor" stroke-linecap="square"></path></svg>
                           </span>
                         </Disclosure.Button>
                       </dt>

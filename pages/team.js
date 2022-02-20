@@ -4,7 +4,6 @@ import styles from "../styles/Home.module.css";
 import Footer from "../components/Footer";
 import Section from "../components/Section";
 import Link from "next/link";
-import profilePic from "../public/img/SuiteD-KitchenUpgrade1.png";
 import Hero from "../components/Hero";
 import Menu from "../components/Menu";
 import Registration from "../components/Registration";
@@ -20,7 +19,7 @@ export default function Home() {
       <Menu></Menu>
 
       <Hero alt="Pic" image="/img/hero/KC-Site-Team-TitleAreaBG.jpg">
-        <h1 className="display_h2 text-white ">THE TEAM</h1>
+      <h1 className="display_h1_alt text-white">THE TEAM</h1>
       </Hero>
 
       <Section anchor="overview" contrast="light">
@@ -77,6 +76,14 @@ export default function Home() {
               design, strategic planning and approvals, detailed construction
               documentation and administration through to facility management.
             </p>
+<div className="grid grid-cols-4 mt-10">
+<img className="col-span-2 lg:col-span-1" src="img/KC-Site-Team-KNYMH-ProjectPhotos-02.jpg"/>
+
+  <img className="col-span-2 lg:col-span-1 " src="img/KC-Site-Team-KNYMH-ProjectPhotos-01.jpg"/>
+  <img className="col-span-4 lg:col-span-2" src="img/KC-Site-Team-KNYMH-ProjectPhotos-03.jpg"/>
+
+</div>
+
           </div>
         </div>
       </Section>

@@ -4,7 +4,6 @@ import styles from "../styles/Home.module.css";
 import Footer from "../components/Footer";
 import Section from "../components/Section";
 import Link from "next/link";
-import profilePic from "../public/img/SuiteD-KitchenUpgrade1.png";
 import Hero from "../components/Hero";
 import FlyoutMenu from "../components/Plans";
 import Registration from "../components/Registration";
@@ -20,12 +19,12 @@ export default function Home() {
       />
       <Menu></Menu>
       <Hero alt="Pic" image="/img/hero/KC-Site-Residences-TitleAreaBG.jpg">
-        <h1 className="display_h2 text-white text-7xl">THE FLOOR PLANS</h1>
+      <h1 className="display_h1_alt text-white">THE FLOOR PLANS</h1>
       </Hero>
 
       <Section anchor="overview" contrast="light">
         <div className="flex flex-row">
-          <div className="max-w-[580px]">
+          <div className="max-w-[800px]">
             <h2 className="display_h2 here">HERE</h2>
             <div className="head_underline"></div>
             <h3 className="display_h3 max-w-[900px] mb-4">

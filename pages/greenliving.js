@@ -4,7 +4,6 @@ import styles from "../styles/Home.module.css";
 import Footer from "../components/Footer";
 import Section from "../components/Section";
 import Link from "next/link";
-import profilePic from "../public/img/SuiteD-KitchenUpgrade1.png";
 import Hero from "../components/Hero";
 import Registration from "../components/Registration";
 import { Fragment } from "react";
@@ -20,8 +19,11 @@ export default function Home() {
         description="A short description goes here."
       />
       <Menu></Menu>
-      <Hero alt="Pic" image="/img/hero/KC-Site-GreenLiving.jpg">
-        <h1 className="display_h2 text-white ">GREEN LIVING</h1>
+      <Hero alt="Pic" image="/img/hero/KC-Site-GreenLiving.jpg"
+            imagePortrait="img/hero/KC-Site-GreenLiving-TitleAreaBG-Portrait.jpg"
+
+      >
+        <h1 className="display_h1_alt text-white">GREEN LIVING</h1>
       </Hero>
 
       <Section anchor="overview" contrast="light">
@@ -56,7 +58,7 @@ export default function Home() {
             <h2 className="display_alt  text-center">GREEN LIVING</h2>
             <div className="head_underline "></div>
 
-            <div className="w-4/5 m-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 lg:gap-20 pt-10  ">
+            <div className="w-4/5 m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 lg:gap-20 pt-10  ">
               <div>
                 <img
                   className="h-[182px] mb-[70px]"

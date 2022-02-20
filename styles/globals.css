@@ -46,12 +46,12 @@ font-size: 21px;
   font-size: 2rem;
   line-height: 3rem;
   text-align: center;
-  text-shadow: 1px 1px 1px #3c5c5e;
+  text-shadow: 1px 1px 25px #111212;
 }
 
 .hero {
-  height: calc(100vh - 66px);
- margin-top: 66px;
+  height: calc(100vh - 62px);
+ margin-top: 61px;
 }
 
 /* Navigation  */
@@ -75,7 +75,7 @@ font-size: 21px;
 /* Section Module */
 
 .cta {
-  @apply font-display inline-block text-cta mt-16;
+  @apply font-display inline-block text-cta mt-10 2xl:mt-16;
 }
 
 .fp-cta {
@@ -163,6 +163,9 @@ font-size: 21px;
   transform: scale3d(1, 1, 1);
 }
 
+.display_h1_alt {
+  @apply font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl;
+}
 
 .display_h2 {
   @apply font-sans text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl;
@@ -345,7 +348,7 @@ font-size: 21px;
 }
 
 .formActions {
-  text-align: center;
+  text-align: left;
 }
 
 /* FLOORPLANS */

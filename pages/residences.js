@@ -4,7 +4,6 @@ import styles from "../styles/Home.module.css";
 import Footer from "../components/Footer";
 import Section from "../components/Section";
 import Link from "next/link";
-import profilePic from "../public/img/SuiteD-KitchenUpgrade1.png";
 import Hero from "../components/Hero";
 import Registration from "../components/Registration";
 import Floorplans from "../components/Floorplans";
@@ -19,8 +18,11 @@ export default function Home() {
         description="A short description goes here."
       />
       <Menu></Menu>
-      <Hero alt="Pic" image="/img/hero/KC-Site-Residences-TitleAreaBG.jpg">
-        <h1 className="display_h2 text-white ">THE RESIDENCES</h1>
+      <Hero alt="Pic" image="/img/hero/KC-Site-Residences-TitleArea-N.jpg"
+      imagePortrait="img/hero/KC-Site-Residences-TitleAreaBG-Portrait.jpg"
+
+      >
+        <h1 className="display_h1_alt text-white">THE RESIDENCES</h1>
       </Hero>
 
       <Section anchor="overview" contrast="light">
@@ -67,12 +69,11 @@ export default function Home() {
       </Section>
 
       <div className="here_img">
-        <Image
-          src={profilePic}
-          layout="responsive"
-          alt="Picture of the author"
-        />
-      </div>
+          <img
+            src="/img/SuiteD-KitchenUpgrade1.jpg"
+            alt="Picture of the author"
+          />
+        </div>
 
       <Section anchor="overview" contrast="light">
         <div className="flex flex-row-reverse">
@@ -123,6 +124,14 @@ export default function Home() {
         </div>
       </Section>
 
+
+      <div className="here_img">
+          <img
+            src="/img/Section7_Bathroom.jpg"
+            alt="Picture of the author"
+          />
+        </div>
+
       <Section anchor="overview" contrast="light">
         <div className="flex flex-row">
           <div className="w-full">
@@ -132,10 +141,10 @@ export default function Home() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-20 pt-10  ">
               <div>
                 <img
-                  className="h-[182px] mb-[70px]"
+                  className="h-[182px]  mb-[70px]"
                   src="img/icon/KC-Site-FF-Icons-1-General.svg"
                 />
-                <h3 className="text-xl mb-6">General</h3>
+                <h3 className="text-xl  mb-6">General</h3>
                 <p>
                   Approx. 10' high ceilings on ground floor and approx 9' high
                   ceilings on 2nd-6th floor. Modern wide plank, wear-resistant
@@ -156,7 +165,7 @@ export default function Home() {
               </div>
               <div>
                 <img
-                  className="h-[182px] mb-[70px]"
+                  className="h-[182px]  mb-[70px]"
                   src="img/icon/KC-Site-FF-Icons-3-EnsuiteandBathroom.svg"
                 />
                 <h3 className="text-xl mb-6">Ensuite & Bathroom</h3>

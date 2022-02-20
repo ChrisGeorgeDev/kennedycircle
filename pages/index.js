@@ -18,9 +18,12 @@ export default function Home() {
       />
       <Menu></Menu>
 
-      <Hero alt="Pic" image="/img/hero/KC-Render.jpg">
-        <h1 className="display_h2 text-white text-7xl">KENNEDY CIRCLE</h1>
-       
+      <Hero alt="Pic" 
+      image="/img/hero/KC-Render.jpg"
+      imagePortrait="img/hero/KC-HeroImage-Rendering-Portrait.jpg"
+      >
+       <img className="w-2/3 mx-auto " src="/img/icon/KC-Site-LetterMark-KennedyCircle-01.svg"/>
+       <h1 className="display_h1_alt text-white mt-10">IT STARTS HERE</h1>
 
       </Hero>
 

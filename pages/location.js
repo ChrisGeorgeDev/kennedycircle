@@ -4,7 +4,6 @@ import styles from "../styles/Home.module.css";
 import Footer from "../components/Footer";
 import Section from "../components/Section";
 import Link from "next/link";
-import profilePic from "../public/img/SuiteD-KitchenUpgrade1.png";
 import Hero from "../components/Hero";
 import Registration from "../components/Registration";
 import Neighbourhood from "../components/NeighbourhoodSlider";
@@ -21,8 +20,11 @@ export default function Home() {
         description="A short description goes here."
       />
       <Menu></Menu>
-      <Hero alt="Pic" image="/img/hero/KC-Site-Neighbourhood-TitleAreaBG.jpg">
-        <h1 className="display_h2 text-white text-7xl">THE LOCATION</h1>
+      <Hero alt="Pic" image="/img/hero/KC-Site-Neighbourhood-TitleAreaBG.jpg"
+      imagePortrait="img/hero/KC-Site-Neighbourhood-TitleAreaBG-Portrait.jpg"
+      
+      >
+        <h1 className="display_h1_alt text-white">THE LOCATION</h1>
       </Hero>
 
       <Section anchor="overview" contrast="light">
@@ -55,40 +57,41 @@ export default function Home() {
         </div>
       </Section>
 
-      <SectionFull anchor="gallery" contrast="light">
+      <SectionFull anchor="gallery" contrast="light pb-40">
         <Neighbourhood></Neighbourhood>
       </SectionFull>
 
       <Section anchor="overview" contrast="dark">
         <div className="flex items-center justify-center flex-row w-full">
-         
-          <div className="w-full flex-col md:flex-row flex md:max-w-[580px]">
-            <h2 className="display_h3 max-w-[700px] mb-4">
-              LIfe's conveniences are just around the corner
-            </h2>
+          <div className="w-full flex-row items-center flex ">
+           
+            <div>
+              <h2 className="display_h3 max-w-[700px] mb-4">
+                LIfe's conveniences are just around the corner
+              </h2>
+
+              <a href="#NEEDTHEFILE" target="_blank" className="cta">
+                DOWNLOAD COMMUNITY&nbsp;MAP{" "}
+              </a>
+            </div>
 
             <div className="here_img w-full">
-            <img
-              src="/img/icon/KC-Site-SiteMap.svg"
-              alt="Picture of the author"
-              width={200}
-              className="w-full"
-            />
-          </div>
+              <img
+                src="/img/icon/KC-Site-SiteMap.svg"
+                alt="Picture of the author"
+                width={200}
+                className="w-full"
+              />
+            </div>
 
-            <a href="#NEEDTHEFILE" target="_blank" className="cta">
-              DOWNLOAD COMMUNITY MAP{" "}
-            </a>
           </div>
-
-     
         </div>
       </Section>
 
-      <DividerImg 
-      image="/img/Section-5_KC-Site-Neighbourhood-FamilyBGPhoto.jpg" 
-      position="top left"
-
+      <DividerImg
+        image="/img/Section-5_KC-Site-Neighbourhood-FamilyBGPhoto.jpg"
+        imagePortrait="img/hero/KC-Site-Neighbourhood-FamilyBGPhoto-Portrait.jpg"
+        position="top left"
       />
 
       <Registration></Registration>
