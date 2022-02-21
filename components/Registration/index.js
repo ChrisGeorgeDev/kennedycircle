@@ -102,7 +102,7 @@ export default function Registration() {
               <div>
                 <label className="inline-flex items-top">
                   <input
-                    className="form-checkbox accent-gvhGold-400 appearance-none checked:hover:bg-gvhGold-400  mt-1"
+                    className="form-checkbox accent-gvhGold-400  appearance-none  mt-1"
                     type="checkbox"
                   />
                   <span className="ml-2 text-xs text-gvhGold-100">

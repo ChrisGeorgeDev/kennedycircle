@@ -8,6 +8,13 @@ import Registration from "../components/Registration";
 import Menu from "../components/Menu";
 import { NextSeo } from "next-seo";
 
+import dynamic from 'next/dynamic'
+
+const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
+  ssr: false
+});
+
+
 export default function Home() {
   return (
     <>
@@ -15,6 +22,14 @@ export default function Home() {
         title="Kennedy Circle Condominiums | Milton, ON Condo for Sale"
         description="A short description goes here."
       />
+       <AnimatedCursor
+      innerSize={20}
+      outerSize={8}
+      color='184, 157, 103'
+      outerAlpha={0.2}
+      innerScale={.7}
+      outerScale={5}
+    />
       <Menu></Menu>
 
       <Hero alt="Pic" 
