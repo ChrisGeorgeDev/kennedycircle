@@ -16,7 +16,6 @@ export default function Home() {
         title="Kennedy Circle Condominiums | Milton, ON Condo for Sale"
         description="A short description goes here."
       />
-      <Menu></Menu>
       <Hero alt="Pic" image="/img/hero/KC-Site-Residences-TitleArea-N.jpg"
       imagePortrait="img/hero/KC-Site-Residences-TitleAreaBG-Portrait.jpg"
 
@@ -40,7 +39,7 @@ export default function Home() {
             </p>
 
             <Link href="/">
-              <a className="cta">VIEW FLOORPLANS</a>
+              <a className="cta inline-block ">VIEW FLOORPLANS</a>
             </Link>
           </div>
         </div>
@@ -211,15 +210,14 @@ export default function Home() {
 
             <div className="text-center">
               <Link href="/">
-                <a className="cta">DOWNLOAD FEATURES & FINISHES</a>
+                <a className="cta inline-block ">DOWNLOAD FEATURES & FINISHES</a>
               </Link>
             </div>
           </div>
         </div>
       </Section>
 
-      <Registration></Registration>
-      <Footer></Footer>
+    
     </>
   );
 }

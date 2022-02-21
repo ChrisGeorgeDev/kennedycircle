@@ -78,7 +78,7 @@ font-size: 21px;
 /* Section Module */
 
 .cta {
-  @apply font-display inline-block text-cta mt-10 2xl:mt-16;
+  @apply font-display  text-cta mt-10 2xl:mt-16;
 }
 
 .fp-cta {
@@ -166,7 +166,7 @@ font-size: 21px;
 }
 
 .display_h1_alt {
-  @apply font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl;
+  @apply font-display tracking-[.15em] text-4xl sm:text-5xl md:text-6xl ;
 }
 
 .display_h2 {

@@ -32,19 +32,17 @@ export default function Home() {
 }
 
 const itemA = {
-    hidden: { y: -800, opacity:0 },
-    show: { y: 0, opacity: 1 },
-    transition: {
-      type: 'tween',
-      duration: 4,
-        staggerChildren: 3,
-    },
+    hidden: { y: 400, opacity:0 },
+    show: { y: 0, opacity: 1,
+      transition: {
+        type: 'tween',
+        duration: 2,
+          staggerChildren: 3,
+      }, },
+    
 }
 
-const itemB = {
-    hidden: { scale: 0, top: 200 },
-    show: { scale: 1, top: 80 },
-}
+
 
   return (
     <>
@@ -147,20 +145,7 @@ const itemB = {
         <div className="flex flex-row">
           <motion.div variants={itemA} initial="hidden" animate="show"
 
-        //  variants={{
-        //     visible: {
-        //       opacity: 1,
-        //       y:20,
-        //       transition: {
-        //         staggerChildren: 0.6,
-        //         duration: 3,
-        //       },
-        //     },
-        //     hidden: {
-        //       opacity: 0,
-        //       y: 400,
-          
-        //     }}}
+
         
           className="max-w-[700px]">
             <motion.h2 key={1} variants={itemA} initial="hidden" animate="show" className="display_h2 here">HERE</motion.h2>
@@ -180,7 +165,7 @@ const itemB = {
             </motion.p>
 
             <Link href="/floorplans">
-              <a className="cta links link--metis">VIEW FLOORPLANS</a>
+              <a className="cta inline-block   links link--metis">VIEW FLOORPLANS</a>
             </Link>
           </motion.div>
         </div>
@@ -205,7 +190,7 @@ const itemB = {
             </p>
 
             <Link href="/amenities">
-              <a className="cta">VIEW AMENITIES</a>
+              <a className="cta inline-block ">VIEW AMENITIES</a>
             </Link>
           </div>
         </div>
@@ -237,7 +222,7 @@ const itemB = {
             </p>
 
             <Link href="/location">
-              <a className="cta">EXPLORE THE NEIGHBOURHOOD</a>
+              <a className="cta inline-block ">EXPLORE THE NEIGHBOURHOOD</a>
             </Link>
           </div>
         </div>
@@ -266,7 +251,7 @@ const itemB = {
             </p>
 
             <Link href="/greenliving">
-              <a className="cta">GREEN LIVING</a>
+              <a className="cta inline-block ">GREEN LIVING</a>
             </Link>
           </div>
         </div>

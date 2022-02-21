@@ -6,7 +6,7 @@ export default function Registration() {
     <Section anchor="register" contrast="black register">
       <img className="register_icon  " src="/img/icon/kc-brandmark.svg" />
       <div className="w-full">
-        <h2 className="display_alt  text-center">PHASE 1 SOLD&nbsp;OUT</h2>
+        <h2 className="display_alt  text-center mb-6">PHASE 1 SOLD&nbsp;OUT</h2>
         <p className="display_alt  text-center">REGISTER FOR FINAL&nbsp;RELEASE</p>
 
         <div className="head_underline "></div>
@@ -125,16 +125,16 @@ export default function Registration() {
             {" "}
             Book your virtual <br></br>appointment.
           </h2>
-          <div className="text-slate-600">
-            <p className="text-gvhGold-100 md:text-xl">Contact Sales</p>
-            <span className="text-gvhGold-100 md:text-xl">905.336.8953</span>{" "}
-            <br />
-            <span className="text-gvhGold-100 md:text-xl">
+          <div className="text-slate-600 mt-5">
+         
+            <p className="text-gvhGold-100 md:text-xl  mb-2">905.336.8953</p>{" "}
+          
+            <p className="text-gvhGold-100 md:text-xl">
               sales@gableviewhomes.com
-            </span>
+            </p>
           </div>
         </div>
-        <div className="text-xs mt-32 text-center text-slate-400 md:w-4/5 mx-auto font-sans">
+        <div className="text-xs mt-32 text-center text-[#C4AB7A] md:w-4/5 mx-auto font-sans">
           The developer reserves the right to modify or make substitutes to the
           building design, specifications and floorplans should they be
           necessary. Renderings, views, and layouts are for illustration

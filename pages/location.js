@@ -18,7 +18,6 @@ export default function Home() {
         title="Kennedy Circle Condominiums | Milton, ON Condo for Sale"
         description="A short description goes here."
       />
-      <Menu></Menu>
       <Hero alt="Pic" image="/img/hero/KC-Site-Neighbourhood-TitleAreaBG.jpg"
       imagePortrait="img/hero/KC-Site-Neighbourhood-TitleAreaBG-Portrait.jpg"
       
@@ -62,25 +61,28 @@ export default function Home() {
 
       <Section anchor="overview" contrast="dark">
         <div className="flex items-center justify-center flex-row w-full">
-          <div className="w-full flex-row items-center flex ">
+          <div className="w-full flex-col md:flex-row md:items-center flex ">
            
             <div>
-              <h2 className="display_h3 max-w-[700px] mb-4">
+              <h2 className="display_h3 max-w-[400px] md:max-w-[700px] mb-4">
                 LIfe's conveniences are just around the corner
               </h2>
 
-              <a href="#NEEDTHEFILE" target="_blank" className="cta">
+              <a href="#NEEDTHEFILE" target="_blank" className="cta hidden md:inline-block ">
                 DOWNLOAD COMMUNITY&nbsp;MAP{" "}
               </a>
             </div>
 
-            <div className="here_img w-full">
+            <div className=" mt-0 w-full">
               <img
                 src="/img/icon/KC-Site-SiteMap.svg"
                 alt="Picture of the author"
                 width={200}
                 className="w-full"
               />
+                  <a href="#NEEDTHEFILE" target="_blank" className="inline-block md:hidden cta">
+                DOWNLOAD COMMUNITY&nbsp;MAP{" "}
+              </a>
             </div>
 
           </div>
@@ -93,8 +95,6 @@ export default function Home() {
         position="top left"
       />
 
-      <Registration></Registration>
-      <Footer></Footer>
     </>
   );
 }

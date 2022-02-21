@@ -22,12 +22,12 @@ function MyApp({ Component, pageProps, router }) {
 <meta name="msapplication-TileColor" content="#da532c"/>
 <meta name="theme-color" content="#ffffff"></meta>
 <AnimatedCursor
-      innerSize={20}
-      outerSize={8}
+      innerSize={25}
+      outerSize={1}
       color='184, 157, 103'
       outerAlpha={0.2}
       innerScale={.7}
-      outerScale={5}
+      outerScale={30}
     />
 <Menu></Menu>
 {/* <AnimatePresence> */}

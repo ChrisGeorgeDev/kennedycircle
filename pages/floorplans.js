@@ -16,11 +16,10 @@ export default function Home() {
         title="Kennedy Circle Condominiums | Milton, ON Condo for Sale"
         description="A short description goes here."
       />
-      <Menu></Menu>
       <Hero alt="Pic" image="/img/hero/KC-Site-Residences-TitleAreaBG.jpg"
       imagePortrait="/img/hero/KC-Site-FloorPlans-TitleAreaBG-P.jpg"
       >
-      <h1 className="display_h1_alt text-white">THE FLOOR PLANS</h1>
+      <h1 className="display_h1_alt text-white">THE FLOORPLANS</h1>
       </Hero>
 
       <Section anchor="overview" contrast="light">
@@ -36,24 +35,22 @@ export default function Home() {
               Each floor plan has been laid out for elevated living experiences.{" "}
             </p>
 
-            <a href="#floorplans" className="cta">
-              VIEW FLOOR PLANS
+            <a href="#floorplans" className="cta inline-block ">
+              VIEW FLOORPLANS
             </a>
           </div>
         </div>
       </Section>
 
       <Section anchor="floorplans" contrast="white">
-        <h2 className="display_alt  text-center">FLOOR PLANS</h2>
+        <h2 className="display_alt  text-center">FLOORPLANS</h2>
         <div className="head_underline "></div>
 
         <FlyoutMenu />
       </Section>
 
    
-    
-      <Registration></Registration>
-      <Footer></Footer>
+  
     </>
   );
 }
