@@ -9,6 +9,7 @@ import Menu from "../components/Menu";
 import { NextSeo } from "next-seo";
 
 import dynamic from 'next/dynamic'
+import { motion } from "framer-motion";
 
 const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
   ssr: false
@@ -16,21 +17,42 @@ const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
 
 
 export default function Home() {
+
+
+  const container = {
+    hidden: { rotate: 90 },
+    show: {
+        rotate: 0,
+        transition: {
+          type: 'tween',
+          duration: 4,
+            staggerChildren: 1,
+        },
+    },
+}
+
+const itemA = {
+    hidden: { y: -800, opacity:0 },
+    show: { y: 0, opacity: 1 },
+    transition: {
+      type: 'tween',
+      duration: 4,
+        staggerChildren: 3,
+    },
+}
+
+const itemB = {
+    hidden: { scale: 0, top: 200 },
+    show: { scale: 1, top: 80 },
+}
+
   return (
     <>
       <NextSeo
         title="Kennedy Circle Condominiums | Milton, ON Condo for Sale"
         description="A short description goes here."
       />
-       <AnimatedCursor
-      innerSize={20}
-      outerSize={8}
-      color='184, 157, 103'
-      outerAlpha={0.2}
-      innerScale={.7}
-      outerScale={5}
-    />
-      <Menu></Menu>
+  
 
       <Hero alt="Pic" 
       image="/img/hero/KC-Render.jpg"
@@ -123,14 +145,31 @@ export default function Home() {
 
       <Section anchor="overview" contrast="dark">
         <div className="flex flex-row">
-          <div className="max-w-[700px]">
-            <h2 className="display_h2 here">HERE</h2>
-            <div className="head_underline"></div>
-            <h3 className="display_h3 max-w-[700px] mb-4">
-              Live. Work. Relax. Play.
-            </h3>
+          <motion.div variants={itemA} initial="hidden" animate="show"
 
-            <p className="text-base max-w-[580px]">
+        //  variants={{
+        //     visible: {
+        //       opacity: 1,
+        //       y:20,
+        //       transition: {
+        //         staggerChildren: 0.6,
+        //         duration: 3,
+        //       },
+        //     },
+        //     hidden: {
+        //       opacity: 0,
+        //       y: 400,
+          
+        //     }}}
+        
+          className="max-w-[700px]">
+            <motion.h2 key={1} variants={itemA} initial="hidden" animate="show" className="display_h2 here">HERE</motion.h2>
+            <motion.div key={2} variants={itemA} initial="hidden" animate="show"  className="head_underline"></motion.div>
+            <motion.h3 key={3} variants={itemA}  initial="hidden" animate="show" className="display_h3 max-w-[700px] mb-4">
+              Live. Work. Relax. Play.
+            </motion.h3>
+
+            <motion.p key={4} variants={itemA} initial="hidden" animate="show" className="text-base max-w-[580px]">
               The Residences on Kennedy Circle comprises of 148 units in a
               6-storey mid-rise state-of-the-art building that embodies a
               distinct spirit and style like no other condominium in the area.
@@ -138,12 +177,12 @@ export default function Home() {
               unit types. Each unit has been carefully developed to suit a
               variety of lifestyles with convenience and comfort in mind, and
               appointed with beautiful, timeless features and finishes.
-            </p>
+            </motion.p>
 
             <Link href="/floorplans">
               <a className="cta links link--metis">VIEW FLOORPLANS</a>
             </Link>
-          </div>
+          </motion.div>
         </div>
       </Section>
 
@@ -240,8 +279,6 @@ export default function Home() {
         </div>
       </Section>
 
-      <Registration></Registration>
-      <Footer></Footer>
     </>
   );
 }
