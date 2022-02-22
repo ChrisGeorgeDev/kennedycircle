@@ -205,7 +205,7 @@ export default function FlyoutMenu() {
 
 
       
-              <a href={`assets/floorplans/${solution.download}`}  target="_blank" className="fp-cta hidden xl:block">DOWNLOAD</a>
+              <a href={`assets/floorplans/${solution.download}`}  target="_blank" className="fplan-cta col-span-6  xl:block">DOWNLOAD</a>
                
                 
 
