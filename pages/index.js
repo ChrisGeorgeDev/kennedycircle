@@ -37,9 +37,22 @@ const itemA = {
       transition: {
         type: 'tween',
         duration: 2,
-          staggerChildren: 3,
-      }, },
+        staggerChildren: 0.5
+      }, 
+    },
     
+}
+
+const itemB = {
+  hidden: { y: 400, opacity:0 },
+  show: { y: 0, opacity: 1,
+    transition: {
+      type: 'tween',
+      duration: 2,
+      staggerChildren: 0.5
+    }, 
+  },
+  
 }
 
 
@@ -148,13 +161,13 @@ const itemA = {
 
         
           className="max-w-[700px]">
-            <motion.h2 key={1} variants={itemA} initial="hidden" animate="show" className="display_h2 here">HERE</motion.h2>
-            <motion.div key={2} variants={itemA} initial="hidden" animate="show"  className="head_underline"></motion.div>
-            <motion.h3 key={3} variants={itemA}  initial="hidden" animate="show" className="display_h3 max-w-[700px] mb-4">
+            <motion.h2 key={1} variants={itemA}  className="display_h2 here">HERE</motion.h2>
+            <motion.div key={2} variants={itemA}   className="head_underline"></motion.div>
+            <motion.h3 key={3} variants={itemA}   className="display_h3 max-w-[700px] mb-4">
               Live. Work. Relax. Play.
             </motion.h3>
 
-            <motion.p key={4} variants={itemA} initial="hidden" animate="show" className="text-base max-w-[580px]">
+            <motion.p key={4} variants={itemA}  className="text-base max-w-[580px]">
               The Residences on Kennedy Circle comprises of 148 units in a
               6-storey mid-rise state-of-the-art building that embodies a
               distinct spirit and style like no other condominium in the area.
@@ -165,7 +178,7 @@ const itemA = {
             </motion.p>
 
             <Link href="/floorplans">
-              <a className="cta inline-block   links link--metis">VIEW FLOORPLANS</a>
+            <motion.a key={5} variants={itemA}  className="cta inline-block   links link--metis">VIEW FLOORPLANS</motion.a>
             </Link>
           </motion.div>
         </div>
