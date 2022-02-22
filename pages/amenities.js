@@ -75,14 +75,12 @@ export default function Home() {
         </div>
       </Section>
 
-      <SectionFull contrast="light">
       <div className="here_img">
           <img
             src="/img/KC-Site-Amenities-YogaRoom-b.jpg"
             alt="Picture of the author"
           />
         </div>
-      </SectionFull>
 
       <Section anchor="overview" contrast="light">
         <div className="flex flex-row">
@@ -99,7 +97,7 @@ export default function Home() {
               for social co-working spaces featuring work pods, a laptop bar and
               a boardroom to host meetings, plus Smart Home Tech offering
               digital building and unit access as well as smartphone video
-              calling and delivery parcel scanning.{" "}
+              calling and delivery parcel scanning.
             </p>
           </div>
        </TextWrap>
@@ -124,9 +122,11 @@ export default function Home() {
       </div>
   </TextWrap>
       
-          <img className="max-w-[800px] xl:max-w-[1200px]" src="/img/siteplan.jpg" />
+     
         
         </div>
+
+        <img className="w-full" src="/img/siteplan.jpg" />
       </Section>
 
       <Section anchor="overview" contrast="dark">

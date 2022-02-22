@@ -144,7 +144,7 @@ export default function Registration() {
             </p>
           </div>
         </div>
-        <div className="text-xs mt-32 text-center text-[#C4AB7A] md:w-4/5 mx-auto font-sans">
+        <div className="text-xs mt-32 text-center text-[#f9f7f2] md:w-4/5 mx-auto font-sans">
           The developer reserves the right to modify or make substitutes to the
           building design, specifications and floorplans should they be
           necessary. Renderings, views, and layouts are for illustration

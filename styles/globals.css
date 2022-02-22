@@ -79,6 +79,12 @@ p {
   @apply rounded-full mt-5 px-6 text-center items-center pt-2 pb-1.5 border border-gvhBlue-400 hover:bg-gvhBlue-400 hover:text-white text-gvhBlue-400 hover:text-gvhGold-400 hover:font-bold focus:outline-none transition duration-150 ease-in-out uppercase;
 }
 
+.black .fplan-cta {
+  @apply rounded-full mt-5 px-6 text-center items-center pt-2 pb-1.5 border border-gvhGold-400 hover:bg-gvhBlue-400 hover:text-white text-gvhGold-400 hover:text-gvhGold-400 hover:font-bold focus:outline-none transition duration-150 ease-in-out uppercase;
+
+}
+
+
 .menu-desktop a.active {
   color: #B89D67;
  border-bottom: 2px solid #B89D67;
