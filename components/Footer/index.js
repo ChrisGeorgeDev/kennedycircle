@@ -19,7 +19,7 @@ export default function Footer() {
         </div>
         <div>
           <p className="text-gvhGold-400 text-sm">
-            <a className=" hover:text-white transition-all duration-150" href="https://gableviewhomes.com/policies/">Privacy Policy</a> |      <a className=" hover:text-white transition-all duration-150" href="https://gableviewhomes.com/terms-conditions/">Terms of Use</a>
+            <a className=" hover:text-white transition-all duration-150" href="https://gableviewhomes.com/policies/" target="_blank">Privacy Policy</a> |      <a className=" hover:text-white transition-all duration-150" href="https://gableviewhomes.com/terms-conditions/" target="_blank">Terms of Use</a>
           </p>
         </div>
       </div>

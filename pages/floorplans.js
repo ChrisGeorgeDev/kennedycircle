@@ -8,6 +8,10 @@ import FlyoutMenu from "../components/Plans";
 import Registration from "../components/Registration";
 import Menu from "../components/Menu";
 import { NextSeo } from "next-seo";
+import { useAnimation, motion } from "framer-motion";
+import {TextWrap, ImageWrap, ImageLoadIn} from "../components/Animations/PageContent";
+import CtaNext from "../components/CtaNext";
+import Cta from "../components/Cta";
 
 export default function Home() {
   return (
@@ -24,6 +28,7 @@ export default function Home() {
 
       <Section anchor="overview" contrast="light">
         <div className="flex flex-row">
+          <TextWrap>
           <div className="max-w-[800px]">
             <h2 className="display_h2 here">HERE</h2>
             <div className="head_underline"></div>
@@ -35,18 +40,19 @@ export default function Home() {
               Each floor plan has been laid out for elevated living experiences.{" "}
             </p>
 
-            <a href="#floorplans" className="cta inline-block ">
-              VIEW FLOORPLANS
-            </a>
+         
           </div>
+          </TextWrap>
         </div>
       </Section>
 
       <Section anchor="floorplans" contrast="white">
-        <h2 className="display_alt  text-center">FLOORPLANS</h2>
+      <TextWrap>
+      <h2 className="display_alt  text-center">FLOORPLANS</h2>
         <div className="head_underline "></div>
 
         <FlyoutMenu />
+      </TextWrap>
       </Section>
 
    

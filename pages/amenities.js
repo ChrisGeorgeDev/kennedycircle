@@ -8,6 +8,10 @@ import Registration from "../components/Registration";
 import Menu from "../components/Menu";
 import SectionFull from "../components/SectionFull";
 import { NextSeo } from "next-seo";
+import { useAnimation, motion } from "framer-motion";
+import {TextWrap, ImageWrap, ImageLoadIn} from "../components/Animations/PageContent";
+import CtaNext from "../components/CtaNext";
+import Cta from "../components/Cta";
 
 export default function Home() {
   return (
@@ -26,7 +30,8 @@ export default function Home() {
 
       <Section anchor="overview" contrast="light">
         <div className="flex flex-row">
-          <div className="max-w-[580px]">
+         <TextWrap>
+         <div className="max-w-[580px]">
             <h2 className="display_h2 here">HERE</h2>
             <div className="head_underline"></div>
             <h3 className="display_h3 max-w-[700px] mb-4">
@@ -40,6 +45,7 @@ export default function Home() {
               from our demonstration kitchen and lounge.
             </p>
           </div>
+         </TextWrap>
         </div>
         <div className="here_img">
           <img
@@ -51,7 +57,8 @@ export default function Home() {
 
       <Section anchor="overview" contrast="white">
         <div className="flex flex-row-reverse">
-          <div className="max-w-[580px]">
+        <TextWrap>
+        <div className="max-w-[580px]">
             <h2 className="display_h2 here">HERE</h2>
             <div className="head_underline"></div>
             <h2 className="display_h3 max-w-[700px] mb-4">
@@ -64,8 +71,8 @@ export default function Home() {
               designed to benefit every active and health-conscious resident.{" "}
             </p>
           </div>
+        </TextWrap>
         </div>
-        {/* <img className="bl-round" src="/SuiteD-KitchenUpgrade1.png" /> */}
       </Section>
 
       <SectionFull contrast="light">
@@ -79,7 +86,8 @@ export default function Home() {
 
       <Section anchor="overview" contrast="light">
         <div className="flex flex-row">
-          <div className="max-w-[580px]">
+       <TextWrap>
+       <div className="max-w-[580px]">
             <h2 className="display_h2 here">HERE</h2>
             <div className="head_underline"></div>
             <h2 className="display_h3 max-w-[700px] mb-4">
@@ -94,8 +102,8 @@ export default function Home() {
               calling and delivery parcel scanning.{" "}
             </p>
           </div>
+       </TextWrap>
         </div>
-        {/* <img className="bl-round" src="/SuiteD-KitchenUpgrade1.png" /> */}
         <div className="here_img">
           <img
             src="/img/KC-Site-Amenities-CoWorkLounge-08.png"
@@ -106,13 +114,15 @@ export default function Home() {
 
       <Section anchor="overview" contrast="white">
         <div className="flex relative flex-col">
-      <div className="lg:absolute right-0">
+  <TextWrap>
+  <div className="lg:absolute right-0">
       <div className="flex justify-end ">
             <h2 className="display_h3 max-w-[300px] lg:max-w-[400px] mb-4">
               The Building<br/> at a glance
             </h2>
           </div>
       </div>
+  </TextWrap>
       
           <img className="max-w-[800px] xl:max-w-[1200px]" src="/img/siteplan.jpg" />
         
@@ -121,7 +131,8 @@ export default function Home() {
 
       <Section anchor="overview" contrast="dark">
         <div className="flex flex-row">
-          <div className="w-full">
+        <TextWrap>
+        <div className="w-full">
             <h2 className="display_alt  text-center">
               BUILDING
               <br />
@@ -159,11 +170,12 @@ export default function Home() {
             </div>
 
             <div className="text-center">
-              <Link href="/">
-                <a className="cta inline-block ">DOWNLOAD FEATURES & AMENITIES</a>
-              </Link>
+            <a className="cta inline-block "href="/assets/downloads/KennedyCircle-FeaturesandFinishes1.pdf" target="_blank">
+                DOWNLOAD FEATURES & AMENITIES
+              </a>
             </div>
           </div>
+        </TextWrap>
         </div>
       </Section>
 

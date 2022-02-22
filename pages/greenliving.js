@@ -9,6 +9,7 @@ import { Fragment } from "react";
 import { Tab, Transition } from "@headlessui/react";
 import Menu from "../components/Menu";
 import { NextSeo } from "next-seo";
+import { TextWrap } from "../components/Animations/PageContent";
 
 export default function Home() {
   return (
@@ -26,7 +27,8 @@ export default function Home() {
 
       <Section anchor="overview" contrast="light">
         <div className="flex flex-row">
-          <div className="max-w-[580px]">
+         <TextWrap>
+         <div className="max-w-[580px]">
             <h2 className="display_h2 here">HERE</h2>
             <div className="head_underline"></div>
             <h3 className="display_h3 max-w-[700px] mb-4">
@@ -40,6 +42,7 @@ export default function Home() {
               <br />
             </p>
           </div>
+         </TextWrap>
         </div>
       </Section>
 
@@ -52,7 +55,8 @@ export default function Home() {
 
       <Section anchor="overview" contrast="dark">
         <div className="flex flex-row">
-          <div className="w-full">
+        <TextWrap>
+        <div className="w-full">
             <h2 className="display_alt  text-center">GREEN LIVING</h2>
             <div className="head_underline "></div>
 
@@ -110,12 +114,14 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </TextWrap>
         </div>
       </Section>
 
       <Section anchor="overview" contrast="light">
         <div className="flex flex-row">
-          <div className="w-full">
+         <TextWrap>
+         <div className="w-full">
             <h2 className="display_alt  text-center">EV CHARGING</h2>
             <div className="head_underline "></div>
 
@@ -200,6 +206,7 @@ export default function Home() {
               />
             </div>
           </div>
+         </TextWrap>
         </div>
       </Section>
 

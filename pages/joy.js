@@ -1,11 +1,13 @@
 import React, { useEffect } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Hero from "../components/Hero";
+import Section from "../components/Section";
 const squareVariants = {
-  visible: { opacity: 1, scale: 2, transition: { duration: 1 } },
-  hidden: { opacity: 0, scale: 0 }
+  visible: { opacity: 1,  transition: { duration: 1 } },
+  hidden: { opacity: 0 }
 };
-function Square() {
+function TextWrap(props) {
   const controls = useAnimation();
   const [ref, inView] = useInView();
   useEffect(() => { 
@@ -14,31 +16,30 @@ function Square() {
     }
   }, [controls, inView]);
   return (
-    <motion.div
-      ref={ref}
-      animate={controls}
-      initial="hidden"
-      variants={squareVariants}
-      className="square"
-    ></motion.div>
+
+        <motion.div className=" bg-yellow-800"
+        ref={ref}
+        animate={controls}
+        initial="hidden"
+        variants={squareVariants}
+        >
+        {props.children}
+    </motion.div>
   );
 }
 export default function App() {
   return (
     <div className="App">
-      <h1 className="title">Scroll Down</h1>
-   <section className="h-screen relative bg-gvhGold-400">
-   <Square />
-    
-   </section>
-   <section className="h-screen relative bg-slate-700">
-   <Square />
-   
-   </section>
-   <section className="h-screen relative bg-yellow-800">
-   <Square />
-    
-   </section>
-    </div>
+
+<Hero alt="Pic" 
+      image="/img/hero/KC-Render.jpg"
+      imagePortrait="img/hero/KC-HeroImage-Rendering-Portrait.jpg"
+      />
+<Section anchor="overview" contrast="dark">
+    <Square>Test</Square>
+</Section>
+
+</div>
+
   );
 }

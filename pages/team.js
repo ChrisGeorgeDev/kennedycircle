@@ -7,6 +7,9 @@ import Hero from "../components/Hero";
 import Menu from "../components/Menu";
 import Registration from "../components/Registration";
 import { NextSeo } from "next-seo";
+import { useAnimation, motion } from "framer-motion";
+import {TextWrap, ImageWrap, ImageLoadIn} from "../components/Animations/PageContent";
+
 
 export default function Home() {
   return (
@@ -25,7 +28,8 @@ export default function Home() {
 
       <Section anchor="overview" contrast="light">
         <div className="flex flex-row">
-          <div className="">
+       <TextWrap>
+       <div className="">
             <h2 className="display_h2 ">Gable View Homes</h2>
             <h2 className="display_h3 mt-8 mb-8">The Builder</h2>
             <p className="text-base max-w-[900px]">
@@ -54,12 +58,14 @@ export default function Home() {
               the way we build homes and communities.
             </p>
           </div>
+       </TextWrap>
         </div>
       </Section>
 
       <Section anchor="overview" contrast="white">
         <div className="flex flex-row">
-          <div className="">
+        <TextWrap>
+        <div className="">
             <h2 className="display_h2 here">KNYMH Inc</h2>
             <h2 className="display_h3 mt-8 mb-8">The Architect.</h2>
 
@@ -86,12 +92,14 @@ export default function Home() {
 </div>
 
           </div>
+        </TextWrap>
         </div>
       </Section>
 
       <Section anchor="overview" contrast="light">
         <div className="flex flex-row">
-          <div className="">
+         <TextWrap>
+         <div className="">
             <h2 className="display_h2 ">Stagg & Paper Interiors</h2>
             <h2 className="display_h3 mt-8 mb-8">The Interior Designer.</h2>
 
@@ -112,6 +120,7 @@ export default function Home() {
               interiors with authenticity and innovation.
             </p>
           </div>
+         </TextWrap>
         </div>
       </Section>
 

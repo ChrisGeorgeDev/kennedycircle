@@ -29,6 +29,7 @@
 html,
 body {
 font-size: 21px;
+@apply bg-gvhBlue-600;
 }
 
 .container {
@@ -52,6 +53,9 @@ font-size: 21px;
   text-shadow: 1px 1px 25px #111212;
 }
 
+p {
+  margin-bottom: .75em;
+}
 .hero {
   height: calc(100vh - 62px);
  margin-top: 61px;
@@ -80,6 +84,8 @@ font-size: 21px;
 .cta {
   @apply font-display  text-cta mt-10 2xl:mt-16;
 }
+
+
 
 .fp-cta {
   cursor: pointer;
@@ -315,8 +321,8 @@ font-size: 21px;
   max-width: 1210px;
 }
 /* Images Module */
-.here_img {margin-top: 80px; display: block;}
-.here_img img {width: 100%;}
+section .here_img  {margin-top: 80px; display: block;}
+.here_img img {width: 100%; display: block;}
 .img_break img {
   @apply object-cover object-bottom w-full ;
 }

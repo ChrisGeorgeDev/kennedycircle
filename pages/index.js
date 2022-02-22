@@ -1,61 +1,17 @@
-import Head from "next/head";
-import styles from "../styles/Home.module.css";
-import Footer from "../components/Footer";
+
+import React, { useEffect } from "react";
 import Section from "../components/Section";
 import Link from "next/link";
 import Hero from "../components/Hero";
-import Registration from "../components/Registration";
-import Menu from "../components/Menu";
 import { NextSeo } from "next-seo";
+import { useAnimation, motion } from "framer-motion";
+import {TextWrap, ImageWrap, ImageLoadIn} from "../components/Animations/PageContent";
+import CtaNext from "../components/CtaNext";
 
-import dynamic from 'next/dynamic'
-import { motion } from "framer-motion";
 
-const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
-  ssr: false
-});
 
 
 export default function Home() {
-
-
-  const container = {
-    hidden: { rotate: 90 },
-    show: {
-        rotate: 0,
-        transition: {
-          type: 'tween',
-          duration: 4,
-            staggerChildren: 1,
-        },
-    },
-}
-
-const itemA = {
-    hidden: { y: 400, opacity:0 },
-    show: { y: 0, opacity: 1,
-      transition: {
-        type: 'tween',
-        duration: 2,
-        staggerChildren: 0.5
-      }, 
-    },
-    
-}
-
-const itemB = {
-  hidden: { y: 400, opacity:0 },
-  show: { y: 0, opacity: 1,
-    transition: {
-      type: 'tween',
-      duration: 2,
-      staggerChildren: 0.5
-    }, 
-  },
-  
-}
-
-
 
   return (
     <>
@@ -66,7 +22,7 @@ const itemB = {
   
 
       <Hero alt="Pic" 
-      image="/img/hero/KC-Render.jpg"
+      image="/img/hero/KC-Site-HomepageHero-Overlay.jpg"
       imagePortrait="img/hero/KC-HeroImage-Rendering-Portrait.jpg"
       >
     
@@ -154,38 +110,52 @@ const itemB = {
 
       </Hero>
 
-      <Section anchor="overview" contrast="dark">
+
+
+
+<Section anchor="overview" contrast="dark">
         <div className="flex flex-row">
-          <motion.div variants={itemA} initial="hidden" animate="show"
+  <TextWrap>
+  <div 
+   
+   className="max-w-[700px]"
+   >
+     <h2 className="display_h2 here">HERE</h2>
+     <div   className="head_underline"></div>
+     <h3    className="display_h3 max-w-[700px] mb-4">
+       Live. Work. Relax. Play.
+     </h3>
+
+     <p   className="text-base max-w-[580px]">
+       The Residences on Kennedy Circle comprises of 148 units in a
+       6-storey mid-rise state-of-the-art building that embodies a
+       distinct spirit and style like no other condominium in the area.
+       The building features 1 bedroom, 1 bedroom + den and 2 bedroom
+       unit types. Each unit has been carefully developed to suit a
+       variety of lifestyles with convenience and comfort in mind, and
+       appointed with beautiful, timeless features and finishes.
+     </p>
+
+     <Link href="/floorplans">
+  
+     <CtaNext>VIEW FLOORPLANS</CtaNext>
+     </Link>
 
 
-        
-          className="max-w-[700px]">
-            <motion.h2 key={1} variants={itemA}  className="display_h2 here">HERE</motion.h2>
-            <motion.div key={2} variants={itemA}   className="head_underline"></motion.div>
-            <motion.h3 key={3} variants={itemA}   className="display_h3 max-w-[700px] mb-4">
-              Live. Work. Relax. Play.
-            </motion.h3>
 
-            <motion.p key={4} variants={itemA}  className="text-base max-w-[580px]">
-              The Residences on Kennedy Circle comprises of 148 units in a
-              6-storey mid-rise state-of-the-art building that embodies a
-              distinct spirit and style like no other condominium in the area.
-              The building features 1 bedroom, 1 bedroom + den and 2 bedroom
-              unit types. Each unit has been carefully developed to suit a
-              variety of lifestyles with convenience and comfort in mind, and
-              appointed with beautiful, timeless features and finishes.
-            </motion.p>
-
-            <Link href="/floorplans">
-            <motion.a key={5} variants={itemA}  className="cta inline-block   links link--metis">VIEW FLOORPLANS</motion.a>
-            </Link>
-          </motion.div>
+   </div>
+  </TextWrap>
         </div>
       </Section>
 
+
+
+
       <Section anchor="overview" contrast="light">
         <div className="flex flex-row-reverse">
+
+        <TextWrap>
+
           <div className="max-w-[580px]">
             <h2 className="display_h2 here">HERE</h2>
             <div className="head_underline"></div>
@@ -203,21 +173,25 @@ const itemB = {
             </p>
 
             <Link href="/amenities">
-              <a className="cta inline-block ">VIEW AMENITIES</a>
+            <CtaNext>VIEW AMENITIES</CtaNext>
             </Link>
           </div>
+          </TextWrap>
         </div>
-        {/* <img className="bl-round" src="/SuiteD-KitchenUpgrade1.png" /> */}
-        <div className="here_img">
-          <img
+<ImageWrap>
+<div className="here_img">
+          <motion.img variants={ImageLoadIn} 
             src="/img/KC-Site-Homepage-Amenities-01b.png"
             alt="Picture of the author"
           />
         </div>
+</ImageWrap>
       </Section>
 
       <Section anchor="overview" contrast="white">
         <div className="flex flex-row">
+        <TextWrap>
+
           <div className="max-w-[580px]">
             <h2 className="display_h2 here">HERE</h2>
             <div className="head_underline"></div>
@@ -235,21 +209,26 @@ const itemB = {
             </p>
 
             <Link href="/location">
-              <a className="cta inline-block ">EXPLORE THE NEIGHBOURHOOD</a>
+            <CtaNext>EXPLORE THE NEIGHBOURHOOD</CtaNext>
             </Link>
           </div>
+          </TextWrap>
+
         </div>
-        {/* <img className="bl-round" src="/SuiteD-KitchenUpgrade1.png" /> */}
+        <ImageWrap>
         <div className="here_img">
-          <img
+        <motion.img variants={ImageLoadIn} 
             src="/img/KC-Site-Homepage-Community-07.png"
             alt="Picture of the author"
           />
         </div>
+      </ImageWrap>
       </Section>
 
       <Section anchor="overview" contrast="light">
         <div className="flex flex-row-reverse">
+        <TextWrap>
+
           <div className="max-w-[580px]">
             <h2 className="display_h2 here">HERE</h2>
             <div className="head_underline"></div>
@@ -264,17 +243,20 @@ const itemB = {
             </p>
 
             <Link href="/greenliving">
-              <a className="cta inline-block ">GREEN LIVING</a>
+            <CtaNext>LEARN MORE</CtaNext>
             </Link>
           </div>
+          </TextWrap>
+
         </div>
-        {/* <img className="bl-round" src="/SuiteD-KitchenUpgrade1.png" /> */}
-        <div className="here_img">
-          <img
+ <ImageWrap>
+ <div className="here_img">
+        <motion.img variants={ImageLoadIn} 
             src="/img/KC-Site-Homepage-EcoConscious.png"
             alt="Picture of the author"
           />
         </div>
+ </ImageWrap>
       </Section>
 
     </>
