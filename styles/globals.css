@@ -1,3 +1,6 @@
+/* * {
+  cursor: default!important;
+} */
 @font-face {
   font-family: 'VisbyCF Medium';
   src: url("/fonts/VisbyCF-Medium.eot");
@@ -26,6 +29,7 @@
 html,
 body {
 font-size: 21px;
+@apply bg-gvhBlue-600;
 }
 
 .container {
@@ -49,6 +53,9 @@ font-size: 21px;
   text-shadow: 1px 1px 25px #111212;
 }
 
+p {
+  margin-bottom: .75em;
+}
 .hero {
   height: calc(100vh - 62px);
  margin-top: 61px;
@@ -59,12 +66,17 @@ font-size: 21px;
 .menu-desktop .link , .menu-desktop span {
   font-size: 14px;
   border-bottom: 2px solid #FFF;
-  @apply flex px-5 items-center pb-3 pt-4  leading-5 text-gvhBlue-400 hover:text-gvhGold-400 hover:font-bold focus:outline-none transition duration-150 ease-in-out uppercase;
+  @apply flex px-2 2xl:px-5 items-center pb-3 pt-4  leading-5 text-gvhBlue-400 hover:text-gvhGold-400 hover:font-bold focus:outline-none transition duration-150 ease-in-out uppercase;
 }
 
 .reg-cta {
   font-size: 14px;
   @apply flex  rounded-full px-6 ml-5 items-center pt-2 pb-1.5 border border-gvhBlue-400 hover:bg-gvhBlue-400 hover:text-white text-gvhBlue-400 hover:text-gvhGold-400 hover:font-bold focus:outline-none transition duration-150 ease-in-out uppercase;
+}
+
+.fplan-cta {
+  font-size: 21px;
+  @apply rounded-full mt-5 px-6 text-center items-center pt-2 pb-1.5 border border-gvhBlue-400 hover:bg-gvhBlue-400 hover:text-white text-gvhBlue-400 hover:text-gvhGold-400 hover:font-bold focus:outline-none transition duration-150 ease-in-out uppercase;
 }
 
 .menu-desktop a.active {
@@ -75,8 +87,10 @@ font-size: 21px;
 /* Section Module */
 
 .cta {
-  @apply font-display inline-block text-cta mt-10 2xl:mt-16;
+  @apply font-display  text-cta mt-10 2xl:mt-16;
 }
+
+
 
 .fp-cta {
   cursor: pointer;
@@ -149,7 +163,6 @@ font-size: 21px;
 }
 
 
-
 .cta::before,
 .floorplan_meta.cta::before {
   transform-origin: 100% 50%;
@@ -164,7 +177,7 @@ font-size: 21px;
 }
 
 .display_h1_alt {
-  @apply font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl;
+  @apply font-display tracking-[.15em] text-4xl sm:text-5xl md:text-6xl ;
 }
 
 .display_h2 {
@@ -313,8 +326,8 @@ font-size: 21px;
   max-width: 1210px;
 }
 /* Images Module */
-.here_img {margin-top: 80px; display: block;}
-.here_img img {width: 100%;}
+section .here_img  {margin-top: 80px; display: block;}
+.here_img img {width: 100%; display: block;}
 .img_break img {
   @apply object-cover object-bottom w-full ;
 }
@@ -337,18 +350,22 @@ font-size: 21px;
 /* FORMS*/
 .form-input , .form-select  {
   border: 2px solid;
-  @apply font-display tracking-[.20em] text-sm xl:text-base 2xl:text-base   focus:border-gvhGold-400 text-gvhGold-100 placeholder:text-gvhGold-100 appearance-none border-y-gvhGold-100 bg-transparent px-5 py-2;
+  @apply font-display tracking-[.20em] text-sm xl:text-base 2xl:text-base   focus:border-gvhGold-400 text-gvhGold-100 placeholder:text-gvhGold-100 appearance-none border-y-gvhGold-100 bg-gvhBlue-600 px-5 py-2;
 }
 
 .form-input:focus, .form-select:focus, .form-checkbox:focus {
   @apply ring-gvhGold-400;
 }
 .form-checkbox {
-  @apply font-sans  text-sm text-gvhGold-100  border-2 appearance-none border-y-gvhGold-100 bg-transparent ;
+  @apply font-sans  text-sm ;
+  border: 2px solid #FFF;
+  background-color: transparent;
+  color:#B89D67;
 }
 
 .formActions {
-  text-align: left;
+  text-align: center;
+  @apply mt-10
 }
 
 /* FLOORPLANS */
@@ -379,4 +396,116 @@ font-size: 21px;
 svg.heroMsg {
   @apply md:w-4/5 lg:w-3/5 mx-auto ;
   filter: drop-shadow(5px 1px 10px rgb(0 0 0 / 0.8));
+}
+
+
+.button {
+	pointer-events: auto;
+	cursor: pointer;
+	background: #e7e7e7;
+	border: none;
+	padding: 1.5rem 3rem;
+	margin: 0;
+	font-family: inherit;
+	font-size: inherit;
+	position: relative;
+	display: inline-block;
+}
+
+.button::before,
+.button::after {
+	/* position: absolute; */
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+.button--fenrir {
+	background: none;
+	padding: 0;
+	-webkit-clip-path: circle(50% at 50% 50%);
+	clip-path: circle(50% at 50% 50%);
+	width: 200px;
+	height: 200px;
+	font-family: aktiv-grotesk-extended, sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 0.85rem;
+}
+
+.progress {
+	/* position: absolute; */
+	width: 160px;
+	height: 160px;
+	top: calc(50% - 40px);
+	left: calc(50% - 40px);
+	transition: transform 0.4s cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.button--fenrir:hover .progress {
+	transform: scale3d(1.2, 1.2, 1);
+}
+
+.progress__circle,
+.progress__path {
+	fill: none;
+	stroke: #f0f0f0;
+	stroke-width: 1px;
+}
+
+.button--fenrir:focus-visible .progress__circle {
+	fill: rgba(252,196,63,0.4);
+}
+
+.progress__path {
+	stroke: #a6a6a6;
+	stroke-dasharray: 1;
+	stroke-dashoffset: 1;
+	transition: stroke-dashoffset 0.4s cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.button--fenrir:hover .progress__path {
+	stroke-dashoffset: 0;
+}
+
+
+
+
+svg.scrollmore:hover .another-circle {
+  stroke-dashoffset: 0;
+}
+svg.scrollmore:hover text {
+  fill: red;
+}
+text {
+  transition: all 0.25s linear;
+}
+.another-circle {
+  stroke-dasharray: 227;
+  stroke-dashoffset: 227;
+  transition: stroke-dashoffset 0.4s cubic-bezier(0.7, 0, 0.3, 1);
+  stroke: white;
+}
+/* svg.scrollmore,
+circle {
+  transform: translateZ(0);
+} */
+
+
+.square {
+  height: 100px;
+  width: 100px;
+  background-color: tomato;
+  margin-bottom: 20px;
+  display: block;
+  padding: 20px;
+  margin:auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top:0;
+  bottom: 0;
+  margin:auto;
 }

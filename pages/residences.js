@@ -8,6 +8,11 @@ import Registration from "../components/Registration";
 import Floorplans from "../components/Floorplans";
 import Menu from "../components/Menu";
 import { NextSeo } from "next-seo";
+import { useAnimation, motion } from "framer-motion";
+import {TextWrap, ImageWrap, ImageLoadIn} from "../components/Animations/PageContent";
+import CtaNext from "../components/CtaNext";
+import Cta from "../components/Cta";
+
 
 export default function Home() {
   return (
@@ -16,7 +21,6 @@ export default function Home() {
         title="Kennedy Circle Condominiums | Milton, ON Condo for Sale"
         description="A short description goes here."
       />
-      <Menu></Menu>
       <Hero alt="Pic" image="/img/hero/KC-Site-Residences-TitleArea-N.jpg"
       imagePortrait="img/hero/KC-Site-Residences-TitleAreaBG-Portrait.jpg"
 
@@ -26,6 +30,8 @@ export default function Home() {
 
       <Section anchor="overview" contrast="light">
         <div className="flex flex-row">
+        <TextWrap>
+
           <div className="max-w-[580px]">
             <h2 className="display_h2 here">HERE</h2>
             <div className="head_underline"></div>
@@ -39,15 +45,18 @@ export default function Home() {
               living experiences.
             </p>
 
-            <Link href="/">
-              <a className="cta">VIEW FLOORPLANS</a>
+            <Link href="/floorplans">
+              <CtaNext>VIEW FLOORPLANS</CtaNext>
             </Link>
           </div>
+          </TextWrap>
         </div>
       </Section>
 
       <Section anchor="overview" contrast="white">
         <div className="flex flex-row">
+        <TextWrap>
+
           <div className="max-w-[580px]">
             <h2 className="display_h3 max-w-[700px] mb-4">Spacious Living</h2>
 
@@ -63,8 +72,8 @@ export default function Home() {
               the living room or the master bedroom.
             </p>
           </div>
+          </TextWrap>
         </div>
-        {/* <img className="bl-round" src="/SuiteD-KitchenUpgrade1.png" /> */}
       </Section>
 
       <div className="here_img">
@@ -76,6 +85,8 @@ export default function Home() {
 
       <Section anchor="overview" contrast="light">
         <div className="flex flex-row-reverse">
+        <TextWrap>
+
           <div className="max-w-[580px]">
             <h2 className="display_h3 max-w-[700px] mb-4">
               Designs for the Digital Age.{" "}
@@ -91,6 +102,7 @@ export default function Home() {
               innovative homes control system.
             </p>
           </div>
+          </TextWrap>
         </div>
         {/* <img className="bl-round" src="/SuiteD-KitchenUpgrade1.png" /> */}
         <div className="here_img">
@@ -103,6 +115,8 @@ export default function Home() {
 
       <Section anchor="overview" contrast="white">
         <div className="flex flex-row">
+        <TextWrap>
+
           <div className="max-w-[580px]">
             <h2 className="display_h3 max-w-[700px] mb-4">
               A breath of fresh air.
@@ -113,6 +127,8 @@ export default function Home() {
               outdoor living area, and are laid out to offer privacy.
             </p>
           </div>
+          </TextWrap>
+
         </div>
         {/* <img className="bl-round" src="/SuiteD-KitchenUpgrade1.png" /> */}
         <div className="here_img">
@@ -133,6 +149,8 @@ export default function Home() {
 
       <Section anchor="overview" contrast="light">
         <div className="flex flex-row">
+        <TextWrap>
+
           <div className="w-full">
             <h2 className="display_alt  text-center">FEATURES & FINISHES</h2>
             <div className="head_underline "></div>
@@ -210,16 +228,15 @@ export default function Home() {
             </div>
 
             <div className="text-center">
-              <Link href="/">
-                <a className="cta">DOWNLOAD FEATURES & FINISHES</a>
-              </Link>
+                <Cta href="/assets/downloads/KennedyCircle-FeaturesandFinishes1.pdf" target="_blank">DOWNLOAD FEATURES & FINISHES</Cta>
             </div>
           </div>
+          </TextWrap>
+
         </div>
       </Section>
 
-      <Registration></Registration>
-      <Footer></Footer>
+    
     </>
   );
 }

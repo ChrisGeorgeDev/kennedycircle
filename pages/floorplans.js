@@ -8,6 +8,10 @@ import FlyoutMenu from "../components/Plans";
 import Registration from "../components/Registration";
 import Menu from "../components/Menu";
 import { NextSeo } from "next-seo";
+import { useAnimation, motion } from "framer-motion";
+import {TextWrap, ImageWrap, ImageLoadIn} from "../components/Animations/PageContent";
+import CtaNext from "../components/CtaNext";
+import Cta from "../components/Cta";
 
 export default function Home() {
   return (
@@ -16,15 +20,15 @@ export default function Home() {
         title="Kennedy Circle Condominiums | Milton, ON Condo for Sale"
         description="A short description goes here."
       />
-      <Menu></Menu>
       <Hero alt="Pic" image="/img/hero/KC-Site-Residences-TitleAreaBG.jpg"
       imagePortrait="/img/hero/KC-Site-FloorPlans-TitleAreaBG-P.jpg"
       >
-      <h1 className="display_h1_alt text-white">THE FLOOR PLANS</h1>
+      <h1 className="display_h1_alt text-white">THE FLOORPLANS</h1>
       </Hero>
 
       <Section anchor="overview" contrast="light">
         <div className="flex flex-row">
+          <TextWrap>
           <div className="max-w-[800px]">
             <h2 className="display_h2 here">HERE</h2>
             <div className="head_underline"></div>
@@ -36,24 +40,23 @@ export default function Home() {
               Each floor plan has been laid out for elevated living experiences.{" "}
             </p>
 
-            <a href="#floorplans" className="cta">
-              VIEW FLOOR PLANS
-            </a>
+         
           </div>
+          </TextWrap>
         </div>
       </Section>
 
       <Section anchor="floorplans" contrast="white">
-        <h2 className="display_alt  text-center">FLOOR PLANS</h2>
+      <TextWrap>
+      <h2 className="display_alt  text-center">FLOORPLANS</h2>
         <div className="head_underline "></div>
 
         <FlyoutMenu />
+      </TextWrap>
       </Section>
 
    
-    
-      <Registration></Registration>
-      <Footer></Footer>
+  
     </>
   );
 }

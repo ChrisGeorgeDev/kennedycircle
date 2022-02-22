@@ -10,6 +10,10 @@ import SectionFull from "../components/SectionFull";
 import Menu from "../components/Menu";
 import DividerImg from "../components/DividerImg";
 import { NextSeo } from "next-seo";
+import { useAnimation, motion } from "framer-motion";
+import {TextWrap, ImageWrap, ImageLoadIn} from "../components/Animations/PageContent";
+import CtaNext from "../components/CtaNext";
+import Cta from "../components/Cta";
 
 export default function Home() {
   return (
@@ -18,7 +22,6 @@ export default function Home() {
         title="Kennedy Circle Condominiums | Milton, ON Condo for Sale"
         description="A short description goes here."
       />
-      <Menu></Menu>
       <Hero alt="Pic" image="/img/hero/KC-Site-Neighbourhood-TitleAreaBG.jpg"
       imagePortrait="img/hero/KC-Site-Neighbourhood-TitleAreaBG-Portrait.jpg"
       
@@ -28,7 +31,8 @@ export default function Home() {
 
       <Section anchor="overview" contrast="light">
         <div className="flex flex-row">
-          <div className="max-w-[580px]">
+        <TextWrap>
+        <div className="max-w-[580px]">
             <h2 className="display_h2 here">HERE</h2>
             <div className="head_underline"></div>
             <h3 className="display_h3 max-w-[700px] mb-4">
@@ -53,34 +57,42 @@ export default function Home() {
               modern living has never been so balanced.
             </p>
           </div>
+        </TextWrap>
         </div>
       </Section>
 
       <SectionFull anchor="gallery" contrast="light pb-40">
-        <Neighbourhood></Neighbourhood>
+     <TextWrap>
+     <Neighbourhood></Neighbourhood>
+     </TextWrap>
       </SectionFull>
 
       <Section anchor="overview" contrast="dark">
         <div className="flex items-center justify-center flex-row w-full">
-          <div className="w-full flex-row items-center flex ">
+          <div className="w-full flex-col md:flex-row md:items-center flex ">
            
-            <div>
-              <h2 className="display_h3 max-w-[700px] mb-4">
+<TextWrap>
+<div>
+              <h2 className="display_h3 max-w-[400px] md:max-w-[700px] mb-4">
                 LIfe's conveniences are just around the corner
               </h2>
 
-              <a href="#NEEDTHEFILE" target="_blank" className="cta">
+              <a href="/assets/downloads/KC-NeighbourhoodMap.pdf" target="_blank" className="cta hidden md:inline-block ">
                 DOWNLOAD COMMUNITY&nbsp;MAP{" "}
               </a>
             </div>
+</TextWrap>
 
-            <div className="here_img w-full">
+            <div className=" mt-0 w-full">
               <img
                 src="/img/icon/KC-Site-SiteMap.svg"
                 alt="Picture of the author"
                 width={200}
                 className="w-full"
               />
+                  <a href="/assets/downloads/KC-NeighbourhoodMap.pdf" target="_blank" className="inline-block md:hidden cta">
+                DOWNLOAD COMMUNITY&nbsp;MAP{" "}
+              </a>
             </div>
 
           </div>
@@ -93,8 +105,6 @@ export default function Home() {
         position="top left"
       />
 
-      <Registration></Registration>
-      <Footer></Footer>
     </>
   );
 }

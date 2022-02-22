@@ -6,7 +6,7 @@ export default function Registration() {
     <Section anchor="register" contrast="black register">
       <img className="register_icon  " src="/img/icon/kc-brandmark.svg" />
       <div className="w-full">
-        <h2 className="display_alt  text-center">PHASE 1 SOLD&nbsp;OUT</h2>
+        <h2 className="display_alt  text-center mb-6">PHASE 1 SOLD&nbsp;OUT</h2>
         <p className="display_alt  text-center">REGISTER FOR FINAL&nbsp;RELEASE</p>
 
         <div className="head_underline "></div>
@@ -102,7 +102,7 @@ export default function Registration() {
               <div>
                 <label className="inline-flex items-top">
                   <input
-                    className="form-checkbox accent-gvhGold-400 appearance-none checked:hover:bg-gvhGold-400  mt-1"
+                    className="form-checkbox accent-gvhGold-400  appearance-none  mt-1"
                     type="checkbox"
                   />
                   <span className="ml-2 text-xs text-gvhGold-100">
@@ -115,8 +115,8 @@ export default function Registration() {
             </div>
           </div>
 
-          <div className="formActions">
-            <input type="submit" className="cta" value="REGISTER"></input>
+          <div className="formActions ">
+            <input type="submit" className="fplan-cta mx-auto" value="REGISTER"></input>
           </div>
         </form>
 
@@ -125,16 +125,26 @@ export default function Registration() {
             {" "}
             Book your virtual <br></br>appointment.
           </h2>
-          <div className="text-slate-600">
-            <p className="text-gvhGold-100 md:text-xl">Contact Sales</p>
-            <span className="text-gvhGold-100 md:text-xl">905.336.8953</span>{" "}
-            <br />
-            <span className="text-gvhGold-100 md:text-xl">
+          <div className="text-slate-600 mt-5">
+         
+            <p className="text-gvhGold-100 md:text-lg flex items-center  mb-2">
+            <svg xmlns="http://www.w3.org/2000/svg" className="icon mr-2 h-5 w-5 icon-tabler icon-tabler-phone" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="#FFF" stroke-linecap="round" stroke-linejoin="round">
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"></path>
+</svg>
+              905.336.8953</p>
+          
+            <p className="text-gvhGold-100 flex items-center md:text-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" className="icon mr-2 h-6 w-6 icon-tabler icon-tabler-mail" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#192128" fill="white" stroke-linecap="round" stroke-linejoin="round">
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+   <polyline points="3 7 12 13 21 7"></polyline>
+</svg>
               sales@gableviewhomes.com
-            </span>
+            </p>
           </div>
         </div>
-        <div className="text-xs mt-32 text-center text-slate-400 md:w-4/5 mx-auto font-sans">
+        <div className="text-xs mt-32 text-center text-[#C4AB7A] md:w-4/5 mx-auto font-sans">
           The developer reserves the right to modify or make substitutes to the
           building design, specifications and floorplans should they be
           necessary. Renderings, views, and layouts are for illustration

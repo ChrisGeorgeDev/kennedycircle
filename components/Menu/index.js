@@ -15,7 +15,7 @@ export default function Menu() {
       <div className="bg-gray-200 h-full w-full">
         {/* Code block starts */}
         <nav className="bg-white top-0 fixed z-10 w-full shadow xl:block hidden">
-          <div className="mx-auto container px-6 py-2 xl:py-0">
+          <div className="mx-auto  px-6 py-2 xl:py-0">
             <div className="flex items-center justify-between">
               <div className="inset-y-0 left-0 flex items-center xl:hidden">
                 <div className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-100 focus:outline-none transition duration-150 ease-in-out">
@@ -54,11 +54,12 @@ export default function Menu() {
               </div>
 
               <div className="flex items-center">
-                <div className="hidden menu-desktop xl:flex items-center">
+                {/* <div className="hidden menu-desktop xl:flex items-center">
                   <div className="relative">
                     <div
                       className="flex items-center relative"
-                      onClick={() => setProfile(!profile)}
+                      onMouseEnter={() => setProfile(!profile)}
+                      onMouseLeave={() => setProfile(!profile)}
                     >
                       {profile && (
                         <ul className="p-2 w-40 border-r bg-white absolute rounded right-0 shadow top-0 mt-12 ">
@@ -98,7 +99,7 @@ export default function Menu() {
                       </span>
                     </div>
                   </div>
-                </div>
+                </div> */}
 
                 <div className="hidden menu-desktop xl:flex  ">
                   <Link href="/residences">
@@ -148,6 +149,28 @@ export default function Menu() {
                     >
                       {" "}
                         Location
+                    </a>
+                  </Link>
+
+                  <Link href="/greenliving">
+                    <a
+                      className={
+                        router.pathname == "/greenliving" ? "active link " : "link"
+                      }
+                    >
+                      {" "}
+                        Green Living
+                    </a>
+                  </Link>
+
+                  <Link href="/team">
+                    <a
+                      className={
+                        router.pathname == "/team" ? "active link " : "link"
+                      }
+                    >
+                      {" "}
+                     The Team
                     </a>
                   </Link>
                 </div>
@@ -272,7 +295,6 @@ export default function Menu() {
                       </div>
                     </div>
                     <ul className="f-m-m">
-                      <a className="cursor-pointer">
                         <li
                           className="text-gray-800 pt-10"
                           onClick={() => setShow(!show)}
@@ -284,8 +306,7 @@ export default function Menu() {
                             </a>
                           </Link>
                         </li>
-                      </a>
-                      <a className="cursor-pointer">
+                  
                         <li
                           className="text-gray-800 pt-4"
                           onClick={() => setShow(!show)}
@@ -297,9 +318,7 @@ export default function Menu() {
                             </a>
                           </Link>
                         </li>
-                      </a>
 
-                      <a className="cursor-pointer">
                         <li
                           className="text-gray-800 pt-4"
                           onClick={() => setShow(!show)}
@@ -311,9 +330,7 @@ export default function Menu() {
                             </a>
                           </Link>
                         </li>
-                      </a>
 
-                      <a className="cursor-pointer">
                         <li
                           className="text-gray-800 pt-4"
                           onClick={() => setShow(!show)}
@@ -325,11 +342,10 @@ export default function Menu() {
                             </a>
                           </Link>
                         </li>
-                      </a>
                   
                   
           
-
+{/* 
                       <li
                         className="text-gray-800 pt-4"
                       
@@ -338,14 +354,14 @@ export default function Menu() {
                           {" "}
                           About
                         </span>
-                      </li>
+                      </li> */}
 
                       <li
-                        className="text-gray-800 "
+                        className="text-gray-800 pt-4"
                         onClick={() => setShow(!show)}
                       >
                         <Link href="/team">
-                          <a className="flex pl-5 items-center pt-4 text-sm leading-5 text-gray-700  focus:outline-none transition duration-150 ease-in-out uppercase">
+                        <a className="flex px-2 items-center pt-1 text-sm leading-5 text-gray-700  focus:outline-none transition duration-150 ease-in-out uppercase">
                             {" "}
                               The Team
                           </a>
@@ -353,16 +369,17 @@ export default function Menu() {
                       </li>
 
                       <li
-                        className="text-gray-800 "
+                        className="text-gray-800 pt-4 "
                         onClick={() => setShow(!show)}
                       >
                         <Link href="/greenliving">
-                          <a className="flex pl-5 items-center pt-4 text-sm leading-5 text-gray-700  focus:outline-none transition duration-150 ease-in-out uppercase">
+                          <a className="flex px-2 items-center pt-1 text-sm leading-5 text-gray-700  focus:outline-none transition duration-150 ease-in-out uppercase">
                             {" "}
                             Green Features
                           </a>
                         </Link>
                       </li>
+
                     </ul>
                   </div>
                   <div className="w-full pt-4">

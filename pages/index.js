@@ -1,24 +1,28 @@
-import Head from "next/head";
-import styles from "../styles/Home.module.css";
-import Footer from "../components/Footer";
+
+import React, { useEffect } from "react";
 import Section from "../components/Section";
 import Link from "next/link";
 import Hero from "../components/Hero";
-import Registration from "../components/Registration";
-import Menu from "../components/Menu";
 import { NextSeo } from "next-seo";
+import { useAnimation, motion } from "framer-motion";
+import {TextWrap, ImageWrap, ImageLoadIn} from "../components/Animations/PageContent";
+import CtaNext from "../components/CtaNext";
+
+
+
 
 export default function Home() {
+
   return (
     <>
       <NextSeo
         title="Kennedy Circle Condominiums | Milton, ON Condo for Sale"
         description="A short description goes here."
       />
-      <Menu></Menu>
+  
 
       <Hero alt="Pic" 
-      image="/img/hero/KC-Render.jpg"
+      image="/img/hero/KC-Site-HomepageHero-Overlay.jpg"
       imagePortrait="img/hero/KC-HeroImage-Rendering-Portrait.jpg"
       >
     
@@ -106,34 +110,66 @@ export default function Home() {
 
       </Hero>
 
-      <Section anchor="overview" contrast="dark">
+
+
+
+<Section anchor="overview" contrast="dark">
         <div className="flex flex-row">
-          <div className="max-w-[700px]">
-            <h2 className="display_h2 here">HERE</h2>
-            <div className="head_underline"></div>
-            <h3 className="display_h3 max-w-[700px] mb-4">
-              Live. Work. Relax. Play.
-            </h3>
+  <TextWrap>
+  <div 
+   
+   className="max-w-[700px]"
+   >
+     <h2 className="display_h2 here">HERE</h2>
+     <div   className="head_underline"></div>
+     <h3    className="display_h3 max-w-[700px] mb-4">
+       Live. Work. Relax. Play.
+     </h3>
 
-            <p className="text-base max-w-[580px]">
-              The Residences on Kennedy Circle comprises of 148 units in a
-              6-storey mid-rise state-of-the-art building that embodies a
-              distinct spirit and style like no other condominium in the area.
-              The building features 1 bedroom, 1 bedroom + den and 2 bedroom
-              unit types. Each unit has been carefully developed to suit a
-              variety of lifestyles with convenience and comfort in mind, and
-              appointed with beautiful, timeless features and finishes.
-            </p>
+     <p   className="text-base max-w-[580px]">
+       The Residences on Kennedy Circle comprises of 148 units in a
+       6-storey mid-rise state-of-the-art building that embodies a
+       distinct spirit and style like no other condominium in the area.
+       The building features 1 bedroom, 1 bedroom + den and 2 bedroom
+       unit types. Each unit has been carefully developed to suit a
+       variety of lifestyles with convenience and comfort in mind, and
+       appointed with beautiful, timeless features and finishes.
+     </p>
 
-            <Link href="/floorplans">
-              <a className="cta links link--metis">VIEW FLOORPLANS</a>
-            </Link>
-          </div>
+     <Link href="/floorplans">
+  
+     {/* <CtaNext>VIEW FLOORPLANS</CtaNext> */}
+
+     <a className="cta inline-block items-center links link--metis">
+
+<span className="flex items-center">
+VIEW FLOORPLANS
+<svg width="24" className="ml-2" height="8" viewBox="0 0 24 8" stroke="currentColor" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23.1547 4.3582C23.35 4.16293 23.35 3.84635 23.1547 3.65109L19.9727 0.469108C19.7775 0.273846 19.4609 0.273846 19.2656 0.469108C19.0704 0.66437 19.0704 0.980953 19.2656 1.17621L22.0941 4.00464L19.2656 6.83307C19.0704 7.02833 19.0704 7.34491 19.2656 7.54018C19.4609 7.73544 19.7775 7.73544 19.9727 7.54018L23.1547 4.3582ZM0.700195 4.50464L22.8012 4.50464L22.8012 3.50464L0.700195 3.50464L0.700195 4.50464Z" />
+</svg>
+
+</span>
+
+ 
+ </a>
+  
+     </Link>
+
+
+
+   </div>
+  </TextWrap>
         </div>
       </Section>
 
+
+
+
       <Section anchor="overview" contrast="light">
         <div className="flex flex-row-reverse">
+
+        <TextWrap>
+
           <div className="max-w-[580px]">
             <h2 className="display_h2 here">HERE</h2>
             <div className="head_underline"></div>
@@ -151,21 +187,39 @@ export default function Home() {
             </p>
 
             <Link href="/amenities">
-              <a className="cta">VIEW AMENITIES</a>
+            {/* <CtaNext>VIEW AMENITIES</CtaNext> */}
+
+            <a className="cta inline-block items-center links link--metis">
+
+<span className="flex items-center">
+VIEW AMENITIES
+<svg width="24" className="ml-2" height="8" viewBox="0 0 24 8" stroke="currentColor" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23.1547 4.3582C23.35 4.16293 23.35 3.84635 23.1547 3.65109L19.9727 0.469108C19.7775 0.273846 19.4609 0.273846 19.2656 0.469108C19.0704 0.66437 19.0704 0.980953 19.2656 1.17621L22.0941 4.00464L19.2656 6.83307C19.0704 7.02833 19.0704 7.34491 19.2656 7.54018C19.4609 7.73544 19.7775 7.73544 19.9727 7.54018L23.1547 4.3582ZM0.700195 4.50464L22.8012 4.50464L22.8012 3.50464L0.700195 3.50464L0.700195 4.50464Z" />
+</svg>
+
+</span>
+
+ 
+ </a>
+
             </Link>
           </div>
+          </TextWrap>
         </div>
-        {/* <img className="bl-round" src="/SuiteD-KitchenUpgrade1.png" /> */}
-        <div className="here_img">
-          <img
+<ImageWrap>
+<div className="here_img">
+          <motion.img variants={ImageLoadIn} 
             src="/img/KC-Site-Homepage-Amenities-01b.png"
             alt="Picture of the author"
           />
         </div>
+</ImageWrap>
       </Section>
 
       <Section anchor="overview" contrast="white">
         <div className="flex flex-row">
+        <TextWrap>
+
           <div className="max-w-[580px]">
             <h2 className="display_h2 here">HERE</h2>
             <div className="head_underline"></div>
@@ -183,21 +237,39 @@ export default function Home() {
             </p>
 
             <Link href="/location">
-              <a className="cta">EXPLORE THE NEIGHBOURHOOD</a>
+            {/* <CtaNext>EXPLORE THE NEIGHBOURHOOD</CtaNext> */}
+
+            <a className="cta inline-block items-center links link--metis">
+
+<span className="flex items-center">
+EXPLORE THE NEIGHBOURHOOD
+<svg width="24" className="ml-2" height="8" viewBox="0 0 24 8" stroke="currentColor" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23.1547 4.3582C23.35 4.16293 23.35 3.84635 23.1547 3.65109L19.9727 0.469108C19.7775 0.273846 19.4609 0.273846 19.2656 0.469108C19.0704 0.66437 19.0704 0.980953 19.2656 1.17621L22.0941 4.00464L19.2656 6.83307C19.0704 7.02833 19.0704 7.34491 19.2656 7.54018C19.4609 7.73544 19.7775 7.73544 19.9727 7.54018L23.1547 4.3582ZM0.700195 4.50464L22.8012 4.50464L22.8012 3.50464L0.700195 3.50464L0.700195 4.50464Z" />
+</svg>
+
+</span>
+
+ 
+ </a>
             </Link>
           </div>
+          </TextWrap>
+
         </div>
-        {/* <img className="bl-round" src="/SuiteD-KitchenUpgrade1.png" /> */}
+        <ImageWrap>
         <div className="here_img">
-          <img
+        <motion.img variants={ImageLoadIn} 
             src="/img/KC-Site-Homepage-Community-07.png"
             alt="Picture of the author"
           />
         </div>
+      </ImageWrap>
       </Section>
 
       <Section anchor="overview" contrast="light">
         <div className="flex flex-row-reverse">
+        <TextWrap>
+
           <div className="max-w-[580px]">
             <h2 className="display_h2 here">HERE</h2>
             <div className="head_underline"></div>
@@ -212,21 +284,34 @@ export default function Home() {
             </p>
 
             <Link href="/greenliving">
-              <a className="cta">GREEN LIVING</a>
+            {/* <CtaNext>LEARN MORE</CtaNext> */}
+            <a className="cta inline-block items-center links link--metis">
+
+<span className="flex items-center">
+LEARN MORE
+<svg width="24" className="ml-2" height="8" viewBox="0 0 24 8" stroke="currentColor" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23.1547 4.3582C23.35 4.16293 23.35 3.84635 23.1547 3.65109L19.9727 0.469108C19.7775 0.273846 19.4609 0.273846 19.2656 0.469108C19.0704 0.66437 19.0704 0.980953 19.2656 1.17621L22.0941 4.00464L19.2656 6.83307C19.0704 7.02833 19.0704 7.34491 19.2656 7.54018C19.4609 7.73544 19.7775 7.73544 19.9727 7.54018L23.1547 4.3582ZM0.700195 4.50464L22.8012 4.50464L22.8012 3.50464L0.700195 3.50464L0.700195 4.50464Z" />
+</svg>
+
+</span>
+
+ 
+ </a>
             </Link>
           </div>
+          </TextWrap>
+
         </div>
-        {/* <img className="bl-round" src="/SuiteD-KitchenUpgrade1.png" /> */}
-        <div className="here_img">
-          <img
+ <ImageWrap>
+ <div className="here_img">
+        <motion.img variants={ImageLoadIn} 
             src="/img/KC-Site-Homepage-EcoConscious.png"
             alt="Picture of the author"
           />
         </div>
+ </ImageWrap>
       </Section>
 
-      <Registration></Registration>
-      <Footer></Footer>
     </>
   );
 }

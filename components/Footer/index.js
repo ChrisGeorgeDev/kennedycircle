@@ -19,12 +19,12 @@ export default function Footer() {
         </div>
         <div>
           <p className="text-gvhGold-400 text-sm">
-            <a className=" hover:text-white transition-all duration-150" href="https://gableviewhomes.com/policies/">Privacy Policy</a> |      <a className=" hover:text-white transition-all duration-150" href="https://gableviewhomes.com/terms-conditions/">Terms of Use</a>
+            <a className=" hover:text-white transition-all duration-150" href="https://gableviewhomes.com/policies/" target="_blank">Privacy Policy</a> |      <a className=" hover:text-white transition-all duration-150" href="https://gableviewhomes.com/terms-conditions/" target="_blank">Terms of Use</a>
           </p>
         </div>
       </div>
 
-      {/* <div className="fixed bottom-0 right-0 p-6 w-8 h-8 bg-white border flex justify-center items-center opacity-75">
+      <div className="fixed bottom-0 right-0 p-6 w-8 h-8 bg-white border flex justify-center items-center opacity-75">
         <div className="block sm:hidden md:hidden lg:hidden xl:hidden 2xl:hidden">
           XS
         </div>
@@ -43,7 +43,7 @@ export default function Footer() {
         <div className="hidden sm:hidden md:hidden lg:hidden xl:hidden 2xl:block">
           2XL
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }
