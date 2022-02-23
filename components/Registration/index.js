@@ -11,6 +11,7 @@ export default function Registration() {
     e.preventDefault();
     const form = document.querySelector('form');
 const data = new FormData(form);
+console.log(form)
     // const update = {
     //   title: document.getElementById('fname').value,
     //   body: 'Brilliant post on fetch API',
@@ -23,11 +24,11 @@ const data = new FormData(form);
       headers: {
       'Content-Type': 'application/json',
       },
-      body: JSON.stringify(data),
+      body: data,
       };
 
 
-      fetch('https://nottinghilltowns.us18.list-manage.com/subscribe/post?u=839fb24cef0413753d27dbc3a&amp;id=f752654c15', options)
+      fetch('https://nottinghilltowns.us18.list-manage.com/subscribe/post-json?u=839fb24cef0413753d27dbc3a&amp;id=f752654c15', options)
   .then(data => {
       if (!data.ok) {
         throw Error(data.status);
