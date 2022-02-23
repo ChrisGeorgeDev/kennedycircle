@@ -183,7 +183,7 @@ p {
 }
 
 .display_h1_alt {
-  @apply font-display tracking-[.15em] text-4xl sm:text-5xl md:text-6xl ;
+  @apply font-display tracking-[.15em] text-3xl sm:text-5xl md:text-6xl ;
 }
 
 .display_h2 {
