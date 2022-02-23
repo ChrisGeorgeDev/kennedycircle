@@ -26,7 +26,7 @@ const data = new FormData(form);
       };
 
 
-      fetch('https://jsonplaceholder.typicode.com/posts', options)
+      fetch('https://nottinghilltowns.us18.list-manage.com/subscribe/post?u=839fb24cef0413753d27dbc3a&amp;id=f752654c15', options)
   .then(data => {
       if (!data.ok) {
         throw Error(data.status);
@@ -204,7 +204,7 @@ const data = new FormData(form);
             <div class="response hidden" id="mce-error-response" ></div>
             <div class="response hidden" id="mce-success-response" ></div>
         </div>
-        <input type="hidden" name="b_839fb24cef0413753d27dbc3a_8b8f942075" tabindex="-1"/>
+        <input type="hidden" name="b_839fb24cef0413753d27dbc3a_f752654c15" tabindex="-1"/>
             {/* <input type="submit" className="fplan-cta mx-auto" value="REGISTER"></input> */}
             <button className="fplan-cta mx-auto" onClick={sayHello}>REGISTER</button>
           </div>
