@@ -10,6 +10,18 @@ export default function Menu() {
   const [deliverables, setDeliverables] = useState(false);
   const router = useRouter();
 
+  const AnchorScroll = (e) => {
+    e.preventDefault()
+    const target = e.target.getAttribute('href')
+    const location = document.querySelector(target).offsetTop
+    console.log(location)
+    window.scrollTo({
+      left: 0,
+      top: location - 120,
+      behavior: "smooth"
+    })
+      }
+
   return (
     <>
       <div className="bg-gray-200 h-full w-full">
@@ -174,7 +186,7 @@ export default function Menu() {
                     </a>
                   </Link>
                 </div>
-                <a href="#register" className="reg-cta">
+                <a href="#register" className="reg-cta" onClick={AnchorScroll}>
                   {" "}
                   Register
                 </a>
@@ -215,7 +227,7 @@ export default function Menu() {
             </div>
             <div className="flex items-center">
               <div className="relative mr-6 ">
-                <a href="#register" className="reg-cta">
+                <a href="#register" className="reg-cta" onClick={AnchorScroll}>
                   {" "}
                   Register
                 </a>

@@ -13,6 +13,8 @@ import CtaNext from "../components/CtaNext";
 
 export default function Home() {
 
+
+
   return (
     <>
       <NextSeo
@@ -120,7 +122,7 @@ export default function Home() {
    
    className="max-w-[700px]"
    >
-     <h2 className="display_h2 here">HERE</h2>
+     <h2  className="display_h2 here">HERE</h2>
      <div   className="head_underline"></div>
      <h3    className="display_h3 max-w-[700px] mb-4">
        Live. Work. Relax. Play.

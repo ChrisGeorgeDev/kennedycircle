@@ -400,13 +400,13 @@ section .here_img  {margin-top: 80px; display: block;}
 
 
 svg.heroMsg {
-  @apply md:w-4/5 lg:w-3/5 mx-auto ;
+  @apply md:w-9/12 lg:w-4/6 xl:w-1/2 mx-auto ;
   filter: drop-shadow(5px 1px 10px rgb(0 0 0 / 0.8));
 }
 
 
 .button {
-	pointer-events: auto;
+	/* pointer-events: auto; */
 	cursor: pointer;
 	background: #e7e7e7;
 	border: none;
@@ -479,10 +479,10 @@ svg.heroMsg {
 
 
 
-svg.scrollmore:hover .another-circle {
+a:hover svg.scrollmore .another-circle {
   stroke-dashoffset: 0;
 }
-svg.scrollmore:hover text {
+a:hover svg.scrollmore text {
   fill: red;
 }
 text {
@@ -514,4 +514,8 @@ circle {
   top:0;
   bottom: 0;
   margin:auto;
+}
+
+html {
+  scroll-behavior: smooth;
 }
