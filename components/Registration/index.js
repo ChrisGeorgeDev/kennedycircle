@@ -1,7 +1,84 @@
 import Hero from "../Hero";
 import Section from "../Section";
 
+
+
 export default function Registration() {
+
+
+
+  function sayHello(e) {
+    e.preventDefault();
+    const form = document.querySelector('form');
+const data = new FormData(form);
+    // const update = {
+    //   title: document.getElementById('fname').value,
+    //   body: 'Brilliant post on fetch API',
+    //   userId: 1,
+    //   };
+      
+      const options = {
+      method: 'POST',
+      headers: {
+      'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+      };
+
+
+      fetch('https://jsonplaceholder.typicode.com/posts', options)
+  .then(data => {
+      if (!data.ok) {
+        throw Error(data.status);
+       }
+       return data.json();
+      }).then(update => {
+      console.log(update);
+    
+      }).catch(e => {
+      console.log(e);
+      });
+
+
+
+    // async (req, res) => {
+    //   try {
+    //     const response = await fetch(
+    //       `https://endpoint.freshdesk.com/api/v2/tickets/28/reply`,
+    //       {
+    //         body: "We are working on this issue. Will keep you posted.",
+    //         headers: {
+    //           'Authorization': 'Basic ' + base64.encode("APIKEY:X"),
+    //           'Content-Type': 'application/json',
+    //         },
+    //         method: 'POST'
+    //       }
+    
+    //     );
+ 
+    //     if (response.status >= 400) {
+    //       return res.status(400).json({
+    //         error: 'There was an error'
+    //       });
+    //     }
+    
+    //     return res.status(200).json({ status: 'ok' });
+    //   } catch (error) {
+    //     return res.status(500).json({
+    //       error: 'There was an error'
+    //     });
+    //   }
+    // };
+  
+  
+  
+  
+  }
+
+
+
+
+
   return (
     <Section anchor="register" contrast="black register">
       <img className="register_icon  " src="/img/icon/kc-brandmark.svg" />
@@ -10,20 +87,24 @@ export default function Registration() {
         <p className="display_alt  text-center">REGISTER FOR FINAL&nbsp;RELEASE</p>
 
         <div className="head_underline "></div>
-        <form>
+        <form  name="mc-embedded-subscribe-form" id="reg-form">
           <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-3 items-start">
             <div className="grid grid-cols-1 gap-3">
               <label className="block">
                 <span className="text-gray-700 sr-only">First Name </span>
                 <input
+                   name="FNAME" 
+                   id="mce-FNAME"
                   type="text"
                   className="form-input appearance-none mt-1 block w-full"
                   placeholder="FIRST NAME"
+                  required=""
                 />
               </label>
               <label className="block">
                 <span className="text-gray-700 sr-only">Last Name</span>
                 <input
+                name="LNAME" id="mce-LNAME"
                   type="text"
                   className="form-input mt-1 block w-full"
                   placeholder="LAST NAME"
@@ -32,6 +113,7 @@ export default function Registration() {
               <label className="block">
                 <span className="text-gray-700 sr-only">Email</span>
                 <input
+                name="EMAIL"  id="mce-EMAIL"
                   type="email"
                   className="form-input mt-1 block w-full"
                   placeholder="EMAIL ADDRESS"
@@ -40,6 +122,7 @@ export default function Registration() {
               <label className="block">
                 <span className="text-gray-700 sr-only">Phone Number</span>
                 <input
+                name="PHONE" id="mce-PHONE"
                   type="tel"
                   className="form-input mt-1 block w-full"
                   placeholder="PHONE NUMBER"
@@ -48,6 +131,7 @@ export default function Registration() {
               <label className="block">
                 <span className="text-gray-700 sr-only">Postal Code</span>
                 <input
+                name="POSTAL" id="mce-POSTAL"
                   type="text"
                   className="form-input mt-1 block w-full"
                   placeholder="POSTAL CODE"
@@ -56,8 +140,8 @@ export default function Registration() {
             </div>
             <div className="grid grid-cols-1 gap-3">
               <label className="block">
-                <span className="text-gray-700 sr-only">First Name </span>
-                <select className="form-select block w-full overflow-x-hidden mt-1">
+                <span className="text-gray-700 sr-only">How did you hear about us?</span>
+                <select name="HOWDIDU"  id="mce-HOWDIDU"  className="form-select block w-full overflow-x-hidden mt-1">
                   <option>HOW DID YOU HEAR ABOUT US</option>
                   <option value="Google Search">Google Search</option>
                   <option value="Buzz Buzz Homes">Buzz Buzz Homes</option>
@@ -72,7 +156,7 @@ export default function Registration() {
 
               <label className="block">
                 <span className="text-gray-700 sr-only">First Name </span>
-                <select className="form-select block w-full overflow-x-hidden mt-1">
+                <select name="PRICER"  id="mce-PRICER" className="form-select block w-full overflow-x-hidden mt-1">
                   <option>TYPE OF UNIT DESIRED</option>
                   <option value="One Bedroom">One Bedroom</option>
                   <option value="One Bedroom plus Den">
@@ -84,7 +168,7 @@ export default function Registration() {
 
               <label className="block">
                 <span className="text-gray-700 sr-only">First Name </span>
-                <select className="form-select block w-full overflow-x-hidden mt-1">
+                <select name="AREUREALTO"  id="mce-AREUREALTO"  className="form-select block w-full overflow-x-hidden mt-1">
                   <option>ARE YOU A REALTOR?</option>
                   <option>Yes</option>
                   <option>No</option>
@@ -92,7 +176,7 @@ export default function Registration() {
               </label>
               <label className="block">
                 <span className="text-gray-700 sr-only">First Name </span>
-                <select className="form-select block w-full overflow-x-hidden mt-1">
+                <select name="WORKREALTR"  id="mce-WORKREALTR" className="form-select block w-full overflow-x-hidden mt-1">
                   <option>ARE YOU WORKING WITH A REALTOR?</option>
                   <option>Yes</option>
                   <option>No</option>
@@ -116,9 +200,17 @@ export default function Registration() {
           </div>
 
           <div className="formActions ">
-            <input type="submit" className="fplan-cta mx-auto" value="REGISTER"></input>
+          <div id="mce-responses" class="clear">
+            <div class="response hidden" id="mce-error-response" ></div>
+            <div class="response hidden" id="mce-success-response" ></div>
+        </div>
+        <input type="hidden" name="b_839fb24cef0413753d27dbc3a_8b8f942075" tabindex="-1"/>
+            {/* <input type="submit" className="fplan-cta mx-auto" value="REGISTER"></input> */}
+            <button className="fplan-cta mx-auto" onClick={sayHello}>REGISTER</button>
           </div>
+      
         </form>
+
 
         <div className="max-w-[500px] mt-20">
           <h2 className="display_h3 mb-2">
@@ -154,3 +246,6 @@ export default function Registration() {
     </Section>
   );
 }
+
+
+// https://nottinghilltowns.us18.list-manage.com/subscribe/post?u=839fb24cef0413753d27dbc3a&amp;id=8b8f942075"
