@@ -156,7 +156,7 @@ export default function FlyoutMenu() {
 
             <div className="logo md:row-span-2 col-span-3 sm:col-span-2 xl:row-span-1  xl:col-span-4">
               <img
-                className="w-5/12 md:w-8/12 xl:w-10/12 lg:pr-0"
+                className="min-w-[90px] w-5/12 md:w-8/12 xl:w-10/12 lg:pr-0"
                 src={`img/icon/${solution.typeSvg}`}
               />
               <hr className="hidden h-[2px] border-t-[2px] border-gray-900 mb-10 mt-8"></hr>
