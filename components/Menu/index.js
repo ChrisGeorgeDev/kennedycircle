@@ -136,7 +136,7 @@ export default function Menu() {
                       }
                     >
                       {" "}
-                        Floor plans
+                        Floorplans
                     </a>
                   </Link>
 
@@ -326,7 +326,7 @@ export default function Menu() {
                           <Link href="/floorplans">
                             <a className="flex px-2 items-center pt-1 text-sm leading-5 text-gray-700  focus:outline-none transition duration-150 ease-in-out uppercase">
                               {" "}
-                                Floor plans
+                                Floorplans
                             </a>
                           </Link>
                         </li>

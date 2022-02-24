@@ -129,13 +129,7 @@ export default function Home() {
      </h3>
 
      <p   className="text-base max-w-[580px]">
-       The Residences on Kennedy Circle comprises of 148 units in a
-       6-storey mid-rise state-of-the-art building that embodies a
-       distinct spirit and style like no other condominium in the area.
-       The building features 1 bedroom, 1 bedroom + den and 2 bedroom
-       unit types. Each unit has been carefully developed to suit a
-       variety of lifestyles with convenience and comfort in mind, and
-       appointed with beautiful, timeless features and finishes.
+     The Residences on Kennedy Circle is comprised of 148 units in a 6-storey mid-rise state-of-the-art building that embodies a distinct spirit and style like no other condominium in the area. The building features 1 bedroom, 1 bedroom + den and 2 bedroom unit types. Each unit has been carefully developed to suit a variety of lifestyles with convenience and comfort in mind and appointed with beautiful, timeless features and finishes. 
      </p>
 
      <Link href="/floorplans">
@@ -180,12 +174,7 @@ VIEW FLOORPLANS
             </h2>
 
             <p className="text-base max-w-[580px]">
-              The amenities of the Residences on Kennedy Circle offer something
-              for everyone - whether it's getting work done, focusing on
-              self-care or hosting an incredible event. Community spaces, such
-              as co-working areas, a yoga room, pet washing station and a 3,600
-              sqft outdoor terrace are just some of the thoughtfully selected
-              conveniences designed to meet all our residents' needs.
+            The amenities of the Residences on Kennedy Circle offer something for everyone, whether it’s getting work done, focusing on self-care or hosting an incredible event. Community spaces such as co-working areas, a yoga room, pet washing station and a 3,600 sqft outdoor terrace are just some of the thoughtfully selected conveniences designed to meet all our residents’ needs. 
             </p>
 
             <Link href="/amenities">
@@ -230,12 +219,9 @@ VIEW AMENITIES
             </h2>
 
             <p className="text-base max-w-[580px]">
-              The amenities of the Residences on Kennedy Circle offer something
-              for everyone – whether it's getting work done, focusing on
-              self-care or hosting an incredible event. Community spaces, such
-              as co-working areas, a yoga room, pet washing station and a 3,600
-              sqft outdoor terrace are just some of the thoughtfully selected
-              conveniences designed to meet all our residents' needs.
+            Situated in a sophisticated enclave of Milton, Ontario, The Residences on Kennedy Circle delivers residents modern conveniences, an eloquent lifestyle, and superb attention to detail. This is a community in which to live, work, play, and truly enjoy. 
+
+
             </p>
 
             <Link href="/location">
@@ -280,9 +266,9 @@ EXPLORE THE NEIGHBOURHOOD
             </h2>
 
             <p className="text-base max-w-[580px]">
-              We've committed to bring sustainable design and
-              environmentally-responsible features, amenities and technology
-              throughout the building.{" "}
+            We've committed to bring sustainable design and environmentally responsible features, amenities and technology throughout the building. 
+
+
             </p>
 
             <Link href="/greenliving">

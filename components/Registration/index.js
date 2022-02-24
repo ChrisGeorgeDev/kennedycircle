@@ -85,8 +85,7 @@ console.log(form)
     <Section anchor="register" contrast="black register">
       <img className="register_icon  " src="/img/icon/kc-brandmark.svg" />
       <div className="w-full">
-        <h2 className="display_alt  text-center mb-6">PHASE 1 SOLD&nbsp;OUT</h2>
-        <p className="display_alt  text-center">REGISTER FOR FINAL&nbsp;RELEASE</p>
+        <h2 className="display_alt  text-center mb-6">REGISTER TODAY</h2>
 
         <div className="head_underline "></div>
         <form  name="mc-embedded-subscribe-form" id="reg-form">

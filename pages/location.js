@@ -40,14 +40,7 @@ export default function Home() {
             </h3>
 
             <p className="text-base max-w-[580px]">
-              The Residences on Kennedy Circle offers the convenience of a
-              Milton Transit bus stop at its doorstep, and is a short distance
-              from the GO Station with a direct route to downtown Toronto, 20
-              minutes to Toronto Pearson Airport and 5 minutes to highway 401.
-              Located in the Toronto-Waterloo Innovation Corridor, the second
-              largest technology cluster in North America, residents are in
-              proximity to Canada’s top academic institution and universities,
-              start-up incubators, research facilities and tech companies.
+            The Residences on Kennedy Circle offers the convenience of a Milton Transit bus stop at its doorstep and is a short distance from the GO Station with a direct route to downtown Toronto, 20 minutes to Toronto Pearson Airport and 5 minutes to Highway 401. Located in the Toronto-Waterloo Innovation Corridor, the second largest technology cluster in North America, residents are in proximity to Canada's top academic institutions and universities, start-up incubators, research facilities and tech companies. 
               <br />
               <br />
             </p>
