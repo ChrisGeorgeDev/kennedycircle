@@ -232,7 +232,7 @@ const CustomForm = ({ status, message, onValidated }) => {
                   />
                   <span className="ml-2 text-xs text-gvhGold-100">
                     By checking this box, you agree to receive emails from Gable
-                    View Homes, its affiliates and agents, with pricing, floor
+                    View Homes or its affiliates and agents, with pricing, floor
                     plans, and site updates.
                   </span>
                 </label>

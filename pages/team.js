@@ -30,8 +30,8 @@ export default function Home() {
         <div className="flex flex-row">
        <TextWrap>
        <div className="">
-            <h2 className="display_h2 ">Gable View Homes</h2>
-            <h2 className="display_h3 mt-8 mb-8">The Builder</h2>
+            <h2 className="title_h2 ">Gable View Homes</h2>
+            <h2 className="display_h3 sm:mt-2 md:mt-4 mb-8">The Builder</h2>
             <p className="text-base max-w-[900px]">
               Spaces designed for life. <br />
               At Gable View Homes, we are inspired to build houses and
@@ -66,8 +66,8 @@ export default function Home() {
         <div className="flex flex-row">
         <TextWrap>
         <div className="">
-            <h2 className="display_h2 here">KNYMH Inc</h2>
-            <h2 className="display_h3 mt-8 mb-8">The Architect.</h2>
+            <h2 className="title_h2 here">KNYMH Inc</h2>
+            <h2 className="display_h3 sm:mt-2 md:mt-4 mb-8">The Architect.</h2>
 
             <p className="text-base max-w-[900px]">
               Team KNYMH Inc. is comprised of Architects, BCIN Certified
@@ -100,8 +100,8 @@ export default function Home() {
         <div className="flex flex-row">
          <TextWrap>
          <div className="">
-            <h2 className="display_h2 ">Stagg & Paper Interiors</h2>
-            <h2 className="display_h3 mt-8 mb-8">The Interior Designer.</h2>
+            <h2 className="title_h2 ">Stagg & Paper Interiors</h2>
+            <h2 className="display_h3 sm:mt-2 md:mt-4 mb-8">The Interior Designer.</h2>
 
             <p className="text-base max-w-[900px]">
               Stagg & Paper Interiors is an interior design firm rooted in the
