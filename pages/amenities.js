@@ -47,12 +47,15 @@ export default function Home() {
           </div>
          </TextWrap>
         </div>
+
+        <ImageWrap>
         <div className="here_img">
-          <img
+          <motion.img variants={ImageLoadIn} 
             src="/img/KC-Site-Amenities-PartyRoom-07.png"
-            alt="Picture of the author"
+            alt="The Party Room"
           />
         </div>
+</ImageWrap>
       </Section>
 
       <Section anchor="overview" contrast="white">
@@ -75,12 +78,30 @@ export default function Home() {
         </div>
       </Section>
 
-      <div className="here_img">
+      {/* <div className="here_img">
           <img
             src="/img/KC-Site-Amenities-YogaRoom-b.jpg"
             alt="Picture of the author"
           />
+        </div> */}
+
+        <section className="white">
+
+<ImageWrap>
+<div className="">
+          <motion.img variants={ImageLoadIn} 
+            src="/img/KC-Site-Amenities-YogaRoom-b.jpg"
+            alt="The Fitness Studio"
+          />
         </div>
+</ImageWrap>
+
+</section>
+
+
+
+
+
 
       <Section anchor="overview" contrast="light">
         <div className="flex flex-row">
@@ -102,12 +123,17 @@ export default function Home() {
           </div>
        </TextWrap>
         </div>
+
+
+        <ImageWrap>
         <div className="here_img">
-          <img
+          <motion.img variants={ImageLoadIn} 
             src="/img/KC-Site-Amenities-CoWorkLounge-08.png"
-            alt="Picture of the author"
+            alt="Co-working Studio"
           />
         </div>
+</ImageWrap>
+
       </Section>
 
       <Section anchor="overview" contrast="white">
