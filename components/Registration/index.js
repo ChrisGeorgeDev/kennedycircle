@@ -1,10 +1,10 @@
+import MailchimpForm from "../CustomForm";
 import Hero from "../Hero";
 import Section from "../Section";
 
 
 
 export default function Registration() {
-
 
 
   function sayHello(e) {
@@ -88,11 +88,15 @@ console.log(form)
         <h2 className="display_alt  text-center mb-6">REGISTER TODAY</h2>
 
         <div className="head_underline "></div>
-        <form  name="mc-embedded-subscribe-form" id="reg-form">
+       
+        {/* <form  name="mc-embedded-subscribe-form" id="reg-form">
           <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-3 items-start">
             <div className="grid grid-cols-1 gap-3">
+            
+            
               <label className="block">
                 <span className="text-gray-700 sr-only">First Name </span>
+              
                 <input
                    name="FNAME" 
                    id="mce-FNAME"
@@ -102,6 +106,8 @@ console.log(form)
                   required=""
                 />
               </label>
+
+
               <label className="block">
                 <span className="text-gray-700 sr-only">Last Name</span>
                 <input
@@ -139,6 +145,7 @@ console.log(form)
                 />
               </label>
             </div>
+
             <div className="grid grid-cols-1 gap-3">
               <label className="block">
                 <span className="text-gray-700 sr-only">How did you hear about us?</span>
@@ -186,7 +193,7 @@ console.log(form)
 
               <div>
                 <label className="inline-flex items-top">
-                  <input
+                  <input name="opt-in" value="Opt-In"
                     className="form-checkbox accent-gvhGold-400  appearance-none  mt-1"
                     type="checkbox"
                   />
@@ -206,12 +213,12 @@ console.log(form)
             <div class="response hidden" id="mce-success-response" ></div>
         </div>
         <input type="hidden" name="b_839fb24cef0413753d27dbc3a_f752654c15" tabindex="-1"/>
-            {/* <input type="submit" className="fplan-cta mx-auto" value="REGISTER"></input> */}
             <button className="fplan-cta mx-auto" onClick={sayHello}>REGISTER</button>
           </div>
       
-        </form>
+        </form> */}
 
+<MailchimpForm></MailchimpForm>
 
         <div className="max-w-[500px] mt-20">
           <h2 className="display_h3 mb-2">

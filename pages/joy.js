@@ -4,6 +4,7 @@ import { useInView } from "react-intersection-observer";
 import Hero from "../components/Hero";
 import Section from "../components/Section";
 import NewsletterForm from "../components/NewsletterForm";
+import MailchimpForm from "../components/CustomForm";
 const squareVariants = {
   visible: { opacity: 1,  transition: { duration: 1 } },
   hidden: { opacity: 0 }
@@ -38,7 +39,7 @@ export default function App() {
       />
 <Section anchor="overview" contrast="dark">
 </Section>
-<NewsletterForm/>
+<MailchimpForm></MailchimpForm>
 </div>
 
   );

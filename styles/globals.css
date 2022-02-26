@@ -356,7 +356,7 @@ section .here_img  {margin-top: 80px; display: block;}
 /* FORMS*/
 .form-input , .form-select  {
   border: 2px solid;
-  @apply font-display tracking-[.20em] text-sm xl:text-base 2xl:text-base   focus:border-gvhGold-400 text-gvhGold-100 placeholder:text-gvhGold-100 appearance-none border-y-gvhGold-100 bg-gvhBlue-600 px-5 py-2;
+  @apply font-display tracking-[.20em] text-sm xl:text-base 2xl:text-base   focus:border-gvhGold-400 text-gvhGold-100 placeholder:text-gvhGold-100 placeholder:opacity-60 appearance-none border-y-gvhGold-100 bg-gvhBlue-600 px-5 py-2;
 }
 
 .form-input:focus, .form-select:focus, .form-checkbox:focus {
