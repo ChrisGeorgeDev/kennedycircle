@@ -37,11 +37,11 @@ export function TextWrap(props) {
   }
 
     export  const ImageReveal = {
-    hidden: { scale: 2, opacity: 0, y:120 },
+    hidden: { scale: .8, opacity: 0, y:120 },
     visible: { y: 0, opacity: 1, scale: 1,
       transition: {
        ease: "easeInOut",
-        duration: 3,
+        duration: 1.5,
         staggerChildren: 0.03
       }, 
     },
@@ -69,11 +69,11 @@ export function TextWrap(props) {
   }
 
   export const ImageLoadIn = {
-    hidden: { scale: .9, opacity: 0, y:120 },
+    hidden: { scale: .95, opacity: 0, y:120 },
     visible: { y: 0, opacity: 1, scale: 1,
       transition: {
        ease: "easeInOut",
-        duration: 2,
+        duration: 1.5,
         staggerChildren: 0.03
       }, 
     },

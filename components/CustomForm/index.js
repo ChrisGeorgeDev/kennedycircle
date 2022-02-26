@@ -57,19 +57,13 @@ const CustomForm = ({ status, message, onValidated }) => {
         });
 
     }
-
-    // useEffect(() => {
-    //     if(status === "success") clearFields();
-    //     if(modalOpen && status === "success") clearFields();
-    // }, [status, modalOpen])
-
-    // const clearFields = () => {
-    //     setFirstName('');
-    //     setLastName('');
-    //     setEmail('');
-    // }
-
-
+  
+        function checkValue(e) {
+            const value = e.target.value;
+            console.log("You selected " + value);
+            setOptin(value);
+          }
+    
     return (
         <form
             className="mc__form"
@@ -101,8 +95,6 @@ const CustomForm = ({ status, message, onValidated }) => {
             {status !== "success" ? (
       <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-3 items-start">
       <div className="grid grid-cols-1 gap-3">
-
-
 
                   
                     <InputField
@@ -156,31 +148,98 @@ const CustomForm = ({ status, message, onValidated }) => {
 
 <div className="grid grid-cols-1 gap-3">
 
-<InputField
+{/* <InputField
                         label="How did you hear"
                         onChangeHandler={setHowdidu}
                         type="text"
                         value={howdidu}
                         placeholder="555"
                         isRequired
-                    />
-                    <InputField
-                        label="Preference"
-                        onChangeHandler={setPref}
-                        type="text"
-                        value={pref}
-                        placeholder="555"
-                        isRequired
-                    />
+                    /> */}
 
-<InputField
-                        label="realtor?"
-                        onChangeHandler={setAreyou}
-                        type="text"
-                        value={are_you_realtor}
-                        placeholder="555"
-                        isRequired
-                    />
+<label className="block">
+                <span className="text-gray-700 sr-only">How did you hear about us?</span>
+                <select 
+                name="HOWDIDU" 
+                id="mce-HOWDIDU"  
+                className="form-select block w-full overflow-x-hidden mt-1"
+                onChange={(e) => setHowdidu(e.target.value)}
+                value={howdidu}
+                required
+                >
+                  <option>HOW DID YOU HEAR ABOUT US</option>
+                  <option value="Google Search">Google Search</option>
+                  <option value="Buzz Buzz Homes">Buzz Buzz Homes</option>
+                  <option value="A-Frame">A-Frame</option>
+                  <option value="Magazine/Newspaper">Magazine/Newspaper</option>
+                  <option value="Signage">Signage</option>
+                  <option value="Social Media">Social Media</option>
+                  <option value="Gableviewhomes.com">Gableviewhomes.com</option>
+                  <option value="E-Blast">E-Blast</option>
+                </select>
+              </label>
+
+              <label className="block">
+                <span className="text-gray-700 sr-only">First Name </span>
+                <select name="PRICER"  
+                  onChange={(e) => setPref(e.target.value)}
+                  value={pref}
+
+                id="mce-PRICER" 
+                className="form-select block w-full overflow-x-hidden mt-1">
+                  <option>TYPE OF UNIT DESIRED</option>
+                  <option value="One Bedroom">One Bedroom</option>
+                  <option value="One Bedroom plus Den">
+                    One Bedroom plus Den
+                  </option>
+                  <option value="Two Bedroom">Two Bedroom</option>
+                </select>
+              </label>
+
+              <label className="block">
+                <span className="text-gray-700 sr-only">First Name </span>
+                <select name="AREUREALTO"
+                    onChange={(e) => setWorkingwith(e.target.value)}
+                    value={working_with}
+                  id="mce-AREUREALTO"  className="form-select block w-full overflow-x-hidden mt-1">
+                  <option>ARE YOU A REALTOR?</option>
+                  <option>Yes</option>
+                  <option>No</option>
+                </select>
+              </label>
+
+              <label className="block">
+                <span className="text-gray-700 sr-only">First Name </span>
+                <select name="WORKREALTR"  
+                onChange={(e) => setAreyou(e.target.value)}
+                value={are_you_realtor}
+                id="mce-WORKREALTR" className="form-select block w-full overflow-x-hidden mt-1">
+                  <option>ARE YOU WORKING WITH A REALTOR?</option>
+                  <option>Yes</option>
+                  <option>No</option>
+                </select>
+              </label>
+   
+              <div>
+                <label className="inline-flex items-top">
+                  <input name="opt-in" value="Opt-In"
+                    className="form-checkbox accent-gvhGold-400  appearance-none  mt-1"
+                    type="checkbox"
+                    onChange={checkValue}
+                    // onChange={(e) => setOptin(e.target.value)}
+                    // onChange={(e) => handleChange(e.target.value)}
+                    value="I agree"
+                  />
+                  <span className="ml-2 text-xs text-gvhGold-100">
+                    By checking this box, you agree to receive emails from Gable
+                    View Homes, its affiliates and agents, with pricing, floor
+                    plans, and site updates.
+                  </span>
+                </label>
+              </div>
+
+
+{/* 
 
 <InputField
                         label="working with?"
@@ -189,16 +248,16 @@ const CustomForm = ({ status, message, onValidated }) => {
                         value={working_with}
                         placeholder="555"
                         isRequired
-                    />
+                    /> */}
 
-<InputField
+{/* <InputField
                         label="working with?"
                         onChangeHandler={setOptin}
                         type="text"
                         value={opt_in}
                         placeholder="555"
                         isRequired
-                    />
+                    /> */}
 
 
 </div>

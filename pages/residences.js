@@ -9,7 +9,7 @@ import Floorplans from "../components/Floorplans";
 import Menu from "../components/Menu";
 import { NextSeo } from "next-seo";
 import { useAnimation, motion } from "framer-motion";
-import {TextWrap, ImageWrap, ImageLoadIn} from "../components/Animations/PageContent";
+import {TextWrap, ImageWrap, ImageLoadIn, ImageReveal} from "../components/Animations/PageContent";
 import CtaNext from "../components/CtaNext";
 import Cta from "../components/Cta";
 
@@ -88,12 +88,28 @@ VIEW FLOORPLANS
         </div>
       </Section>
 
-      <div className="here_img">
+      {/* <div className="here_img">
           <img
             src="/img/SuiteD-KitchenUpgrade1.jpg"
             alt="Picture of the author"
           />
+        </div> */}
+
+
+<section className="white">
+
+<ImageWrap>
+<div className="">
+          <motion.img variants={ImageLoadIn} 
+            src="/img/SuiteD-KitchenUpgrade1.jpg"
+            alt="Picture of the author"
+          />
         </div>
+</ImageWrap>
+
+</section>
+
+
 
       <Section anchor="overview" contrast="light">
         <div className="flex flex-row-reverse">
