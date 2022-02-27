@@ -284,7 +284,7 @@ const CustomForm = ({ status, message, onValidated }) => {
 
 
 const MailchimpForm = props => {
-    const url = `https://nottinghilltowns.us18.list-manage.com/subscribe/post-json?u=839fb24cef0413753d27dbc3a&amp;id=f752654c15`;
+    const url = `https://nottinghilltowns.us18.list-manage.com/subscribe/post-json?u=839fb24cef0413753d27dbc3a&amp;id=8b8f942075`;
 
     return (
 
