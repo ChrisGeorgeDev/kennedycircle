@@ -1,0 +1,328 @@
+import React, { useEffect, useState, useId, useRef } from "react";
+import Section from "../components/Section";
+import Link from "next/link";
+import Hero from "../components/Hero";
+import { NextSeo } from "next-seo";
+import { useInView } from "react-intersection-observer";
+import { Tab } from "@headlessui/react";
+import clsx from "clsx";
+import { useAnimation, motion, animate } from "framer-motion";
+import {
+  TextWrap,
+  Progress,
+  ImageWrap,
+  ImageLoadIn,
+  ProgressCirc,
+} from "../components/Animations/PageContent";
+import CtaNext from "../components/CtaNext";
+import CircleProgress from "../components/CircleProgress";
+import ProgressMe from "../components/CircleProgress/progress";
+import { Container } from "../components/Container";
+import { DiamondIcon } from "../components/DiamondIcon";
+import { DateTime } from "luxon";
+// import Progress from "../components/CircleProgress/progress";
+import Youtube from "react-lazyload-youtube";
+import "react-lazyload-youtube/dist/index.css";
+import YouTubeFrame from "../components/Youtube";
+
+
+
+
+
+
+
+export default function ConstructionProgress({ progress }) {
+  
+  let id = useId();
+  let [tabOrientation, setTabOrientation] = useState("horizontal");
+
+  useEffect(() => {
+    let lgMediaQuery = window.matchMedia("(min-width: 1024px)");
+
+    function onMediaQueryChange({ matches }) {
+      setTabOrientation(matches ? "vertical" : "horizontal");
+    }
+
+    onMediaQueryChange(lgMediaQuery);
+    lgMediaQuery.addEventListener("change", onMediaQueryChange);
+
+    return () => {
+      lgMediaQuery.removeEventListener("change", onMediaQueryChange);
+    };
+  }, []);
+
+  console.log("STUF", progress.data[0].attributes.construction_progress);
+
+  const milestones = progress.data[0].attributes.construction_progress;
+
+  const total = milestones.reduce(
+    (acc, milestone) => acc + milestone.percentage_complete,
+    0
+  );
+  const average = total / milestones.length;
+
+  const { ref, inView } = useInView();
+  const animation = useAnimation();
+  useEffect(() => {
+    console.log("use effect,", inView);
+  }, [inView]);
+
+  function Counter({ from, to }) {
+    const pval = useRef();
+
+    useEffect(() => {
+      const controls = animate(from, to, {
+        duration: 2,
+        onUpdate(value) {
+          pval.current.textContent = value.toFixed(0);
+        },
+      });
+      return () => controls.stop();
+    }, [from, to]);
+
+    return <span ref={pval} />;
+  }
+
+  return (
+    <>
+      <NextSeo
+        title="Kennedy Circle Condominiums | Milton, ON Condo for Sale"
+        description="A short description goes here."
+      />
+      <Hero
+        alt="Pic"
+        image="/img/hero/KC-Site-HomepageHero-Overlay.jpg"
+        imagePortrait="img/hero/KC-HeroImage-Rendering-Portrait.jpg"
+      >
+        <h1 className="display_h1_alt text-white">STATUS UPDATES</h1>
+      </Hero>
+
+      <Section anchor="overview" contrast="light">
+        <div className="flex flex-row">
+          <TextWrap>
+            <div className="max-w-[700px]">
+              <h2 className="display_h2 here">HERE</h2>
+              <div className="head_underline"></div>
+              <h3 className="display_h3 max-w-[700px] mb-4">
+                Stay in the know about our progress.
+              </h3>
+
+              <p className="text-base max-w-[580px]">
+                As your homebuilder, our commitment is to deliver your new home
+                built with the most upmost quality, standards and innovation, as
+                well as to ensure it is thoughtfully integrated into the fabric
+                of your new community. We know you’re eager about the
+                development of your home build. Stay informed on our progress
+                and key project milestones at The Residences on Kennedy Circle
+                here.
+              </p>
+            </div>
+          </TextWrap>
+        </div>
+      </Section>
+
+      <Section anchor="floorplans" contrast="white">
+        <TextWrap>
+          <h2 className="display_h2 here    text-left">
+            Construction <br /> Progress
+          </h2>
+          <div className="head_underline"></div>
+
+        </TextWrap>
+        <div ref={ref} className="mt-20">
+          <motion.div initial={{ x: "100vw" }} animate={{ x: 0 }}>
+            <div className="flex flex-col lg:flex-row gap-10">
+              <div className="max-w-[70%] mx-auto lg:w-1/3">
+                <div className="row-span-1 overallP h-full p-2 ">
+                  {/* <ProgressCirc
+                    stroke={4}
+                    key={23}
+                    width="100%"
+                    complete={0.75}
+                  >
+                    <Counter from={0} to={100.0} />
+                  </ProgressCirc> */}
+
+                  <ProgressCirc
+                    stroke={4}
+                    pkey="avg"
+                    width="100%"
+                    complete={average / 100}
+                  >
+                    {average}%
+                  </ProgressCirc>
+                </div>
+              </div>
+
+              <div className="progressGrid w-full lg:w-2/3 grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-rows-3 lg:grid-cols-2">
+                {progress.data[0].attributes.construction_progress.map(
+                  (milestone) => (
+                    <div className="row-span-1 col-span-1  w-full h-full  ">
+                      <div className="flex gap-4 w-full h-full items-center">
+                        <ProgressCirc
+                          stroke={10}
+                          pkey={milestone.id}
+                          width={100}
+                          complete={milestone.percentage_complete / 100}
+                        >
+                          {milestone.percentage_complete}%
+                        </ProgressCirc>
+
+                        <div className="min-w-[100px]">
+                          {milestone.milestone_title}
+                        </div>
+                      </div>
+                    </div>
+                  )
+                )}
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </Section>
+      <Section anchor="gallery" contrast="light">
+      <h2 className="display_h2 here    text-left">
+            Video Timeline
+          </h2>
+          <div className="head_underline"></div>
+        <Container>
+          <div className="mx-auto max-w-2xl lg:mx-0">
+        
+            {/* <p className="mt-4 font-display text-2xl tracking-tight text-blue-900">
+              Learn from the experts on the cutting-edge of deception at the
+              most sinister companies.
+            </p> */}
+          </div>
+          <Tab.Group
+            as="div"
+            className="mt-14 grid grid-cols-1 items-start gap-y-8 gap-x-8 sm:mt-16 sm:gap-y-16 lg:mt-24 lg:grid-cols-4"
+            vertical={tabOrientation === "vertical"}
+            onChange={(index) => {
+              function stopAllVideos() {
+                const iframes = document.querySelectorAll("iframe[src*='youtube.com']");
+                console.log('FRAMWS',iframes)
+                iframes.forEach((iframe) => {
+                  iframe.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+                });
+              }
+              console.log('Changed selected tab to:', index)
+              stopAllVideos();
+
+            }}
+          >
+            <div className="relative -mx-4 flex overflow-x-auto pb-4 sm:mx-0 sm:block sm:overflow-visible sm:pb-0">
+              <div className="absolute bottom-0 top-2 left-0.5 hidden w-px bg-slate-200 lg:block" />
+              <Tab.List className="flex pl-[4px]  w-full overflow-x-scroll  lg:grid auto-cols-auto grid-flow-col justify-start gap-x-8 gap-y-10 whitespace-nowrap px-4 sm:mx-auto sm:max-w-2xl sm:grid-cols-3 sm:px-0 sm:text-center lg:grid-flow-row lg:grid-cols-1 lg:text-left">
+                {({ selectedIndex }) =>
+                 progress.data[0].attributes.gallery_update.sort((a, b) => new Date(b.date) - new Date(a.date))
+                 .map((day, dayIndex) => (
+                    <div key={day.date} className="relative lg:pl-8">
+                      <DiamondIcon
+                        className={clsx(
+                          "absolute top-[0.5625rem] rounded-full left-[-0.5px] hidden h-1.5 w-1.5 overflow-visible lg:block",
+                          dayIndex === selectedIndex
+                            ? "bg-gvhBlue-400 "
+                            : "fill-transparent bg-slate-400"
+                        )}
+                      />
+                      <div className="relative">
+                        <div
+                          className={clsx(
+                            "font-mono text-sm",
+                            dayIndex === selectedIndex
+                              ? "text-gvhGold-400"
+                              : " text-gvhBlue-400 opacity-70"
+                          )}
+                        >
+                          <Tab className="text-left [&:not(:focus-visible)]:focus:outline-none">
+                            {/* <span className="absolute inset-0" /> */}
+                            {DateTime.fromISO(day.date).toFormat("yyyy")}
+                       
+                       <div className={clsx("mt-1.5 block text-2xl font-semibold tracking-tight  text-gvhBlue-400",
+                          dayIndex === selectedIndex
+                          ? "text-gvhGold-400"
+                          : " text-gvhBlue-600 opacity-70 hover:opacity-90 transition-all ease-in-out"
+                          )} >
+                        <time
+                          dateTime={day.date}
+                          
+                          
+                        >
+                          {DateTime.fromISO(day.date).toFormat("LLL d")}
+                        </time>
+                        </div>
+                        </Tab>
+                        </div>
+                      </div>
+                    </div>
+                  ))
+                }
+              </Tab.List>
+            </div>
+            <Tab.Panels className="lg:col-span-3">
+              {progress.data[0].attributes.gallery_update.map((day) => (
+                <Tab.Panel
+                  key={day.date}
+                  className="grid grid-cols-1 overflow-hidden gap-x-8 gap-y-10 sm:gap-y-16 md:grid-cols-1 [&:not(:focus-visible)]:focus:outline-none"
+                  unmount={false}
+                >
+                    <YouTubeFrame
+      thumbnailQuality="maxresdefault"
+      video={day.youtube_video_id}
+      width="640px"
+      height="480px"
+    />
+                </Tab.Panel>
+              ))}
+            </Tab.Panels>
+          </Tab.Group>
+        </Container>
+   
+      </Section>
+    </>
+  );
+}
+
+export const getStaticProps = async () => {
+  const res = await fetch(
+    `https://strapi-production-2269.up.railway.app/api/communities?filters[id][$eq]=2&populate=*`
+  );
+
+  const progress = await res.json();
+  // const articles = JSON.parse(JSON.stringify(content))
+  return {
+    props: {
+      progress,
+    },
+  };
+};
+
+// { articles }
+
+
+
+// {progress.data[0].attributes.gallery_update.map((update) => (
+//   <>
+//     {update.id}
+//     <br />
+//     {update.title}
+//     <br />
+//     {/* {update.date} */}
+//     {DateTime.fromISO(update.date).toFormat("yyyy")}
+//     <br />
+//     {DateTime.fromISO(update.date).toFormat("LLL d")}
+//     <br />
+//     {/* <Youtube
+//       width="640px"
+//       height="480px"
+//       imgSize="maxresdefault"
+//       videoId={update.youtube_video_id}
+//     /> */}
+//     <YouTubeFrame
+//       thumbnailQuality="maxresdefault"
+//       video={update.youtube_video_id}
+//       width="640px"
+//       height="480px"
+//     />
+//   </>
+// ))}

@@ -9,7 +9,11 @@ import Registration from "../components/Registration";
 import Menu from "../components/Menu";
 import { NextSeo } from "next-seo";
 import { useAnimation, motion } from "framer-motion";
-import {TextWrap, ImageWrap, ImageLoadIn} from "../components/Animations/PageContent";
+import {
+  TextWrap,
+  ImageWrap,
+  ImageLoadIn,
+} from "../components/Animations/PageContent";
 import CtaNext from "../components/CtaNext";
 import Cta from "../components/Cta";
 
@@ -20,43 +24,41 @@ export default function Home() {
         title="Kennedy Circle Condominiums | Milton, ON Condo for Sale"
         description="A short description goes here."
       />
-      <Hero alt="Pic" image="/img/hero/KC-Site-Residences-TitleAreaBG.jpg"
-      imagePortrait="/img/hero/KC-Site-FloorPlans-TitleAreaBG-P.jpg"
+      <Hero
+        alt="Pic"
+        image="/img/hero/KC-Site-Residences-TitleAreaBG.jpg"
+        imagePortrait="/img/hero/KC-Site-FloorPlans-TitleAreaBG-P.jpg"
       >
-      <h1 className="display_h1_alt text-white">THE FLOORPLANS</h1>
+        <h1 className="display_h1_alt text-white">THE FLOORPLANS</h1>
       </Hero>
 
       <Section anchor="overview" contrast="light">
         <div className="flex flex-row">
           <TextWrap>
-          <div className="max-w-[800px]">
-            <h2 className="display_h2 here">HERE</h2>
-            <div className="head_underline"></div>
-            <h3 className="display_h3 max-w-[900px] mb-4">
-              We bring style and functionality to each and every home.
-            </h3>
+            <div className="max-w-[800px]">
+              <h2 className="display_h2 here">HERE</h2>
+              <div className="head_underline"></div>
+              <h3 className="display_h3 max-w-[900px] mb-4">
+                We bring style and functionality to each and every home.
+              </h3>
 
-            <p className="text-base max-w-[580px]">
-              Each floor plan has been laid out for elevated living experiences.{" "}
-            </p>
-
-         
-          </div>
+              <p className="text-base max-w-[580px]">
+                Each floor plan has been laid out for elevated living
+                experiences.{" "}
+              </p>
+            </div>
           </TextWrap>
         </div>
       </Section>
 
       <Section anchor="floorplans" contrast="white">
-      <TextWrap>
-      <h2 className="display_alt  text-center">FLOORPLANS</h2>
-        <div className="head_underline "></div>
+        <TextWrap>
+          <h2 className="display_alt  text-center">FLOORPLANS</h2>
+          <div className="head_underline "></div>
 
-        <FlyoutMenu />
-      </TextWrap>
+          <FlyoutMenu />
+        </TextWrap>
       </Section>
-
-   
-  
     </>
   );
 }

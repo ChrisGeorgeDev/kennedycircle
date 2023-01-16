@@ -5,7 +5,7 @@ export default function Footer() {
         <div>
           <a href="https://www.gableviewhomes.com" target="_blank">
             <img src="/img/placeholder-gvh.png" className="px-2" width={292} />
-</a>
+          </a>
           <hr className="mt-4 mb-4 border-t-[1px] border-gvhGold-400" />
           <p className="text-center text-gvhGold-100">
             Spaces designed for life.
@@ -19,12 +19,26 @@ export default function Footer() {
         </div>
         <div>
           <p className="text-gvhGold-400 text-sm">
-            <a className=" hover:text-white transition-all duration-150" href="https://gableviewhomes.com/policies/" target="_blank">Privacy Policy</a> |      <a className=" hover:text-white transition-all duration-150" href="https://gableviewhomes.com/terms-conditions/" target="_blank">Terms of Use</a>
+            <a
+              className=" hover:text-white transition-all duration-150"
+              href="https://gableviewhomes.com/policies/"
+              target="_blank"
+            >
+              Privacy Policy
+            </a>{" "}
+            |{" "}
+            <a
+              className=" hover:text-white transition-all duration-150"
+              href="https://gableviewhomes.com/terms-conditions/"
+              target="_blank"
+            >
+              Terms of Use
+            </a>
           </p>
         </div>
       </div>
-{/* 
-      <div className="fixed bottom-0 right-0 p-6 w-8 h-8 bg-white border flex justify-center items-center opacity-75">
+
+      {/* <div className="fixed bottom-0 right-0 p-6 w-8 h-8 bg-white border flex justify-center items-center opacity-75">
         <div className="block sm:hidden md:hidden lg:hidden xl:hidden 2xl:hidden">
           XS
         </div>
