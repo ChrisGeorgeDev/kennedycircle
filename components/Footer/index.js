@@ -58,6 +58,8 @@ export default function Footer() {
           2XL
         </div>
       </div> */}
+
+      
     </div>
   );
 }
