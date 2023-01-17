@@ -59,7 +59,8 @@ export default function ConstructionProgress({ progress }) {
     (acc, milestone) => acc + milestone.percentage_complete,
     0
   );
-  const average = total / milestones.length;
+  const average = Math.round(total / milestones.length);
+  
 
   const { ref, inView } = useInView();
   const animation = useAnimation();
@@ -149,7 +150,8 @@ export default function ConstructionProgress({ progress }) {
                     width="100%"
                     complete={average / 100}
                   >
-                    {average}%
+                    {average}%<br/>
+                   <span className="text-sm">Overall completion</span>
                   </ProgressCirc>
                 </div>
               </div>
@@ -200,7 +202,6 @@ export default function ConstructionProgress({ progress }) {
             onChange={(index) => {
               function stopAllVideos() {
                 const iframes = document.querySelectorAll("iframe[src*='youtube.com']");
-                console.log('FRAMWS',iframes)
                 iframes.forEach((iframe) => {
                   iframe.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
                 });
@@ -221,7 +222,7 @@ export default function ConstructionProgress({ progress }) {
                         className={clsx(
                           "absolute top-[0.5625rem] rounded-full left-[-0.5px] hidden h-1.5 w-1.5 overflow-visible lg:block",
                           dayIndex === selectedIndex
-                            ? "bg-gvhBlue-400 "
+                            ? "bg-gvhGold-400 "
                             : "fill-transparent bg-slate-400"
                         )}
                       />
@@ -260,13 +261,16 @@ export default function ConstructionProgress({ progress }) {
               </Tab.List>
             </div>
             <Tab.Panels className="lg:col-span-3">
-              {progress.data[0].attributes.gallery_update.map((day) => (
+              {/* {progress.data[0].attributes.gallery_update.map((day) => ( */}
+                  {progress.data[0].attributes.gallery_update.sort((a, b) => new Date(b.date) - new Date(a.date))
+                  .map((day, dayIndex) => (
                 <Tab.Panel
                   key={day.date}
                   className="grid grid-cols-1 overflow-hidden gap-x-8 gap-y-10 sm:gap-y-16 md:grid-cols-1 [&:not(:focus-visible)]:focus:outline-none"
                   unmount={false}
                 >
                     <YouTubeFrame
+                    id={day.youtube_video_id}
       thumbnailQuality="maxresdefault"
       video={day.youtube_video_id}
       width="640px"

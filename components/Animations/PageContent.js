@@ -74,7 +74,7 @@ export function ProgressCirc(props) {
   return (
     <div key={props.pkey} ref={ref} className="flex justify-center relative">
       <div className="absolute left-0 top-0 right-0 bottom-0 m-auto">
-        <div className="flex percentageText justify-center items-center h-full">
+        <div className="flex flex-col percentageText justify-center items-center h-full">
           {props.children}
         </div>
       </div>
