@@ -26,7 +26,7 @@ export default function Menu() {
     <>
       <div className="bg-gray-200 h-full w-full">
         {/* Code block starts */}
-        <nav className="bg-white top-0 fixed z-10 w-full shadow xl:block hidden">
+        <nav className="bg-white top-0 fixed z-10 w-full shadow navDesktop ">
           <div className="mx-auto  px-6 py-2 xl:py-0">
             <div className="flex items-center justify-between">
               <div className="inset-y-0 left-0 flex items-center xl:hidden">
@@ -185,6 +185,17 @@ export default function Menu() {
                      The Team
                     </a>
                   </Link>
+
+                  <Link href="/construction-progress">
+                    <a
+                      className={
+                        router.pathname == "/construction-progress" ? "active link " : "link"
+                      }
+                    >
+                      {" "}
+                    Updates
+                    </a>
+                  </Link>
                 </div>
                 <a href="#register" className="reg-cta" onClick={AnchorScroll}>
                   {" "}
@@ -196,7 +207,7 @@ export default function Menu() {
         </nav>
 
         <nav>
-          <div className="py-2 px-2 w-full flex xl:hidden justify-between items-center bg-white fixed top-0 z-40">
+          <div className="py-2 px-2 w-full flex navMobile justify-between items-center bg-white fixed top-0 z-40">
             <div>
             <a href="/">
               <svg
@@ -355,18 +366,19 @@ export default function Menu() {
                           </Link>
                         </li>
                   
-                  
-          
-{/* 
-                      <li
-                        className="text-gray-800 pt-4"
-                      
+
+
+<li
+                        className="text-gray-800 pt-4 "
+                        onClick={() => setShow(!show)}
                       >
-                        <span className="flex px-2 items-center pt-1 text-sm leading-5 text-gray-700 focus:outline-none transition duration-150 ease-in-out uppercase">
-                          {" "}
-                          About
-                        </span>
-                      </li> */}
+                        <Link href="/greenliving">
+                          <a className="flex px-2 items-center pt-1 text-sm leading-5 text-gray-700  focus:outline-none transition duration-150 ease-in-out uppercase">
+                            {" "}
+                            Green Living
+                          </a>
+                        </Link>
+                      </li>
 
                       <li
                         className="text-gray-800 pt-4"
@@ -381,16 +393,17 @@ export default function Menu() {
                       </li>
 
                       <li
-                        className="text-gray-800 pt-4 "
+                        className="text-gray-800 pt-4"
                         onClick={() => setShow(!show)}
                       >
-                        <Link href="/greenliving">
-                          <a className="flex px-2 items-center pt-1 text-sm leading-5 text-gray-700  focus:outline-none transition duration-150 ease-in-out uppercase">
+                        <Link href="/construction-progress">
+                        <a className="flex px-2 items-center pt-1 text-sm leading-5 text-gray-700  focus:outline-none transition duration-150 ease-in-out uppercase">
                             {" "}
-                            Green Features
+                              Updates
                           </a>
                         </Link>
                       </li>
+
 
                     </ul>
                   </div>
