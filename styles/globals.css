@@ -565,6 +565,10 @@ html {
   display: none!important;
  }
 
+ .navFlex {
+  display: flex!important;
+ }
+
  .navDesktop {
   display: block!important;
  }
