@@ -5,6 +5,14 @@ import Menu from '../components/Menu';
 import Registration from '../components/Registration';
 import Footer from '../components/Footer';
 import dynamic from 'next/dynamic'
+import { GTM_ID, pageview } from '../lib/gtm'
+import Script from 'next/script'
+import * as fbq from '../lib/fpixel'
+import { useRouter } from 'next/router'
+import { useEffect } from 'react'
+
+
+
 
 const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
   ssr: false
@@ -12,6 +20,25 @@ const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
 
 
 function MyApp({ Component, pageProps, router }) {
+
+  const prouter = useRouter()
+
+  useEffect(() => {
+    // This pageview only triggers the first time (it's important for Pixel to have real information)
+    fbq.pageview()
+ 
+    const handleRouteChange = () => {
+      fbq.pageview()
+      pageview()
+   
+    }
+    prouter.events.on('routeChangeComplete', handleRouteChange)
+    return () => {
+      prouter.events.off('routeChangeComplete', handleRouteChange)
+    }
+  }, [prouter.events])
+
+
   return (
   <>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
@@ -31,6 +58,39 @@ function MyApp({ Component, pageProps, router }) {
     />
 <Menu></Menu>
 {/* <AnimatePresence> */}
+<Script
+        id="gtag-base"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer', '${GTM_ID}');
+          `,
+        }}
+      />
+
+<Script
+        id="fb-pixel"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', ${fbq.FB_PIXEL_ID});
+          `,
+        }}
+      />
+
+
 
 <motion.div key={router.route} initial="pageInitial" animate="pageAnimate" exit="pageExit" variants={{
   pageInitial: {
