@@ -54,7 +54,7 @@ export default function YouTubeFrame(props) {
         loading="lazy"
         src={`https://img.youtube.com/vi/${props.video}/${props.thumbnailQuality}.jpg`}
         alt="YouTube Video Thumbnail"
-        className="shadow-md"
+        className="shadow-md object-cover w-full aspect-video"
       />
     </div>
   );

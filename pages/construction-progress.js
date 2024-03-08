@@ -197,7 +197,7 @@ export default function ConstructionProgress({ progress }) {
           </div>
           <Tab.Group
             as="div"
-            className="mt-14 grid grid-cols-1 items-start gap-y-8 gap-x-8 sm:mt-16 sm:gap-y-16 lg:mt-24 lg:grid-cols-4"
+            className="mt-14 grid  grid-cols-1 w-full items-start gap-y-8 gap-x-8 sm:mt-16 sm:gap-y-16 lg:mt-24 "
             vertical={tabOrientation === "vertical"}
             onChange={(index) => {
               function stopAllVideos() {
@@ -211,21 +211,41 @@ export default function ConstructionProgress({ progress }) {
 
             }}
           >
-            <div className="relative -mx-4 flex overflow-x-auto pb-4 sm:mx-0 sm:block sm:overflow-visible sm:pb-0">
-              <div className="absolute bottom-0 top-2 left-0.5 hidden w-px bg-slate-200 lg:block" />
-              <Tab.List className="flex pl-[4px]  w-full overflow-x-scroll  lg:grid auto-cols-auto grid-flow-col justify-start gap-x-8 gap-y-10 whitespace-nowrap px-4 sm:mx-auto sm:max-w-2xl sm:grid-cols-3 sm:px-0 sm:text-center lg:grid-flow-row lg:grid-cols-1 lg:text-left">
+           
+            <Tab.Panels className="lg:grid-cols-1">
+              {/* {progress.data[0].attributes.gallery_update.map((day) => ( */}
+                  {progress.data[0].attributes.gallery_update.sort((a, b) => new Date(b.date) - new Date(a.date))
+                  .map((day, dayIndex) => (
+                <Tab.Panel
+                  key={day.date}
+                  className="grid grid-cols-1 overflow-hidden gap-x-8 gap-y-10 sm:gap-y-16 md:grid-cols-1 [&:not(:focus-visible)]:focus:outline-none"
+                  unmount={false}
+                >
+                    <YouTubeFrame
+                    id={day.youtube_video_id}
+      thumbnailQuality="maxresdefault"
+      video={day.youtube_video_id}
+      width="640px"
+      height="480px"
+    />
+                </Tab.Panel>
+              ))}
+            </Tab.Panels>
+            <div className=" -mx-4   w-full flex overflow-x-hidden pb-4 sm:mx-0 sm:overflow-visible sm:pb-0">
+              {/* <div className="absolute bottom-0 top-2 left-0.5 hidden w-px bg-slate-200 lg:block" /> */}
+              <Tab.List className="flex  whitespace-nowrap w-full overflow-x-scroll scroll-smooth ">
                 {({ selectedIndex }) =>
                  progress.data[0].attributes.gallery_update.sort((a, b) => new Date(b.date) - new Date(a.date))
                  .map((day, dayIndex) => (
-                    <div key={day.date} className="relative lg:pl-8">
-                      <DiamondIcon
+                    <div key={day.date} className="relative pb-4 lg:px-4">
+                      {/* <DiamondIcon
                         className={clsx(
                           "absolute top-[0.5625rem] rounded-full left-[-0.5px] hidden h-1.5 w-1.5 overflow-visible lg:block",
                           dayIndex === selectedIndex
                             ? "bg-gvhGold-400 "
                             : "fill-transparent bg-slate-400"
                         )}
-                      />
+                      /> */}
                       <div className="relative">
                         <div
                           className={clsx(
@@ -239,7 +259,7 @@ export default function ConstructionProgress({ progress }) {
                             {/* <span className="absolute inset-0" /> */}
                             {DateTime.fromISO(day.date).toFormat("yyyy")}
                        
-                       <div className={clsx("mt-1.5 block text-2xl font-semibold tracking-tight  text-gvhBlue-400",
+                       <div className={clsx("mt-1.5 block  text-base pr-10 md:text-lg lg:pr-5 lg:text-xl font-semibold tracking-tight  text-gvhBlue-400",
                           dayIndex === selectedIndex
                           ? "text-gvhGold-400"
                           : " text-gvhBlue-600 opacity-70 hover:opacity-90 transition-all ease-in-out"
@@ -260,25 +280,6 @@ export default function ConstructionProgress({ progress }) {
                 }
               </Tab.List>
             </div>
-            <Tab.Panels className="lg:col-span-3">
-              {/* {progress.data[0].attributes.gallery_update.map((day) => ( */}
-                  {progress.data[0].attributes.gallery_update.sort((a, b) => new Date(b.date) - new Date(a.date))
-                  .map((day, dayIndex) => (
-                <Tab.Panel
-                  key={day.date}
-                  className="grid grid-cols-1 overflow-hidden gap-x-8 gap-y-10 sm:gap-y-16 md:grid-cols-1 [&:not(:focus-visible)]:focus:outline-none"
-                  unmount={false}
-                >
-                    <YouTubeFrame
-                    id={day.youtube_video_id}
-      thumbnailQuality="maxresdefault"
-      video={day.youtube_video_id}
-      width="640px"
-      height="480px"
-    />
-                </Tab.Panel>
-              ))}
-            </Tab.Panels>
           </Tab.Group>
         </Container>
    
@@ -289,7 +290,7 @@ export default function ConstructionProgress({ progress }) {
 
 export const getStaticProps = async () => {
   const res = await fetch(
-    `https://strapi-production-2269.up.railway.app/api/communities?filters[id][$eq]=2&populate=*`
+    `https://strapi-production-806f.up.railway.app/api/communities?filters[id][$eq]=2&populate=*`
   );
 
   const progress = await res.json();

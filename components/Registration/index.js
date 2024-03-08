@@ -10,7 +10,7 @@ export default function Registration() {
     <Section anchor="register" contrast="black register">
       <img className="register_icon  " src="/img/icon/kc-brandmark.svg" />
       <div className="w-full">
-        <h2 className="display_alt  text-center mb-6">REGISTER TODAY</h2>
+        <h2 className="display_alt uppercase text-center mb-6">Register Today <br/> for Phase II</h2>
 
         <div className="head_underline "></div>
        
