@@ -50,6 +50,7 @@ html,
 body {
   font-size: 21px;
   @apply bg-gvhBlue-600;
+  overflow-x: hidden;
 }
 
 .container {
