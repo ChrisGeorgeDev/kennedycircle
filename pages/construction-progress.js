@@ -51,7 +51,7 @@ export default function ConstructionProgress({ progress }) {
     };
   }, []);
 
-  console.log("STUF", progress.data[0].attributes.construction_progress);
+  // console.log("STUF", progress.data[0].attributes.construction_progress);
 
   const milestones = progress.data[0].attributes.construction_progress;
 
@@ -255,11 +255,11 @@ export default function ConstructionProgress({ progress }) {
                               : " text-gvhBlue-400 opacity-70"
                           )}
                         >
-                          <Tab className="text-left [&:not(:focus-visible)]:focus:outline-none">
+                          <Tab className="text-left px-2 [&:not(:focus-visible)]:focus:outline-none">
                             {/* <span className="absolute inset-0" /> */}
                             {DateTime.fromISO(day.date).toFormat("yyyy")}
                        
-                       <div className={clsx("mt-1.5 block  text-base pr-10 md:text-lg lg:pr-5 lg:text-xl font-semibold tracking-tight  text-gvhBlue-400",
+                       <div className={clsx("mt-1.5 block  text-base   md:text-lg  lg:text-xl font-semibold tracking-tight  text-gvhBlue-400",
                           dayIndex === selectedIndex
                           ? "text-gvhGold-400"
                           : " text-gvhBlue-600 opacity-70 hover:opacity-90 transition-all ease-in-out"
