@@ -196,7 +196,7 @@ export default function Home() {
             </div>
 
             <div className="text-center">
-            <a className="cta inline-block "href="/assets/downloads/KennedyCircle-FeaturesandFinishes1.pdf" target="_blank">
+            <a className="cta inline-block "href="/assets/downloads/KennedyCircle-FeaturesandFinishes-2024.pdf" target="_blank">
                 DOWNLOAD FEATURES & AMENITIES
               </a>
             </div>
