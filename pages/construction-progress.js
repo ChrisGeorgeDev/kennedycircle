@@ -86,17 +86,18 @@ export default function ConstructionProgress({ progress }) {
         image="/img/hero/KC-Site-HomepageHero-Overlay.jpg"
         imagePortrait="img/hero/KC-HeroImage-Rendering-Portrait.jpg"
       >
-        <h1 className="display_h1_alt text-white">STATUS UPDATES</h1>
+          <h1 className="display_h1_alt text-white">STATUS UPDATES</h1>
+          <h2 className="text-white">Stay in the know about our progress.</h2>
       </Hero>
 
       <Section anchor="overview" contrast="light">
         <div className="flex flex-row">
           <TextWrap>
             <div className="max-w-[700px]">
-              <h2 className="display_h2 here">HERE</h2>
-              <div className="head_underline"></div>
+              {/* <h2 className="display_h2 here">HERE</h2>
+              <div className="head_underline"></div> */}
               <h3 className="display_h3 max-w-[700px] mb-4">
-                Stay in the know about our progress.
+                Stay in the know about&nbsp;our progress.
               </h3>
 
               <p className="text-base max-w-[580px]">

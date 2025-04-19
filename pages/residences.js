@@ -26,6 +26,7 @@ export default function Home() {
 
       >
         <h1 className="display_h1_alt text-white">THE RESIDENCES</h1>
+        <h2 className="text-white">Explore our Modern Rental Suites</h2>
       </Hero>
 
       <Section anchor="overview" contrast="light">
@@ -33,8 +34,8 @@ export default function Home() {
         <TextWrap>
 
           <div className="max-w-[580px]">
-            <h2 className="display_h2 here">HERE</h2>
-            <div className="head_underline"></div>
+            {/* <h2 className="display_h2 here">HERE</h2>
+            <div className="head_underline"></div> */}
             <h3 className="display_h3 max-w-[700px] mb-4">
               Spaces designed for life.
             </h3>

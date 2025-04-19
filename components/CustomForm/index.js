@@ -58,8 +58,8 @@ const CustomForm = ({ status, message, onValidated }) => {
     <form className="mc__form" onSubmit={(e) => handleSubmit(e)}>
       <h3 className="mc__title text-base md:text-xl text-center">
         {status === "success"
-          ? "Registration received"
-          : "Join our email list for project updates."}
+          ? "Thank you for your inquiry"
+          : "Let's Find Your New Milton Rental Home"}
       </h3>
 
       {status === "sending" && (
@@ -260,7 +260,7 @@ const CustomForm = ({ status, message, onValidated }) => {
           ""
         ) : (
           <InputField
-            label="subscribe"
+            label="Request Information"
             type="submit"
             formValues={[
               email,

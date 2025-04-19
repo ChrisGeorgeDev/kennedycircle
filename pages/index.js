@@ -107,8 +107,8 @@ export default function Home() {
 
 
 
-       <h1 className="display_h1_alt text-white mt-10">IT STARTS HERE</h1>
-
+       <h1 className=" xl:text-5xl !leading-[1.2em] text-white mt-10 uppercase">Contemporary Apartment Rentals Designed&nbsp;for Your&nbsp;Lifestyle.</h1>
+       {/* text-2xl sm:text-3xl md:text-4xl lg:text-5xl */}
       </Hero>
 
 
@@ -121,22 +121,21 @@ export default function Home() {
    
    className="max-w-[700px]"
    >
-     <h2  className="display_h2 here">HERE</h2>
-     <div   className="head_underline"></div>
+     {/* <h2  className="display_h4 ">Kennedy Circle: Contemporary Apartment Rentals Designed for Your Lifestyle.</h2>
+     <div   className="head_underline"></div> */}
      <h3    className="display_h3 max-w-[700px] mb-4">
-       Live. Work. Relax. Play.
+     Modern 1, 1+Den & 2-Bedroom Suites Now Leasing in Milton
      </h3>
 
      <p   className="text-base max-w-[580px]">
-     The Residences on Kennedy Circle is comprised of 148 units in a 6-storey mid-rise state-of-the-art building that embodies a distinct spirit and style like no other condominium in the area. The building features 1 bedroom, 1 bedroom + den and 2 bedroom unit types. Each unit has been carefully developed to suit a variety of lifestyles with convenience and comfort in mind and appointed with beautiful, timeless features and finishes. 
-     </p>
+     Welcome to Kennedy Circle, where contemporary design meets effortless rental living in the heart of Milton, Ontario. Discover a curated collection of beautifully appointed apartment suites, thoughtfully designed amenities, and a vibrant community atmosphere. Experience a home that complements your lifestyle, offering convenience, comfort, and connection. Your new Milton address awaits.    </p>
 
      <Link
-       href="/floorplans"
+       href="/residences"
        className="cta inline-block items-center links link--metis"
      >
-       <span className="flex items-center">
-         VIEW FLOORPLANS
+       <span className="flex items-center uppercase">
+        Explore Residences
          <svg width="24" className="ml-2" height="8" viewBox="0 0 24 8" stroke="currentColor" fill="none" xmlns="http://www.w3.org/2000/svg">
            <path d="M23.1547 4.3582C23.35 4.16293 23.35 3.84635 23.1547 3.65109L19.9727 0.469108C19.7775 0.273846 19.4609 0.273846 19.2656 0.469108C19.0704 0.66437 19.0704 0.980953 19.2656 1.17621L22.0941 4.00464L19.2656 6.83307C19.0704 7.02833 19.0704 7.34491 19.2656 7.54018C19.4609 7.73544 19.7775 7.73544 19.9727 7.54018L23.1547 4.3582ZM0.700195 4.50464L22.8012 4.50464L22.8012 3.50464L0.700195 3.50464L0.700195 4.50464Z" />
          </svg>
@@ -152,8 +151,9 @@ export default function Home() {
 
 
 
+{/* HERE campaign */}
 
-      <Section anchor="overview" contrast="light">
+{/* <Section anchor="overview" contrast="light">
         <div className="flex flex-row-reverse">
 
         <TextWrap>
@@ -275,8 +275,8 @@ export default function Home() {
           />
         </div>
  </ImageWrap>
-      </Section>
-
+      </Section> */}
+{/* END HERE campaign */}
     </>
   );
 }

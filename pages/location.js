@@ -27,21 +27,22 @@ export default function Home() {
       
       >
         <h1 className="display_h1_alt text-white">THE LOCATION</h1>
+        <h2 className="text-white">Milton Living: Connected & Convenient</h2>
+
       </Hero>
 
       <Section anchor="overview" contrast="light">
         <div className="flex flex-row">
         <TextWrap>
         <div className="max-w-[580px]">
-            <h2 className="display_h2 here">HERE</h2>
-            <div className="head_underline"></div>
+            {/* <h2 className="display_h2 here">HERE</h2>
+            <div className="head_underline"></div> */}
             <h3 className="display_h3 max-w-[700px] mb-4">
-              Milton: Meet your neighbourhood.
+            Explore Your New Neighbourhood
             </h3>
 
             <p className="text-base max-w-[580px]">
-            The Residences on Kennedy Circle offers the convenience of a Milton Transit bus stop at its doorstep and is a short distance from the GO Station with a direct route to downtown Toronto, 20 minutes to Toronto Pearson Airport and 5 minutes to Highway 401. Located in the Toronto-Waterloo Innovation Corridor, the second largest technology cluster in North America, residents are in proximity to Canada's top academic institutions and universities, start-up incubators, research facilities and tech companies. 
-              <br />
+            Perfectly positioned in Milton, Ontario, Kennedy Circle connects you to the best the area has to offer. Enjoy the balance of nearby nature trails and parks with the convenience of urban amenities. Shops, dining, schools, and easy transit links are all within reach, making it effortless to embrace the vibrant Milton lifestyle right from your doorstep.              <br />
               <br />
             </p>
 

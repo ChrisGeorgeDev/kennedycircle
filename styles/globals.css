@@ -93,7 +93,7 @@ p {
 
 .reg-cta {
   font-size: 14px;
-  @apply flex  rounded-full px-6 ml-5 items-center pt-2 pb-1.5 border border-gvhBlue-400 hover:bg-gvhBlue-400  text-gvhBlue-400 hover:text-gvhGold-400 hover:font-bold focus:outline-none transition duration-150 ease-in-out uppercase;
+  @apply flex rounded-full px-6 ml-5 items-center pt-2 pb-1.5 border border-gvhBlue-400 bg-gvhBlue-400 text-gvhGold-400 hover:bg-transparent hover:text-gvhBlue-400 hover:font-bold focus:outline-none transition duration-150 ease-in-out uppercase;
 }
 
 .fplan-cta {

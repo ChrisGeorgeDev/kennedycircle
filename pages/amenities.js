@@ -25,6 +25,8 @@ export default function Home() {
 
       >
         <h1 className="display_h1_alt text-white">THE AMENITIES</h1>
+        <h2 className="text-white">Designed For Your Lifestyle</h2>
+
 
       </Hero>
 
@@ -32,17 +34,14 @@ export default function Home() {
         <div className="flex flex-row">
          <TextWrap>
          <div className="max-w-[580px]">
-            <h2 className="display_h2 here">HERE</h2>
-            <div className="head_underline"></div>
+            {/* <h2 className="display_h2 here">HERE</h2>
+            <div className="head_underline"></div> */}
             <h3 className="display_h3 max-w-[700px] mb-4">
-              Your home extends beyond.{" "}
+            Elevate Your Everyday at Kennedy Circle.
             </h3>
 
             <p className="text-base max-w-[580px]">
-              Come home to an expansive lobby complete with a 24-7 virtual
-              concierge and spaces to relax and meet your neighbours and guests,
-              including our 3,600 sqft outdoor terrace. Host an incredible event
-              from our demonstration kitchen and lounge.
+            At Kennedy Circle, your living space extends far beyond your suite. We've curated a selection of modern amenities designed to enhance your well-being, productivity, and connection. Discover spaces that seamlessly integrate into your daily routine, offering convenience and opportunities to unwind, focus, and socialize right at home.
             </p>
           </div>
          </TextWrap>
@@ -62,16 +61,14 @@ export default function Home() {
         <div className="flex flex-row-reverse">
         <TextWrap>
         <div className="max-w-[580px]">
-            <h2 className="display_h2 here">HERE</h2>
-            <div className="head_underline"></div>
+            {/* <h2 className="display_h2 here">HERE</h2>
+            <div className="head_underline"></div> */}
             <h2 className="display_h3 max-w-[700px] mb-4">
-              Self-care is everyday{" "}
+            Yoga & Wellness&nbsp;Room
             </h2>
 
             <p className="text-base max-w-[580px]">
-              Focus on your health and wellness in our yoga, stretch and
-              meditation room. This soothing and sun-filled space has been
-              designed to benefit every active and health-conscious resident.{" "}
+            Prioritize your well-being in our serene yoga room, a dedicated space to stretch, meditate, and recharge.
             </p>
           </div>
         </TextWrap>
@@ -107,18 +104,14 @@ export default function Home() {
         <div className="flex flex-row">
        <TextWrap>
        <div className="max-w-[580px]">
-            <h2 className="display_h2 here">HERE</h2>
-            <div className="head_underline"></div>
+            {/* <h2 className="display_h2 here">HERE</h2>
+            <div className="head_underline"></div> */}
             <h2 className="display_h3 max-w-[700px] mb-4">
-              Working from home doesn't feel like work.
+            Co-Working Lounge
             </h2>
 
             <p className="text-base max-w-[580px]">
-              We've created a digital community for our residents, with areas
-              for social co-working spaces featuring work pods, a laptop bar and
-              a boardroom to host meetings, plus Smart Home Tech offering
-              digital building and unit access as well as smartphone video
-              calling and delivery parcel scanning.
+            Streamline your workday or find focus in our stylish co-working lounge, offering a productive escape just steps from your door.
             </p>
           </div>
        </TextWrap>
@@ -136,7 +129,68 @@ export default function Home() {
 
       </Section>
 
+      <Section anchor="overview" contrast="light">
+        <div className="flex flex-row">
+       <TextWrap>
+       <div className="max-w-[580px]">
+            {/* <h2 className="display_h2 here">HERE</h2>
+            <div className="head_underline"></div> */}
+            <h2 className="display_h3 max-w-[700px] mb-4">
+            Pet Wash Station
+            </h2>
+
+            <p className="text-base max-w-[580px]">
+            Keep your furry companions happy and clean with ease at our convenient, resident-exclusive pet wash station.            </p>
+          </div>
+       </TextWrap>
+        </div>
+
+
+        <ImageWrap>
+        <div className="here_img">
+          <motion.img variants={ImageLoadIn} 
+            src="/img/KC-Site-Amenities-CoWorkLounge-08.png"
+            alt="Co-working Studio"
+          />
+        </div>
+</ImageWrap>
+
+      </Section>
+
+     
+     
       <Section anchor="overview" contrast="white">
+        <div className="flex flex-row-reverse">
+        <TextWrap>
+        <div className="max-w-[580px]">
+            {/* <h2 className="display_h2 here">HERE</h2>
+            <div className="head_underline"></div> */}
+            <h2 className="display_h3 max-w-[700px] mb-4">
+            Expansive Outdoor Terrace
+            </h2>
+
+            <p className="text-base max-w-[580px]">
+            Connect with neighbours, host friends, or simply relax under the open sky on our stunning 3,600 sqft outdoor terrace – your private urban oasis.            </p>
+          </div>
+        </TextWrap>
+        </div>
+      </Section>
+
+
+      <section className="white">
+
+<ImageWrap>
+<div className="">
+          <motion.img variants={ImageLoadIn} 
+          src="/img/KC-Site-GreenLiving-Rooftop.jpg"
+            alt="The Rooftop patio"
+          />
+        </div>
+</ImageWrap>
+
+</section>
+     
+      {/* <Section anchor="overview" contrast="white">
         <div className="flex relative flex-col">
   <TextWrap>
   <div className="lg:absolute right-0">
@@ -153,7 +207,7 @@ export default function Home() {
         </div>
 
         <img className="w-full" src="/img/siteplan.jpg" />
-      </Section>
+      </Section> */}
 
       <Section anchor="overview" contrast="dark">
         <div className="flex flex-row">

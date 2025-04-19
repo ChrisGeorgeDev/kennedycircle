@@ -191,7 +191,7 @@ export default function Menu() {
                 </div>
                 <a href="#register" className="reg-cta" onClick={AnchorScroll}>
                   {" "}
-                  Register
+               Inquire Now
                 </a>
               </div>
             </div>

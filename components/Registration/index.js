@@ -10,7 +10,7 @@ export default function Registration() {
     <Section anchor="register" contrast="black register">
       <img className="register_icon  " src="/img/icon/kc-brandmark.svg" />
       <div className="w-full">
-        <h2 className="display_alt uppercase text-center mb-6">Register Today <br/> for Phase II</h2>
+        <h2 className="display_alt uppercase text-center mb-6">Leasing Inquiry</h2>
 
         <div className="head_underline "></div>
        
@@ -20,7 +20,7 @@ export default function Registration() {
         <div className="max-w-[500px] mt-20">
           <h2 className="display_h3 mb-2">
             {" "}
-            Book your virtual <br></br>appointment.
+            Have questions?
           </h2>
           <div className="text-slate-600 mt-5">
          
@@ -37,7 +37,7 @@ export default function Registration() {
    <rect x="3" y="5" width="18" height="14" rx="2"></rect>
    <polyline points="3 7 12 13 21 7"></polyline>
 </svg>
-              sales@gableviewhomes.com
+              leasing@gableviewhomes.com
             </p>
           </div>
         </div>

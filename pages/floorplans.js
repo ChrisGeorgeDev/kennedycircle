@@ -30,21 +30,21 @@ export default function Home() {
         imagePortrait="/img/hero/KC-Site-FloorPlans-TitleAreaBG-P.jpg"
       >
         <h1 className="display_h1_alt text-white">THE FLOORPLANS</h1>
+        <h2 className="text-white">Find Your Ideal Space</h2>
       </Hero>
 
       <Section anchor="overview" contrast="light">
         <div className="flex flex-row">
           <TextWrap>
             <div className="max-w-[800px]">
-              <h2 className="display_h2 here">HERE</h2>
-              <div className="head_underline"></div>
+              {/* <h2 className="display_h2 here">HERE</h2>
+              <div className="head_underline"></div> */}
               <h3 className="display_h3 max-w-[900px] mb-4">
-                We bring style and functionality to each and every home.
+              Contemporary 1, 1+Den, and 2-Bedroom Apartments in Milton.
               </h3>
 
               <p className="text-base max-w-[580px]">
-                Each floor plan has been laid out for elevated living
-                experiences.{" "}
+              Discover the perfect backdrop for your life at Kennedy Circle. Our thoughtfully designed rental suites offer a blend of modern aesthetics and practical comfort. Choose from a variety of spacious layouts, each featuring [mention key in-suite features like '9-foot ceilings', 'expansive windows', 'designer-inspired kitchens', 'private balconies/patios' - adapt based on actual features] to create a space that truly feels like home.
               </p>
             </div>
           </TextWrap>

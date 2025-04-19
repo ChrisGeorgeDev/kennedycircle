@@ -23,14 +23,16 @@ export default function Home() {
 
       >
         <h1 className="display_h1_alt text-white">GREEN LIVING</h1>
+        <h2 className="text-white">A breath of fresh air</h2>
+
       </Hero>
 
       <Section anchor="overview" contrast="light">
         <div className="flex flex-row">
          <TextWrap>
          <div className="max-w-[580px]">
-            <h2 className="display_h2 here">HERE</h2>
-            <div className="head_underline"></div>
+            {/* <h2 className="display_h2 here">HERE</h2>
+            <div className="head_underline"></div> */}
             <h3 className="display_h3 max-w-[700px] mb-4">
               You're living a sustainable and eco-conscious lifestyle.
             </h3>
