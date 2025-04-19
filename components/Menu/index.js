@@ -116,91 +116,77 @@ export default function Menu() {
                 </div> */}
 
                 <div className="hidden menu-desktop navFlex  ">
-                  <Link href="/residences">
-                    <a
-                      className={
-                        router.pathname == "/residences"
-                          ? "active link "
-                          : "link"
-                      }
-                    >
-                      {" "}
-                      Residences
-                    </a>
+                  <Link
+                    href="/residences"
+                    className={
+                      router.pathname == "/residences"
+                        ? "active link "
+                        : "link"
+                    }
+                  >
+                    Residences
                   </Link>
 
-                  <Link href="/floorplans">
-                    <a
-                      className={
-                        router.pathname == "/floorplans"
-                          ? "active link "
-                          : "link"
-                      }
-                    >
-                      {" "}
-                      Floorplans
-                    </a>
+                  <Link
+                    href="/floorplans"
+                    className={
+                      router.pathname == "/floorplans"
+                        ? "active link "
+                        : "link"
+                    }
+                  >
+                    Floorplans
                   </Link>
 
-                  <Link href="/amenities">
-                    <a
-                      className={
-                        router.pathname == "/amenities"
-                          ? "active link "
-                          : "link"
-                      }
-                    >
-                      {" "}
-                      Amenities
-                    </a>
+                  <Link
+                    href="/amenities"
+                    className={
+                      router.pathname == "/amenities"
+                        ? "active link "
+                        : "link"
+                    }
+                  >
+                    Amenities
                   </Link>
 
-                  <Link href="/location">
-                    <a
-                      className={
-                        router.pathname == "/location" ? "active link " : "link"
-                      }
-                    >
-                      {" "}
-                      Location
-                    </a>
+                  <Link
+                    href="/location"
+                    className={
+                      router.pathname == "/location" ? "active link " : "link"
+                    }
+                  >
+                    Location
                   </Link>
 
-                  <Link href="/greenliving">
-                    <a
-                      className={
-                        router.pathname == "/greenliving"
-                          ? "active link "
-                          : "link"
-                      }
-                    >
-                      {" "}
-                      Green Living
-                    </a>
+                  <Link
+                    href="/greenliving"
+                    className={
+                      router.pathname == "/greenliving"
+                        ? "active link "
+                        : "link"
+                    }
+                  >
+                    Green Living
                   </Link>
 
-                  <Link href="/team">
-                    <a
-                      className={
-                        router.pathname == "/team" ? "active link " : "link"
-                      }
-                    >
-                      {" "}
-                      The Team
-                    </a>
+                  <Link
+                    href="/team"
+                    className={
+                      router.pathname == "/team" ? "active link " : "link"
+                    }
+                  >
+                    The Team
                   </Link>
 
-                  <Link href="/construction-progress">
-                    <a
-                      className={
-                        router.pathname == "/construction-progress"
-                          ? "active link "
-                          : "link"
-                      }
-                    >
-                      {" "}
-                      Updates
-                    </a>
+                  <Link
+                    href="/construction-progress"
+                    className={
+                      router.pathname == "/construction-progress"
+                        ? "active link "
+                        : "link"
+                    }
+                  >
+                    Updates
                   </Link>
                 </div>
                 <a href="#register" className="reg-cta" onClick={AnchorScroll}>
@@ -329,11 +315,15 @@ export default function Menu() {
                         className="text-gray-800 pt-10"
                         onClick={() => setShow(!show)}
                       >
-                        <Link href="/residences">
-                          <a className="flex px-2 items-center pt-1 text-sm leading-5 text-gray-700  focus:outline-none transition duration-150 ease-in-out uppercase">
-                            {" "}
-                            Residences
-                          </a>
+                        <Link
+                          href="/residences"
+                          className={
+                            router.pathname == "/residences"
+                              ? "active link "
+                              : "link"
+                          }
+                        >
+                          Residences
                         </Link>
                       </li>
 
@@ -341,11 +331,15 @@ export default function Menu() {
                         className="text-gray-800 pt-4"
                         onClick={() => setShow(!show)}
                       >
-                        <Link href="/floorplans">
-                          <a className="flex px-2 items-center pt-1 text-sm leading-5 text-gray-700  focus:outline-none transition duration-150 ease-in-out uppercase">
-                            {" "}
-                            Floorplans
-                          </a>
+                        <Link
+                          href="/floorplans"
+                          className={
+                            router.pathname == "/floorplans"
+                              ? "active link "
+                              : "link"
+                          }
+                        >
+                          Floorplans
                         </Link>
                       </li>
 
@@ -353,11 +347,15 @@ export default function Menu() {
                         className="text-gray-800 pt-4"
                         onClick={() => setShow(!show)}
                       >
-                        <Link href="/amenities">
-                          <a className="flex px-2 items-center pt-1 text-sm leading-5 text-gray-700  focus:outline-none transition duration-150 ease-in-out uppercase">
-                            {" "}
-                            Amenities
-                          </a>
+                        <Link
+                          href="/amenities"
+                          className={
+                            router.pathname == "/amenities"
+                              ? "active link "
+                              : "link"
+                          }
+                        >
+                          Amenities
                         </Link>
                       </li>
 
@@ -365,11 +363,13 @@ export default function Menu() {
                         className="text-gray-800 pt-4"
                         onClick={() => setShow(!show)}
                       >
-                        <Link href="/location">
-                          <a className="flex px-2 items-center pt-1 text-sm leading-5 text-gray-700  focus:outline-none transition duration-150 ease-in-out uppercase">
-                            {" "}
-                            Location
-                          </a>
+                        <Link
+                          href="/location"
+                          className={
+                            router.pathname == "/location" ? "active link " : "link"
+                          }
+                        >
+                          Location
                         </Link>
                       </li>
 
@@ -377,11 +377,15 @@ export default function Menu() {
                         className="text-gray-800 pt-4 "
                         onClick={() => setShow(!show)}
                       >
-                        <Link href="/greenliving">
-                          <a className="flex px-2 items-center pt-1 text-sm leading-5 text-gray-700  focus:outline-none transition duration-150 ease-in-out uppercase">
-                            {" "}
-                            Green Living
-                          </a>
+                        <Link
+                          href="/greenliving"
+                          className={
+                            router.pathname == "/greenliving"
+                              ? "active link "
+                              : "link"
+                          }
+                        >
+                          Green Living
                         </Link>
                       </li>
 
@@ -389,11 +393,13 @@ export default function Menu() {
                         className="text-gray-800 pt-4"
                         onClick={() => setShow(!show)}
                       >
-                        <Link href="/team">
-                          <a className="flex px-2 items-center pt-1 text-sm leading-5 text-gray-700  focus:outline-none transition duration-150 ease-in-out uppercase">
-                            {" "}
-                            The Team
-                          </a>
+                        <Link
+                          href="/team"
+                          className={
+                            router.pathname == "/team" ? "active link " : "link"
+                          }
+                        >
+                          The Team
                         </Link>
                       </li>
 
@@ -401,11 +407,15 @@ export default function Menu() {
                         className="text-gray-800 pt-4"
                         onClick={() => setShow(!show)}
                       >
-                        <Link href="/construction-progress">
-                          <a className="flex px-2 items-center pt-1 text-sm leading-5 text-gray-700  focus:outline-none transition duration-150 ease-in-out uppercase">
-                            {" "}
-                            Updates
-                          </a>
+                        <Link
+                          href="/construction-progress"
+                          className={
+                            router.pathname == "/construction-progress"
+                              ? "active link "
+                              : "link"
+                          }
+                        >
+                          Updates
                         </Link>
                       </li>
                     </ul>

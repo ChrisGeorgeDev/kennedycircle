@@ -1,6 +1,6 @@
 import { Fragment, useRef, useState, useEffect } from "react"
 import { Disclosure, Transition } from "@headlessui/react"
-import { ChevronDownIcon } from "@heroicons/react/solid"
+import { ChevronDownIcon } from "@heroicons/react/24/solid"
 import Link from "next/link"
 
 function classNames(...classes) {

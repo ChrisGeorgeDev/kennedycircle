@@ -20,16 +20,7 @@ import ProgressMe from "../components/CircleProgress/progress";
 import { Container } from "../components/Container";
 import { DiamondIcon } from "../components/DiamondIcon";
 import { DateTime } from "luxon";
-// import Progress from "../components/CircleProgress/progress";
-import Youtube from "react-lazyload-youtube";
-import "react-lazyload-youtube/dist/index.css";
 import YouTubeFrame from "../components/Youtube";
-
-
-
-
-
-
 
 export default function ConstructionProgress({ progress }) {
   
@@ -112,7 +103,7 @@ export default function ConstructionProgress({ progress }) {
                 As your homebuilder, our commitment is to deliver your new home
                 built with the most upmost quality, standards and innovation, as
                 well as to ensure it is thoughtfully integrated into the fabric
-                of your new community. We know you’re eager about the
+                of your new community. We know you're eager about the
                 development of your home build. Stay informed on our progress
                 and key project milestones at The Residences on Kennedy Circle
                 here.
