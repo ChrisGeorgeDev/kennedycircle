@@ -196,6 +196,9 @@ p {
   @apply font-display tracking-[.15em] text-3xl sm:text-5xl md:text-6xl;
 }
 
+.display_h1_alt + h2 {
+ margin-top: 20px
+}
 .title_h2 {
   @apply font-sans text-4xl sm:text-5xl md:text-6xl;
 }
