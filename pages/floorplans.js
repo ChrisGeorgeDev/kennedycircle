@@ -44,7 +44,7 @@ export default function Home() {
               </h3>
 
               <p className="text-base max-w-[580px]">
-              Discover the perfect backdrop for your life at Kennedy Circle. Our thoughtfully designed rental suites offer a blend of modern aesthetics and practical comfort. Choose from a variety of spacious layouts, each featuring [mention key in-suite features like '9-foot ceilings', 'expansive windows', 'designer-inspired kitchens', 'private balconies/patios' - adapt based on actual features] to create a space that truly feels like home.
+              Discover the perfect backdrop for your life at Kennedy Circle. Our thoughtfully designed rental suites offer a blend of modern aesthetics and practical comfort with features like approximately 9-foot ceilings (10-foot on the ground floor), modern wide plank laminate flooring, and designer kitchens with stainless steel appliances, quartz countertops, and soft-close cabinetry. Enjoy the convenience of in-suite laundry and individual heating and cooling. Kennedy Circle provides a space that truly feels like home.
               </p>
             </div>
           </TextWrap>

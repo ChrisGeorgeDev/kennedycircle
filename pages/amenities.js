@@ -149,8 +149,8 @@ export default function Home() {
         <ImageWrap>
         <div className="here_img">
           <motion.img variants={ImageLoadIn} 
-            src="/img/KC-Site-Amenities-CoWorkLounge-08.png"
-            alt="Co-working Studio"
+            src="/img/petwashstation.png"
+            alt="Pet Wash Station"
           />
         </div>
 </ImageWrap>
@@ -166,7 +166,7 @@ export default function Home() {
             {/* <h2 className="display_h2 here">HERE</h2>
             <div className="head_underline"></div> */}
             <h2 className="display_h3 max-w-[700px] mb-4">
-            Expansive Outdoor Terrace
+            Expansive Outdoor&nbsp;Terrace
             </h2>
 
             <p className="text-base max-w-[580px]">
