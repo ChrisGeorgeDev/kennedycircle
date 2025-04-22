@@ -23,14 +23,16 @@ export default function Home() {
 
       >
         <h1 className="display_h1_alt text-white">GREEN LIVING</h1>
+        <h2 className="text-white">A breath of fresh air</h2>
+
       </Hero>
 
       <Section anchor="overview" contrast="light">
         <div className="flex flex-row">
          <TextWrap>
          <div className="max-w-[580px]">
-            <h2 className="display_h2 here">HERE</h2>
-            <div className="head_underline"></div>
+            {/* <h2 className="display_h2 here">HERE</h2>
+            <div className="head_underline"></div> */}
             <h3 className="display_h3 max-w-[700px] mb-4">
               You're living a sustainable and eco-conscious lifestyle.
             </h3>
@@ -125,12 +127,12 @@ export default function Home() {
             <h2 className="display_alt  text-center">EV CHARGING</h2>
             <div className="head_underline "></div>
 
-            <h2 className="display_h4 text-center pt-8 pb-8">
+            {/* <h2 className="display_h4 text-center pt-8 pb-8">
               Two options offered for EV&nbsp;Charging:
-            </h2>
+            </h2> */}
 
             <Tab.Group>
-              <Tab.List className="pb-6 text-center flex-grow ">
+              {/* <Tab.List className="pb-6 text-center flex-grow ">
                 <Tab as={Fragment}>
                   {({ selected }) => (
                     <button
@@ -157,7 +159,7 @@ export default function Home() {
                     </button>
                   )}
                 </Tab>
-              </Tab.List>
+              </Tab.List> */}
               <Tab.Panels>
                 <Tab.Panel>
                   <h2 className="display_h4 text-center w-full md:w-4/5 lg:w-2/3 xl:w-1/2 mx-auto pb-10">

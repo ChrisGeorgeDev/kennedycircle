@@ -20,16 +20,7 @@ import ProgressMe from "../components/CircleProgress/progress";
 import { Container } from "../components/Container";
 import { DiamondIcon } from "../components/DiamondIcon";
 import { DateTime } from "luxon";
-// import Progress from "../components/CircleProgress/progress";
-import Youtube from "react-lazyload-youtube";
-import "react-lazyload-youtube/dist/index.css";
 import YouTubeFrame from "../components/Youtube";
-
-
-
-
-
-
 
 export default function ConstructionProgress({ progress }) {
   
@@ -95,24 +86,25 @@ export default function ConstructionProgress({ progress }) {
         image="/img/hero/KC-Site-HomepageHero-Overlay.jpg"
         imagePortrait="img/hero/KC-HeroImage-Rendering-Portrait.jpg"
       >
-        <h1 className="display_h1_alt text-white">STATUS UPDATES</h1>
+          <h1 className="display_h1_alt text-white">STATUS UPDATES</h1>
+          <h2 className="text-white">Stay in the know about our progress.</h2>
       </Hero>
 
       <Section anchor="overview" contrast="light">
         <div className="flex flex-row">
           <TextWrap>
             <div className="max-w-[700px]">
-              <h2 className="display_h2 here">HERE</h2>
-              <div className="head_underline"></div>
+              {/* <h2 className="display_h2 here">HERE</h2>
+              <div className="head_underline"></div> */}
               <h3 className="display_h3 max-w-[700px] mb-4">
-                Stay in the know about our progress.
+                Stay in the know about&nbsp;our progress.
               </h3>
 
               <p className="text-base max-w-[580px]">
                 As your homebuilder, our commitment is to deliver your new home
                 built with the most upmost quality, standards and innovation, as
                 well as to ensure it is thoughtfully integrated into the fabric
-                of your new community. We know you’re eager about the
+                of your new community. We know you're eager about the
                 development of your home build. Stay informed on our progress
                 and key project milestones at The Residences on Kennedy Circle
                 here.

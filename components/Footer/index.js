@@ -15,7 +15,7 @@ export default function Footer() {
 
       <div className="flex text-center pt-5 md:pt-0 md:text-left flex-col md:flex-row md:justify-between">
         <div>
-          <p className=" text-gvhGold-400 text-sm">©2022 Gable View Homes</p>
+          <p className=" text-gvhGold-400 text-sm">©{new Date().getFullYear()} Gable View Homes</p>
         </div>
         <div>
           <p className="text-gvhGold-400 text-sm">

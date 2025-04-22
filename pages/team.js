@@ -24,6 +24,8 @@ export default function Home() {
       imagePortrait="/img/hero/KC-Site-Team-TitleAreaBG-P.jpg"
       >
       <h1 className="display_h1_alt text-white">THE TEAM</h1>
+      <h2 className="text-white">Where Expertise Meets Innovation</h2>
+
       </Hero>
 
       <Section anchor="overview" contrast="light">
@@ -35,7 +37,7 @@ export default function Home() {
             <p className="text-base max-w-[900px]">
               Spaces designed for life. <br />
               At Gable View Homes, we are inspired to build houses and
-              communities you’ll be proud to call home. As a boutique developer
+              communities you'll be proud to call home. As a boutique developer
               with over 25 years of combined experience, our vision remains a
               home that is inviting, desirable, affordable and thoughtfully
               integrated into the fabric of the surrounding community. With over
@@ -77,7 +79,7 @@ export default function Home() {
               sustainability into planning, design and construction practices.
             </p>
             <p className="text-base max-w-[900px]">
-              As a solution oriented practice, KNYMH’s services include
+              As a solution oriented practice, KNYMH's services include
               architectural, interior design, urban planning and project
               management services, ranging from programming spaces, concept
               design, strategic planning and approvals, detailed construction
@@ -109,7 +111,7 @@ export default function Home() {
               intentional approach to design that places value on simplicity and
               sustainability. By designing spaces that are functional and which
               reflect diverse individual needs, Stagg & Paper Interiors creates
-              a living oasis from the world’s outside noise — offering clients
+              a living oasis from the world's outside noise — offering clients
               the sense of well-being, calmness, and order within their home.
             </p>
             <p className="text-base max-w-[900px]">

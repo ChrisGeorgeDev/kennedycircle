@@ -26,6 +26,7 @@ export default function Home() {
 
       >
         <h1 className="display_h1_alt text-white">THE RESIDENCES</h1>
+        <h2 className="text-white">Explore our Modern Rental Suites</h2>
       </Hero>
 
       <Section anchor="overview" contrast="light">
@@ -33,8 +34,8 @@ export default function Home() {
         <TextWrap>
 
           <div className="max-w-[580px]">
-            <h2 className="display_h2 here">HERE</h2>
-            <div className="head_underline"></div>
+            {/* <h2 className="display_h2 here">HERE</h2>
+            <div className="head_underline"></div> */}
             <h3 className="display_h3 max-w-[700px] mb-4">
               Spaces designed for life.
             </h3>
@@ -45,21 +46,17 @@ export default function Home() {
               living experiences.
             </p>
 
-            <Link href="/floorplans">
-              {/* <CtaNext>VIEW FLOORPLANS</CtaNext> */}
-              <a className="cta inline-block items-center links link--metis">
-
-<span className="flex items-center">
-VIEW FLOORPLANS
-<svg width="24" className="ml-2" height="8" viewBox="0 0 24 8" stroke="currentColor" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M23.1547 4.3582C23.35 4.16293 23.35 3.84635 23.1547 3.65109L19.9727 0.469108C19.7775 0.273846 19.4609 0.273846 19.2656 0.469108C19.0704 0.66437 19.0704 0.980953 19.2656 1.17621L22.0941 4.00464L19.2656 6.83307C19.0704 7.02833 19.0704 7.34491 19.2656 7.54018C19.4609 7.73544 19.7775 7.73544 19.9727 7.54018L23.1547 4.3582ZM0.700195 4.50464L22.8012 4.50464L22.8012 3.50464L0.700195 3.50464L0.700195 4.50464Z" />
-</svg>
-
-</span>
-
- 
- </a>
-            </Link>
+            {/* <Link
+              href="/floorplans"
+              className="cta inline-block items-center links link--metis"
+            >
+              <span className="flex items-center">
+                VIEW FLOORPLANS
+                <svg width="24" className="ml-2" height="8" viewBox="0 0 24 8" stroke="currentColor" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M23.1547 4.3582C23.35 4.16293 23.35 3.84635 23.1547 3.65109L19.9727 0.469108C19.7775 0.273846 19.4609 0.273846 19.2656 0.469108C19.0704 0.66437 19.0704 0.980953 19.2656 1.17621L22.0941 4.00464L19.2656 6.83307C19.0704 7.02833 19.0704 7.34491 19.2656 7.54018C19.4609 7.73544 19.7775 7.73544 19.9727 7.54018L23.1547 4.3582ZM0.700195 4.50464L22.8012 4.50464L22.8012 3.50464L0.700195 3.50464L0.700195 4.50464Z" />
+                </svg>
+              </span>
+            </Link> */}
           </div>
           </TextWrap>
         </div>
@@ -76,7 +73,7 @@ VIEW FLOORPLANS
               These spacious floor plans invite light into the space with floor
               to ceiling windows and 10 feet high ceilings on the ground floor
               and 9 feet high on the upper floors. Open to the living area,
-              we’ve designed our kitchens to be host-friendly and efficient with
+              we've designed our kitchens to be host-friendly and efficient with
               ample counter space, modern appliances and beautifully appointed
               finishes and hardware. These finishes extend to our bathrooms that
               provide generous storage and cabinetry with full bathtubs or
@@ -126,7 +123,7 @@ VIEW FLOORPLANS
               digital building access, smartphone video calling, facial
               recognition entry and to receive delivery notifications. In-suite
               features such as lighting and thermostat as well as keyless lock
-              and entry are some additional features we’ve integrated into our
+              and entry are some additional features we've integrated into our
               innovative homes control system.
             </p>
           </div>
@@ -215,7 +212,7 @@ VIEW FLOORPLANS
                 />
                 <h3 className="text-xl mb-6">Ensuite & Bathroom</h3>
                 <p>
-                  Cultured marble countertop with sleek Moen ‘Vichy’ faucet and
+                  Cultured marble countertop with sleek Moen 'Vichy' faucet and
                   contemporary hardware and tiled with imporated ceramic tile.{" "}
                 </p>
               </div>
