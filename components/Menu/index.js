@@ -200,7 +200,7 @@ export default function Menu() {
 
         <nav>
           <div className="py-2 px-2 w-full flex navMobile justify-between items-center bg-white fixed top-0 z-40">
-            <div>
+            <div className="flex items-center">
               <a href="/">
                 <svg
                   className="h-[31px] md:hidden lg:hidden"
@@ -233,7 +233,7 @@ export default function Menu() {
               <div className="relative mr-6 ">
                 <a href="#register" className="reg-cta" onClick={AnchorScroll}>
                   {" "}
-                  Register
+                  Inquire Now
                 </a>
               </div>
               <div

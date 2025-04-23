@@ -576,32 +576,31 @@ html {
 
 
 
-@media (min-width: 1355px) {
- .navMobile {
-  display: none!important;
- }
-
- .navFlex {
-  display: flex!important;
- }
-
- .navDesktop {
-  display: block!important;
- }
-}
-/* 
-@media (min-width: 1354px) {
+@media (min-width: 1356px) {
   .navMobile {
-    display: block!important;
+    display: none !important;
+  }
 
+  .navFlex {
+    display: flex !important;
+  }
+
+  .navDesktop {
+    display: block !important;
+  }
+}
+
+@media (max-width: 1355px) {
+  .navMobile {
+    display: flex !important;
   }
  
   .navDesktop {
-   display: none!important;
+    display: none !important;
   }
- } */
+}
 
- .swiper-button-prev,
+.swiper-button-prev,
 .swiper-button-next {
   background-color: rgba(184, 157, 103, 0.8);
   padding: 1.5rem;
