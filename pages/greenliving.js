@@ -15,8 +15,8 @@ export default function Home() {
   return (
     <>
       <NextSeo
-        title="Kennedy Circle Condominiums | Milton, ON Condo for Sale"
-        description="A short description goes here."
+        title="Green Living | Kennedy Circle Condominiums | Milton, ON"
+        description="Contemporary Apartment Rentals Designed for Your Lifestyle."
       />
       <Hero alt="Pic" image="/img/hero/KC-Site-GreenLiving.jpg"
             imagePortrait="img/hero/KC-Site-GreenLiving-TitleAreaBG-Portrait.jpg"
