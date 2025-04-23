@@ -157,7 +157,7 @@ export default function FlyoutMenu() {
             <div className="logo md:row-span-2 col-span-3 sm:col-span-2 xl:row-span-1  xl:col-span-4">
               <img
                 className="min-w-[90px] w-5/12 md:w-8/12 xl:w-10/12 lg:pr-0"
-                src={`img/icon/${solution.typeSvg}`}
+                src={`/img/icon/${solution.typeSvg}`}
               />
               <hr className="hidden h-[2px] border-t-[2px] border-gray-900 mb-10 mt-8"></hr>
             </div>
@@ -205,7 +205,7 @@ export default function FlyoutMenu() {
 
 
       
-              <a href={`assets/floorplans/${solution.download}`}  target="_blank" className="fplan-cta col-span-6  xl:block">DOWNLOAD</a>
+              <a href={`/assets/floorplans/${solution.download}`}  target="_blank" className="fplan-cta col-span-6  xl:block">DOWNLOAD</a>
                
                 
 
@@ -219,7 +219,7 @@ export default function FlyoutMenu() {
          
           <div class="flex-1 mt-10 xl:mt-0 ">
             <img
-              src={`img/floorplans/${solution.blackline}`}
+              src={`/img/floorplans/${solution.blackline}`}
               width="400"
               className="xl:pl-20 pb-10 w-full"
             />

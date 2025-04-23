@@ -184,7 +184,7 @@ export default function Home() {
               <div>
                 <img
                   className="h-[182px]  mb-[70px]"
-                  src="img/icon/KC-Site-FF-Icons-1-General.svg"
+                  src="/img/icon/KC-Site-FF-Icons-1-General.svg"
                 />
                 <h3 className="text-xl  mb-6">General</h3>
                 <p>
@@ -196,7 +196,7 @@ export default function Home() {
               <div>
                 <img
                   className="h-[182px] mb-[70px]"
-                  src="img/icon/KC-Site-FF-Icons-2-Kitchen.svg"
+                  src="/img/icon/KC-Site-FF-Icons-2-Kitchen.svg"
                 />
                 <h3 className="text-xl mb-6">Kitchen</h3>
                 <p>
@@ -208,7 +208,7 @@ export default function Home() {
               <div>
                 <img
                   className="h-[182px]  mb-[70px]"
-                  src="img/icon/KC-Site-FF-Icons-3-EnsuiteandBathroom.svg"
+                  src="/img/icon/KC-Site-FF-Icons-3-EnsuiteandBathroom.svg"
                 />
                 <h3 className="text-xl mb-6">Ensuite & Bathroom</h3>
                 <p>
@@ -219,7 +219,7 @@ export default function Home() {
               <div>
                 <img
                   className="h-[182px] mb-[70px]"
-                  src="img/icon/KC-Site-FF-Icons-4-Laundry.svg"
+                  src="/img/icon/KC-Site-FF-Icons-4-Laundry.svg"
                 />
                 <h3 className="text-xl mb-6">Laundry</h3>
                 <p>
@@ -230,7 +230,7 @@ export default function Home() {
               <div>
                 <img
                   className="h-[182px] mb-[70px]"
-                  src="img/icon/KC-Site-FF-Icons-5-MechanicalandElectrical.svg"
+                  src="/img/icon/KC-Site-FF-Icons-5-MechanicalandElectrical.svg"
                 />
                 <h3 className="text-xl mb-6">Mechanical & Electrical</h3>
                 <p>
@@ -241,7 +241,7 @@ export default function Home() {
               <div>
                 <img
                   className="h-[182px] mb-[70px]"
-                  src="img/icon/KC-Site-FF-Icons-6-SecurityandCommunications.svg"
+                  src="/img/icon/KC-Site-FF-Icons-6-SecurityandCommunications.svg"
                 />
                 <h3 className="text-xl mb-6">Security & Communications</h3>
                 <p>

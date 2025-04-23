@@ -51,7 +51,7 @@ export default function Home() {
       <div className="img_break">
         <img
           src="/img/KC-Site-GreenLiving-Rooftop.jpg"
-          alt="Picture of the author"
+          alt="Rooftop"
         />
       </div>
 
@@ -66,7 +66,7 @@ export default function Home() {
               <div>
                 <img
                   className="h-[182px] mb-[70px]"
-                  src="img/icon/KC-Site-Green-Icons-1-HeatingandCooling.svg"
+                  src="/img/icon/KC-Site-Green-Icons-1-HeatingandCooling.svg"
                 />
                 <h3 className="text-xl mb-6">Heating & Cooling</h3>
                 <p>
@@ -80,7 +80,7 @@ export default function Home() {
               <div>
                 <img
                   className="h-[182px] mb-[70px]"
-                  src="img/icon/KC-Site-Green-Icons-2-Insulation.svg"
+                  src="/img/icon/KC-Site-Green-Icons-2-Insulation.svg"
                 />
                 <h3 className="text-xl mb-6">Insulation</h3>
                 <p>
@@ -93,7 +93,7 @@ export default function Home() {
               <div>
                 <img
                   className="h-[182px] mb-[70px]"
-                  src="img/icon/KC-Site-Green-Icons-3-ElectricalandPlumbing.svg"
+                  src="/img/icon/KC-Site-Green-Icons-3-ElectricalandPlumbing.svg"
                 />
                 <h3 className="text-xl mb-6">Electrical & Plumbing</h3>
                 <p>
@@ -106,7 +106,7 @@ export default function Home() {
               <div>
                 <img
                   className="h-[182px] mb-[70px]"
-                  src="img/icon/KC-Site-Green-Icons-4-Recycling.svg"
+                  src="/img/icon/KC-Site-Green-Icons-4-Recycling.svg"
                 />
                 <h3 className="text-xl mb-6">Recycling</h3>
                 <p>
@@ -204,7 +204,7 @@ export default function Home() {
             <div className="here_img">
               <img
                 src="/img/KC-Site-GreenLiving-EVCharging-08.png"
-                alt="Picture of the author"
+                alt="EV Charging"
               />
             </div>
           </div>

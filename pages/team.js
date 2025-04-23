@@ -86,10 +86,10 @@ export default function Home() {
               documentation and administration through to facility management.
             </p>
 <div className="grid grid-cols-4 mt-10">
-<img className="col-span-2 lg:col-span-1" src="img/KC-Site-Team-KNYMH-ProjectPhotos-02.jpg"/>
+<img className="col-span-2 lg:col-span-1" src="/img/KC-Site-Team-KNYMH-ProjectPhotos-02.jpg"/>
 
-  <img className="col-span-2 lg:col-span-1 " src="img/KC-Site-Team-KNYMH-ProjectPhotos-01.jpg"/>
-  <img className="col-span-4 lg:col-span-2" src="img/KC-Site-Team-KNYMH-ProjectPhotos-03.jpg"/>
+  <img className="col-span-2 lg:col-span-1 " src="/img/KC-Site-Team-KNYMH-ProjectPhotos-01.jpg"/>
+  <img className="col-span-4 lg:col-span-2" src="/img/KC-Site-Team-KNYMH-ProjectPhotos-03.jpg"/>
 
 </div>
 
