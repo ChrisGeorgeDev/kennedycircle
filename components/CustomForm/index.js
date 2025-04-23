@@ -59,7 +59,7 @@ const CustomForm = ({ status, message, onValidated }) => {
       <h3 className="mc__title text-base md:text-xl text-center">
         {status === "success"
           ? "Thank you for your inquiry"
-          : "Let's Find Your New Milton Rental Home"}
+          : "Let's Find Your New Milton Rental\u00A0Home"}
       </h3>
 
       {status === "sending" && (
