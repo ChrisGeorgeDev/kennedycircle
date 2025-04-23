@@ -23,7 +23,7 @@ export default function Home() {
 
       >
         <h1 className="display_h1_alt text-white">GREEN LIVING</h1>
-        <h2 className="text-white">A breath of fresh air</h2>
+        <h2 className="text-white">A breath of fresh&nbsp;air</h2>
 
       </Hero>
 

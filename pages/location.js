@@ -95,7 +95,7 @@ export default function Home() {
 
       <DividerImg
         image="/img/Section-5_KC-Site-Neighbourhood-FamilyBGPhoto.jpg"
-        imagePortrait="img/hero/KC-Site-Neighbourhood-FamilyBGPhoto-Portrait.jpg"
+        imagePortrait="/img/hero/KC-Site-Neighbourhood-FamilyBGPhoto-Portrait.jpg"
         position="top left"
       />
 
