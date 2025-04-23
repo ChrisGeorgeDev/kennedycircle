@@ -22,7 +22,7 @@ export default function Home() {
         description="Contemporary Apartment Rentals Designed for Your Lifestyle."
       />
       <Hero alt="Pic" image="/img/hero/KC-Site-Residences-TitleArea-N.jpg"
-      imagePortrait="img/hero/KC-Site-Residences-TitleAreaBG-Portrait.jpg"
+      imagePortrait="/img/hero/KC-Site-Residences-TitleAreaBG-Portrait.jpg"
 
       >
         <h1 className="display_h1_alt text-white">THE RESIDENCES</h1>

@@ -19,7 +19,7 @@ export default function Home() {
         description="Contemporary Apartment Rentals Designed for Your Lifestyle."
       />
       <Hero alt="Pic" image="/img/hero/KC-Site-GreenLiving.jpg"
-            imagePortrait="img/hero/KC-Site-GreenLiving-TitleAreaBG-Portrait.jpg"
+            imagePortrait="/img/hero/KC-Site-GreenLiving-TitleAreaBG-Portrait.jpg"
 
       >
         <h1 className="display_h1_alt text-white">GREEN LIVING</h1>

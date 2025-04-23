@@ -84,7 +84,7 @@ export default function ConstructionProgress({ progress }) {
       <Hero
         alt="Pic"
         image="/img/hero/KC-Site-HomepageHero-Overlay.jpg"
-        imagePortrait="img/hero/KC-HeroImage-Rendering-Portrait.jpg"
+        imagePortrait="/img/hero/KC-HeroImage-Rendering-Portrait.jpg"
       >
           <h1 className="display_h1_alt text-white">STATUS UPDATES</h1>
           <h2 className="text-white">Stay in the know about our progress.</h2>

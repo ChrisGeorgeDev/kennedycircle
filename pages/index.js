@@ -24,7 +24,7 @@ export default function Home() {
 
       <Hero alt="Pic" 
       image="/img/hero/KC-Site-HomepageHero-Overlay.jpg"
-      imagePortrait="img/hero/KC-HeroImage-Rendering-Portrait.jpg"
+      imagePortrait="/img/hero/KC-HeroImage-Rendering-Portrait.jpg"
       >
     
 <svg className="heroMsg lg:mb-24" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
