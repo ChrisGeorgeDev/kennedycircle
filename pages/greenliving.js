@@ -15,8 +15,8 @@ export default function Home() {
   return (
     <>
       <NextSeo
-        title="Green Living | Kennedy Circle Condominiums | Milton, ON"
-        description="Contemporary Apartment Rentals Designed for Your Lifestyle."
+        title="Green Living | Kennedy Circle Apartments | Milton, ON"
+        description="Modern 1, 1+den & 2-bedroom apartment rentals now leasing in Milton, ON. Smart home technology, rooftop terrace, co-working lounge & more. Book a tour: 905.336.8953."
       />
       <Hero alt="Pic" image="/img/hero/KC-Site-GreenLiving.jpg"
             imagePortrait="/img/hero/KC-Site-GreenLiving-TitleAreaBG-Portrait.jpg"
@@ -169,13 +169,13 @@ export default function Home() {
 
                   <ul className=" list-disc mx-auto w-full px-5 md:w-4/5  lg:w-3/5 xl:w-2/5">
                     <li>
-                      Electricity Meter to be billed directly to residents and
-                      separate from suite electrical consumption through
-                      Electric Vehicle Energy Management System.
+                      EV charging is metered separately from your suite's
+                      electricity through an Electric Vehicle Energy
+                      Management System, so you only pay for what you use.
                     </li>
                     <li>
-                      Available at Residential Suite Occupancy Date, no later
-                      than final closing
+                      Available from your move-in date, with usage billed
+                      directly to you
                     </li>
                   </ul>
                 </Tab.Panel>

@@ -15,8 +15,8 @@ export default function Home() {
   return (
     <>
       <NextSeo
-        title="The Team | Kennedy Circle Condominiums | Milton, ON"
-        description="Contemporary Apartment Rentals Designed for Your Lifestyle."
+        title="The Team | Kennedy Circle Apartments | Milton, ON"
+        description="Modern 1, 1+den & 2-bedroom apartment rentals now leasing in Milton, ON. Smart home technology, rooftop terrace, co-working lounge & more. Book a tour: 905.336.8953."
       />
 
       <Hero alt="Pic" 
@@ -53,11 +53,12 @@ export default function Home() {
             </p>
             <p className="text-base max-w-[900px]">
               From vibrant townhomes, contemporary singles and semi-detached
-              houses to modern condominiums, our mission is to adhere to our
-              core values of creating outstanding spaces through design and
-              craftsmanship and to deliver buildings with quality, experience
-              and innovation. Our work is guided by passion and drive to reshape
-              the way we build homes and communities.
+              houses to modern purpose-built rental residences, our mission is
+              to adhere to our core values of creating outstanding spaces
+              through design and craftsmanship and to deliver buildings with
+              quality, experience and innovation. Our work is guided by
+              passion and drive to reshape the way we build homes and
+              communities.
             </p>
           </div>
        </TextWrap>

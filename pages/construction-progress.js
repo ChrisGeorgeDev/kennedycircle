@@ -78,15 +78,15 @@ export default function ConstructionProgress({ progress }) {
   return (
     <>
       <NextSeo
-        title="Status Updates | Kennedy Circle Condominiums | Milton, ON"
-        description="Contemporary Apartment Rentals Designed for Your Lifestyle."
+        title="Building Updates | Kennedy Circle Apartments | Milton, ON"
+        description="Modern 1, 1+den & 2-bedroom apartment rentals now leasing in Milton, ON. Smart home technology, rooftop terrace, co-working lounge & more. Book a tour: 905.336.8953."
       />
       <Hero
         alt="Pic"
         image="/img/hero/KC-Site-HomepageHero-Overlay.jpg"
         imagePortrait="/img/hero/KC-HeroImage-Rendering-Portrait.jpg"
       >
-          <h1 className="display_h1_alt text-white">STATUS UPDATES</h1>
+          <h1 className="display_h1_alt text-white">BUILDING UPDATES</h1>
           <h2 className="text-white">Stay in the know about our progress.</h2>
       </Hero>
 
@@ -101,13 +101,13 @@ export default function ConstructionProgress({ progress }) {
               </h3>
 
               <p className="text-base max-w-[580px]">
-                As your homebuilder, our commitment is to deliver your new home
-                built with the most upmost quality, standards and innovation, as
-                well as to ensure it is thoughtfully integrated into the fabric
-                of your new community. We know you're eager about the
-                development of your home build. Stay informed on our progress
-                and key project milestones at The Residences on Kennedy Circle
-                here.
+                Your future home is taking shape. We're committed to delivering
+                a building of exceptional quality, thoughtfully integrated into
+                the fabric of the Milton community — and we know you're excited
+                to see it come to life. Follow our construction progress and
+                key milestones here as we count down to first move-ins. Ready
+                to reserve your suite? Call 905.336.8953 or submit a leasing
+                inquiry below.
               </p>
             </div>
           </TextWrap>

@@ -18,8 +18,8 @@ export default function Home() {
   return (
     <>
       <NextSeo
-        title="The Residences | Kennedy Circle Condominiums | Milton, ON"
-        description="Contemporary Apartment Rentals Designed for Your Lifestyle."
+        title="The Residences | Kennedy Circle Apartments | Milton, ON"
+        description="Modern 1, 1+den & 2-bedroom apartment rentals now leasing in Milton, ON. Smart home technology, rooftop terrace, co-working lounge & more. Book a tour: 905.336.8953."
       />
       <Hero alt="Pic" image="/img/hero/KC-Site-Residences-TitleArea-N.jpg"
       imagePortrait="/img/hero/KC-Site-Residences-TitleAreaBG-Portrait.jpg"
@@ -77,8 +77,8 @@ export default function Home() {
               ample counter space, modern appliances and beautifully appointed
               finishes and hardware. These finishes extend to our bathrooms that
               provide generous storage and cabinetry with full bathtubs or
-              walk-in showers. Our 2-bedroom plans units offer corner views from
-              the living room or the master bedroom.
+              walk-in showers. Our 2-bedroom suites offer corner views from
+              the living room or the primary bedroom.
             </p>
           </div>
           </TextWrap>
@@ -213,7 +213,7 @@ export default function Home() {
                 <h3 className="text-xl mb-6">Ensuite & Bathroom</h3>
                 <p>
                   Cultured marble countertop with sleek Moen 'Vichy' faucet and
-                  contemporary hardware and tiled with imporated ceramic tile.{" "}
+                  contemporary hardware and tiled with imported ceramic tile.{" "}
                 </p>
               </div>
               <div>

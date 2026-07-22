@@ -14,10 +14,10 @@ const solutions = [
     bed: "1 BED",
     bath: "1 BATH",
     indoor: "606 sqft.",
-    outdoor: "51 sqft.",
-    total: "657 sqft.",
+    outdoor: "0 sqft.",
+    total: "606 sqft.",
     blackline:"KC-Site-FloorPlan-Modal-TransparentBG-A.png",
-    download:"KennedyCircle-FloorPlans-A-2024.pdf",
+    download:"KennedyCircle-FloorPlan-TypeA-1Bed-REV2026.pdf",
      href: "#"
   },
   {
@@ -29,7 +29,7 @@ const solutions = [
     outdoor: "45 sqft.",
     total: "706 sqft.",
     blackline:"KC-Site-FloorPlan-Modal-TransparentBG-B.png",
-    download:"KennedyCircle-FloorPlans-B-2024.pdf",
+    download:"KennedyCircle-FloorPlan-TypeB-1BedDen-REV2026.pdf",
     href: "#"
   },
   {
@@ -41,7 +41,7 @@ const solutions = [
     outdoor: "50 sqft.",
     total: "928 sqft.",
     blackline:"KC-Site-FloorPlan-Modal-TransparentBG-C.png",
-    download:"KennedyCircle-FloorPlans-C-2024.pdf",
+    download:"KennedyCircle-FloorPlan-TypeC-2Bed-REV2026.pdf",
      href: "#"
   },
   {
@@ -53,7 +53,7 @@ const solutions = [
     outdoor: "42 sqft.",
     total: "1,084 sqft.",
     blackline:"KC-Site-FloorPlan-Modal-TransparentBG-D.png",
-    download:"KennedyCircle-FloorPlans-D-2024.pdf",
+    download:"KennedyCircle-FloorPlan-TypeD-2Bed-REV2026.pdf",
       href: "#"
   },
   {
@@ -62,10 +62,10 @@ const solutions = [
     bed: "2 BED ",
     bath: "2 BATH",
     indoor: "963 sqft.",
-    outdoor: "216 sqft.",
-    total: "1,179 sqft.",
+    outdoor: "0 sqft.",
+    total: "963 sqft.",
     blackline:"KC-Site-FloorPlan-Modal-TransparentBG-E.png",
-    download:"KennedyCircle-FloorPlans-E-2024.pdf",
+    download:"KennedyCircle-FloorPlan-TypeE-2Bed-NoPorch-REV2026.pdf",
     href: "#"
   },
 ]

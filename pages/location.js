@@ -19,8 +19,8 @@ export default function Home() {
   return (
     <>
       <NextSeo
-        title="The Location | Kennedy Circle Condominiums | Milton, ON"
-        description="Contemporary Apartment Rentals Designed for Your Lifestyle."
+        title="Location | Kennedy Circle Apartments | Milton, ON"
+        description="Modern 1, 1+den & 2-bedroom apartment rentals now leasing in Milton, ON. Smart home technology, rooftop terrace, co-working lounge & more. Book a tour: 905.336.8953."
       />
       <Hero alt="Pic" image="/img/hero/KC-Site-Neighbourhood-TitleAreaBG.jpg"
       imagePortrait="/img/hero/KC-Site-Neighbourhood-TitleAreaBG-Portrait.jpg"

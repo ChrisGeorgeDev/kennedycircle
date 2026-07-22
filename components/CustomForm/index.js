@@ -164,7 +164,7 @@ const CustomForm = ({ status, message, onValidated }) => {
             </label>
 
             <label className="block">
-              <span className="text-gray-700 sr-only">First Name </span>
+              <span className="text-gray-700 sr-only">Type of Unit Desired </span>
               <select
                 name="PRICER"
                 onChange={(e) => setPref(e.target.value)}
@@ -182,7 +182,7 @@ const CustomForm = ({ status, message, onValidated }) => {
             </label>
 
             <label className="block">
-              <span className="text-gray-700 sr-only">First Name </span>
+              <span className="text-gray-700 sr-only">Are You a Realtor </span>
               <select
                 name="AREUREALTO"
                 onChange={(e) => setWorkingwith(e.target.value)}
@@ -197,7 +197,7 @@ const CustomForm = ({ status, message, onValidated }) => {
             </label>
 
             <label className="block">
-              <span className="text-gray-700 sr-only">First Name </span>
+              <span className="text-gray-700 sr-only">Working With a Realtor </span>
               <select
                 name="WORKREALTR"
                 onChange={(e) => setAreyou(e.target.value)}
