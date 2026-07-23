@@ -17,7 +17,7 @@ const solutions = [
     outdoor: "0 sqft.",
     total: "606 sqft.",
     blackline:"KC-Site-FloorPlan-Modal-TransparentBG-A.png",
-    download:"KennedyCircle-FloorPlan-TypeA-1Bed-REV2026.pdf",
+    download:"Combined_Type_A_AA_1_Bed_REV2026.pdf",
      href: "#"
   },
   {

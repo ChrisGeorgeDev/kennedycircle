@@ -68,7 +68,7 @@ export default function Home() {
 <TextWrap>
 <div>
               <h2 className="display_h3 max-w-[400px] md:max-w-[700px] mb-4">
-                LIfe's conveniences are just around the corner
+                Life's conveniences are just around the corner
               </h2>
 
               <a href="/assets/downloads/KC-NeighbourhoodMap.pdf" target="_blank" className="cta hidden md:inline-block ">
