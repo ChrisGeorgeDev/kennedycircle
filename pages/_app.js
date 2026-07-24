@@ -5,7 +5,7 @@ import Menu from '../components/Menu';
 import Registration from '../components/Registration';
 import Footer from '../components/Footer';
 import dynamic from 'next/dynamic'
-import { GA_MEASUREMENT_ID, pageview } from '../lib/gtag'
+import { pageview } from '../lib/gtag'
 import Script from 'next/script'
 import * as fbq from '../lib/fpixel'
 import { useRouter } from 'next/router'
@@ -58,23 +58,6 @@ function MyApp({ Component, pageProps, router }) {
     />
 <Menu></Menu>
 {/* <AnimatePresence> */}
-<Script
-        strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-      />
-      <Script
-        id="gtag-base"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_MEASUREMENT_ID}');
-          `,
-        }}
-      />
-
 <Script
         id="fb-pixel"
         strategy="afterInteractive"
