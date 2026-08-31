@@ -1,5 +1,6 @@
 import MailchimpForm from "../CustomForm";
 import Section from "../Section";
+import SocialLinks from "../SocialLinks";
 
 
 
@@ -17,7 +18,7 @@ export default function Registration() {
        
 <MailchimpForm></MailchimpForm>
 
-        <div className="max-w-[500px] mt-20">
+        <div className="max-w-[700px] mt-20">
           <h2 className="display_h3 mb-2">
             {" "}
             Have questions?
@@ -40,6 +41,31 @@ export default function Registration() {
 </svg>
               leasing@gableviewhomes.com
             </p>
+
+            <p className="text-gvhGold-100 md:text-lg flex items-center mb-2 mt-2">
+            <svg xmlns="http://www.w3.org/2000/svg" className="icon mr-2 h-5 w-5 icon-tabler icon-tabler-map-pin" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="#FFF" stroke-linecap="round" stroke-linejoin="round">
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
+   <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"></path>
+</svg>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=1001+Kennedy+Circle,+Milton,+ON,+L9T+9PS"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="!text-[#f9f7f3e6] hover:!text-gvhGold-400 transition-all duration-150"
+              >
+                1001 Kennedy Circle, Milton, ON, L9T 9PS
+              </a>
+            </p>
+
+             <h2 className="text-lg mt-8">
+            {" "}
+           Connect with us
+          </h2>
+
+            <div className="flex items-center gap-4 mt-4">
+              <SocialLinks />
+            </div>
           </div>
         </div>
         <div className="text-xs mt-32 text-center text-[#f9f7f2] md:w-4/5 mx-auto font-sans">

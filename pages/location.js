@@ -27,7 +27,7 @@ export default function Home() {
       
       >
         <h1 className="display_h1_alt text-white">THE LOCATION</h1>
-        <h2 className="text-white">Milton Living: Connected & Convenient</h2>
+        <h2 className="text-white"> 1001 Kennedy Circle, Milton, ON, L9T 9PS</h2>
 
       </Hero>
 
@@ -40,6 +40,10 @@ export default function Home() {
             <h3 className="display_h3 max-w-[700px] mb-4">
             Explore Your New Neighbourhood
             </h3>
+
+            <p className="text-base max-w-[580px] font-display_med mb-4">
+             Milton Living: Connected & Convenient
+            </p>
 
             <p className="text-base max-w-[580px]">
             Perfectly positioned in Milton, Ontario, Kennedy Circle connects you to the best the area has to offer. Enjoy the balance of nearby nature trails and parks with the convenience of urban amenities. Shops, dining, schools, and easy transit links are all within reach, making it effortless to embrace the vibrant Milton lifestyle right from your doorstep.              <br />

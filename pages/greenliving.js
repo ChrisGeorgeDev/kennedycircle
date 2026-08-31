@@ -110,8 +110,7 @@ export default function Home() {
                 />
                 <h3 className="text-xl mb-6">Recycling</h3>
                 <p>
-                  Community Recycling and Waste Reduction Program with
-                  centralized disposal facilities with separate water
+                Community recycling and waste reduction program with centralized disposal and recycling facilities
                 </p>
               </div>
             </div>
@@ -163,8 +162,7 @@ export default function Home() {
               <Tab.Panels>
                 <Tab.Panel>
                   <h2 className="display_h4 text-center w-full md:w-4/5 lg:w-2/3 xl:w-1/2 mx-auto pb-10">
-                    Turnkey Electrical Vehicle Charging with fully installed EV
-                    service equipment.
+                   Electric Vehicle Charging with fully installed EV charging equipment.
                   </h2>
 
                   <ul className=" list-disc mx-auto w-full px-5 md:w-4/5  lg:w-3/5 xl:w-2/5">

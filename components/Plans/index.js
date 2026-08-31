@@ -18,6 +18,8 @@ const solutions = [
     total: "606 sqft.",
     blackline:"KC-Site-FloorPlan-Modal-TransparentBG-A.png",
     download:"KennedyCircle-FloorPlan-TypeA-AA-1Bed-REV2026.pdf",
+    price: "From $2,150/month",
+    availability: "Available",
      href: "#"
   },
   {
@@ -30,6 +32,8 @@ const solutions = [
     total: "706 sqft.",
     blackline:"KC-Site-FloorPlan-Modal-TransparentBG-B.png",
     download:"KennedyCircle-FloorPlan-TypeB-1BedDen-REV2026.pdf",
+    price: "From $2,300/month",
+    availability: "Available",
     href: "#"
   },
   {
@@ -42,6 +46,8 @@ const solutions = [
     total: "928 sqft.",
     blackline:"KC-Site-FloorPlan-Modal-TransparentBG-C.png",
     download:"KennedyCircle-FloorPlan-TypeC-2Bed-REV2026.pdf",
+    price: "From $2,725/month",
+    availability: "Available",
      href: "#"
   },
   {
@@ -54,6 +60,8 @@ const solutions = [
     total: "1,084 sqft.",
     blackline:"KC-Site-FloorPlan-Modal-TransparentBG-D.png",
     download:"KennedyCircle-FloorPlan-TypeD-2Bed-REV2026.pdf",
+    price: "From $2,950/month",
+    availability: "Available",
       href: "#"
   },
   {
@@ -66,6 +74,8 @@ const solutions = [
     total: "963 sqft.",
     blackline:"KC-Site-FloorPlan-Modal-TransparentBG-E.png",
     download:"KennedyCircle-FloorPlan-TypeE-2Bed-NoPorch-REV2026.pdf",
+    price: "From $2,900/month",
+    availability: "Limited Availability",
     href: "#"
   },
 ]
@@ -103,6 +113,8 @@ export default function FlyoutMenu() {
             <p className="flex-auto  w-4 md:w-16 text-left md:text-center">TYPE</p>
             <p className="flex-auto hidden md:block  w-16  text-left md:text-center">BEDS</p>
             <p className="flex-auto hidden md:block w-16 text-center">SIZE</p>
+            <p className="flex-auto hidden md:block w-32 text-center">PRICE</p>
+            <p className="flex-auto hidden md:block w-40 text-center">AVAILABILITY</p>
             <span className="flex  menuItems-center mr-2 md:mr-10">
               <ChevronDownIcon className=" text-transparent w-3 h-3 md:w-5 md:h-5 " />
             </span>
@@ -127,6 +139,12 @@ export default function FlyoutMenu() {
                           </span>
                           <span  className={`${ open ? "text-gvhGold-400" : "" } flex-auto w-16  md:text-center`}
 >                              {solution.total}
+                          </span>
+                          <span  className={`${ open ? "text-gvhGold-400" : "" } flex-auto hidden md:block w-32 text-center`}
+>                              {solution.price}
+                          </span>
+                          <span  className={`${ open ? "text-gvhGold-400" : "" } flex-auto hidden md:block w-40 text-center`}
+>                              {solution.availability}
                           </span>
                           <span className="flex menuItems-center mr-2 md:mr-10">
                  
@@ -194,6 +212,20 @@ export default function FlyoutMenu() {
                     <dt className="text-sm font-medium text-gray-900">Total</dt>
                     <dd className=" text-sm text-gray-500 sm:mt-0 text-left md:text-right">
                     {solution.total}
+                    </dd>
+                  </div>
+
+                  <div className=" grid grid-cols-2 gap-4 ">
+                    <dt className="text-sm font-medium text-gray-900">Price</dt>
+                    <dd className=" text-sm text-gray-500 mt-0 text-left md:text-right">
+                    {solution.price}
+                    </dd>
+                  </div>
+
+                  <div className=" grid grid-cols-2 gap-4 ">
+                    <dt className="text-sm font-medium text-gray-900">Availability</dt>
+                    <dd className=" text-sm text-gray-500 mt-0 text-left md:text-right">
+                    {solution.availability}
                     </dd>
                   </div>
                 </dl>

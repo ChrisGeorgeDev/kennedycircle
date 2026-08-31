@@ -54,6 +54,7 @@ export default function Home() {
       <Section anchor="floorplans" contrast="white">
         <TextWrap>
           <h2 className="display_alt  text-center">FLOORPLANS</h2>
+          <h3 className="text-center text-gvhGold-400 text-2xl mt-6">Now Pre-Leasing — Occupancy from Late 2026</h3>
           <div className="head_underline "></div>
 
           <FlyoutMenu />

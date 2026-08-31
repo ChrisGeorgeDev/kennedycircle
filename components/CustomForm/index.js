@@ -14,7 +14,6 @@ const CustomForm = ({ status, message, onValidated }) => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [phone, setPhone] = useState("");
-  const [postal, setPostal] = useState("");
   const [howdidu, setHowdidu] = useState("");
   const [pref, setPref] = useState("");
   const [are_you_realtor, setAreyou] = useState("");
@@ -27,7 +26,6 @@ const CustomForm = ({ status, message, onValidated }) => {
       firstName &&
       lastName &&
       phone &&
-      postal &&
       howdidu &&
       pref &&
       are_you_realtor &&
@@ -38,7 +36,6 @@ const CustomForm = ({ status, message, onValidated }) => {
         EMAIL: email,
         MERGE1: firstName,
         MERGE2: lastName,
-        MERGE3: postal,
         MERGE4: phone,
         MERGE5: howdidu,
         MERGE6: pref,
@@ -118,15 +115,6 @@ const CustomForm = ({ status, message, onValidated }) => {
               placeholder="PHONE NUMBER*"
               isRequired
             />
-
-            <InputField
-              label="Postal Code"
-              onChangeHandler={setPostal}
-              type="text"
-              value={postal}
-              placeholder="POSTAL CODE*"
-              isRequired
-            />
           </div>
 
           <div className="grid grid-cols-1 gap-3">
@@ -152,14 +140,14 @@ const CustomForm = ({ status, message, onValidated }) => {
                 required
               >
                 <option>HOW DID YOU HEAR ABOUT US</option>
-                <option value="Google Search">Google Search</option>
-                <option value="Buzz Buzz Homes">Buzz Buzz Homes</option>
-                <option value="A-Frame">A-Frame</option>
-                <option value="Magazine/Newspaper">Magazine/Newspaper</option>
-                <option value="Signage">Signage</option>
                 <option value="Social Media">Social Media</option>
-                <option value="Gableviewhomes.com">Gableviewhomes.com</option>
-                <option value="E-Blast">E-Blast</option>
+                <option value="Google Search">Google Search</option>
+                <option value="Property Signage">Property Signage</option>
+                <option value="A-Frame">A-Frame</option>
+                <option value="Rental Website">Rental Website</option>
+                <option value="Realtor">Realtor</option>
+                <option value="Referral (Friend or Family)">Referral (Friend or Family)</option>
+                <option value="Other">Other</option>
               </select>
             </label>
 
@@ -267,7 +255,6 @@ const CustomForm = ({ status, message, onValidated }) => {
               firstName,
               lastName,
               phone,
-              postal,
               howdidu,
               pref,
               are_you_realtor,
