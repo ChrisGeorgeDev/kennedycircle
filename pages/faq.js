@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import Section from "../components/Section";
-import { NextSeo } from "next-seo";
+import { NextSeo, FAQPageJsonLd } from "next-seo";
 import { Disclosure, Transition } from "@headlessui/react";
 import { TextWrap } from "../components/Animations/PageContent";
 
@@ -143,7 +143,7 @@ const faqItems = [
     category: "Resident Life & Application",
     question: "How do I book a tour?",
     answer:
-      "Call 289.498.3213, email leasing@gableviewhomes.com, or submit an inquiry through our website to schedule an in-person or virtual tour with our leasing team.",
+      "Call 905.336.8953, email leasing@gableviewhomes.com, or submit an inquiry through our website to schedule an in-person or virtual tour with our leasing team.",
   },
 ];
 
@@ -166,7 +166,14 @@ export default function Faq() {
     <>
       <NextSeo
         title="FAQ | Kennedy Circle Apartments | Milton, ON"
-        description="Answers to common leasing, rent, suite, pet, and resident questions for Kennedy Circle Apartments in Milton, ON. Now Pre-Leasing, Call 289.498.3213"
+        description="Answers to common leasing, rent, suite, pet, and resident questions for Kennedy Circle Apartments in Milton, ON. Now Pre-Leasing, Call 905.336.8953"
+      />
+
+      <FAQPageJsonLd
+        mainEntity={faqItems.map((item) => ({
+          questionName: item.question,
+          acceptedAnswerText: item.answer,
+        }))}
       />
 
       <section className="bg-gvhBlue-400 pt-40 pb-16 md:pt-48 md:pb-20 text-center">
@@ -263,7 +270,7 @@ export default function Faq() {
           <div className="text-center">
             <h3 className="display_h3 mb-4">Have Questions?</h3>
             <p className="text-base">
-              Call <a href="tel:+12894983213">905.336.8953</a> or email{" "}
+              Call <a href="tel:+19053368953">905.336.8953</a> or email{" "}
               <a href="mailto:leasing@gableviewhomes.com">
                 leasing@gableviewhomes.com
               </a>
