@@ -88,7 +88,15 @@ p {
 .menu-desktop span {
   font-size: 14px;
   border-bottom: 2px solid #fff;
-  @apply flex px-2 2xl:px-5 items-center pb-3 pt-4  leading-5 text-gvhBlue-400 hover:text-gvhGold-400  focus:outline-none transition duration-150 ease-in-out uppercase;
+  @apply flex px-2 items-center pb-3 pt-4  leading-5 text-gvhBlue-400 hover:text-gvhGold-400  focus:outline-none transition duration-150 ease-in-out uppercase;
+}
+
+@media (min-width: 1670px) {
+  .menu-desktop .link,
+  .menu-desktop span {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
 }
 
 .reg-cta {
@@ -576,7 +584,7 @@ html {
 
 
 
-@media (min-width: 1356px) {
+@media (min-width: 1450px) {
   .navMobile {
     display: none !important;
   }
@@ -590,11 +598,11 @@ html {
   }
 }
 
-@media (max-width: 1355px) {
+@media (max-width: 1449px) {
   .navMobile {
     display: flex !important;
   }
- 
+
   .navDesktop {
     display: none !important;
   }

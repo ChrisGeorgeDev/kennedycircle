@@ -130,6 +130,7 @@ export default function Home() {
      <p   className="text-base max-w-[580px]">
      Welcome to Kennedy Circle, where contemporary design meets effortless rental living in the heart of Milton, Ontario. Discover a curated collection of beautifully appointed apartment suites, thoughtfully designed amenities, and a vibrant community atmosphere. Experience a home that complements your lifestyle, offering convenience, comfort, and connection. Your new Milton address awaits.    </p>
 
+     <div className="flex flex-col items-start gap-4">
      <Link
        href="/residences"
        className="cta inline-block items-center links link--metis"
@@ -141,6 +142,19 @@ export default function Home() {
          </svg>
        </span>
      </Link>
+
+     <Link
+       href="/faq"
+       className="cta inline-block items-center links link--metis !mt-4"
+     >
+       <span className="flex items-center uppercase">
+        FREQUENTLY ASKED Questions
+         <svg width="24" className="ml-2" height="8" viewBox="0 0 24 8" stroke="currentColor" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <path d="M23.1547 4.3582C23.35 4.16293 23.35 3.84635 23.1547 3.65109L19.9727 0.469108C19.7775 0.273846 19.4609 0.273846 19.2656 0.469108C19.0704 0.66437 19.0704 0.980953 19.2656 1.17621L22.0941 4.00464L19.2656 6.83307C19.0704 7.02833 19.0704 7.34491 19.2656 7.54018C19.4609 7.73544 19.7775 7.73544 19.9727 7.54018L23.1547 4.3582ZM0.700195 4.50464L22.8012 4.50464L22.8012 3.50464L0.700195 3.50464L0.700195 4.50464Z" />
+         </svg>
+       </span>
+     </Link>
+     </div>
 
 
 

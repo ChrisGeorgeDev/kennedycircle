@@ -188,6 +188,15 @@ export default function Menu() {
                   >
                     Updates
                   </Link>
+
+                  <Link
+                    href="/faq"
+                    className={
+                      router.pathname == "/faq" ? "active link " : "link"
+                    }
+                  >
+                    FAQ
+                  </Link>
                 </div>
                 <a href="#register" className="reg-cta" onClick={AnchorScroll}>
                   {" "}
@@ -416,6 +425,20 @@ export default function Menu() {
                           }
                         >
                           Updates
+                        </Link>
+                      </li>
+
+                      <li
+                        className="text-gray-800 pt-4"
+                        onClick={() => setShow(!show)}
+                      >
+                        <Link
+                          href="/faq"
+                          className={
+                            router.pathname == "/faq" ? "active link " : "link"
+                          }
+                        >
+                          FAQ
                         </Link>
                       </li>
                     </ul>
