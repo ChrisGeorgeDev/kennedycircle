@@ -16,7 +16,7 @@ export default function Home() {
     <>
       <NextSeo
         title="The Team | Kennedy Circle Apartments | Milton, ON"
-        description="Modern 1, 1+den & 2-bedroom apartment rentals now leasing in Milton, ON. Smart home technology, rooftop terrace, co-working lounge & more. Book a tour: 905.336.8953."
+        description="Modern 1, 1+den & 2-bedroom apartment rentals now leasing in Milton, ON. Smart home technology, rooftop terrace, co-working lounge & more. Now Pre-Leasing, Call 289.498.3213"
       />
 
       <Hero alt="Pic" 
