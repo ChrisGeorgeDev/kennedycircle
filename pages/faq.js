@@ -277,6 +277,7 @@ export default function Faq() {
             </p>
           </div>
         </TextWrap>
+        
       </Section>
     </>
   );
