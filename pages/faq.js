@@ -263,7 +263,7 @@ export default function Faq() {
           <div className="text-center">
             <h3 className="display_h3 mb-4">Have Questions?</h3>
             <p className="text-base">
-              Call <a href="tel:+12894983213">289.498.3213</a> or email{" "}
+              Call <a href="tel:+12894983213">905.336.8953</a> or email{" "}
               <a href="mailto:leasing@gableviewhomes.com">
                 leasing@gableviewhomes.com
               </a>
